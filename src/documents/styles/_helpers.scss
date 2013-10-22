@@ -5,3 +5,23 @@
 %hide-text {
   font: 0/0 auto;
 }
+
+@mixin button {
+  display: inline-block;
+  font: 800 rem(23px)/#{2.3} $main-font;
+  padding-left: rem(20px);
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  background: $red;
+  border-radius: 4px;
+  &:after {
+    border-left: 1px solid rgba(black, .18);
+    box-shadow: -1px 0 0 rgba(white, .1);
+    display: inline-block;
+    margin-left: rem(20px);
+    padding: 0 rem(20px);
+    content: '>';
+    font-weight: 200;
+  }
+}

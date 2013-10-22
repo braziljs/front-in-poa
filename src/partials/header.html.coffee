@@ -7,14 +7,5 @@ header class: 'header', ->
       "#{@conf.date} • #{@conf.venue} • #{@conf.city}/#{@conf.state}"
     p class: 'event-slogan', ->
       @conf.description
-    # if @conf.price or @callToAction
-    #   <div class="call-action-area">
-    #     <% if @conf.price: %>
-    #       <span class="price">Only <%= @conf.price %></span>
-    #     <% end %>
-
-    #     <% if @callToAction: %>
-    #       <a href="<%= @callToAction.link %>" class="call-action-link" title="<%= @callToAction.text %>"><%= @callToAction.text %></a>
-    #     <% end %>
-    #   </div>
-    # <% end %>
+    if @callToAction
+      a href: @callToAction.link, class: 'call-action-link', @callToAction.text

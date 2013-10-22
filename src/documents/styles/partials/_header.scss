@@ -27,3 +27,8 @@
   letter-spacing: rem(-3px);
   text-transform: uppercase;
 }
+.call-action-link {
+  @include button;
+  margin-top: rem(18px);
+  font-size: rem(33px);
+}
