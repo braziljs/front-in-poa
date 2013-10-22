@@ -4,8 +4,8 @@
   "description": "Front in Poa event website",
   "homepage": "http://frontinpoa.com.br",
   "repository": {
-    "type" : "git",
-    "url" : "http://github.com/braziljs/front-in-poa.git"
+    "type": "git",
+    "url": "http://github.com/braziljs/front-in-poa.git"
   },
   "engines": {
     "node": ">0.8.x",

@@ -6,7 +6,7 @@
 
 2. Open your terminal and download [DocPad](https://github.com/bevry/docpad) through this command:
 
-		[sudo] npm install -fg docpad@6.30
+		[sudo] npm install -fg docpad@6.53.4
 
 3. Now clone it:
 
