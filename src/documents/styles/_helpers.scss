@@ -13,7 +13,8 @@
   text-transform: uppercase;
   color: white;
   text-decoration: none;
-  background: $red;
+  background: url("../images/texture-red.jpg") center center;
+  background-size: 200px 200px;
   border-radius: 4px;
   &:after {
     border-left: 1px solid rgba(black, .18);
