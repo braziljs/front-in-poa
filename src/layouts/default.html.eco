@@ -28,12 +28,10 @@
   <%-@partial('header.html.coffee', @)%>
 
   <div class="content" id="content">
-    <div class="wrapper">
-      <%- @content %>
-      <footer class="footer">
-        <p>Made with ♥ by <a href="http://confboilerplate.com">Conf Boilerplate</a> :)</p>
-      </footer>
-    </div>
+    <%- @content %>
+    <footer class="footer">
+      <p>Made with ♥ by <a href="http://confboilerplate.com">Conf Boilerplate</a> :)</p>
+    </footer>
   </div>
 
   <script src="<%= @getTheme() %>/js/main.js"></script>
