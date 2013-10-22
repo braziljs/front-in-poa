@@ -1,3 +1,9 @@
 body {
   font: rem(18px) $main-font;
 }
+
+.wrapper {
+  max-width: 940px;
+  padding: 0 25px;
+  margin: 0 auto;
+}

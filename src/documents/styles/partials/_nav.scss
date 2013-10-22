@@ -1,0 +1,19 @@
+.nav {
+  background: white;
+}
+.nav-items {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.nav-item {
+  display: inline-block;
+  margin: 0 rem(16px);
+}
+.nav-link {
+  font: 600 rem(15px)/#{rem(55px)} $main-font;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $grey;
+}
