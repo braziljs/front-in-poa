@@ -9,13 +9,13 @@ module.exports = {
     conf: {
       name: "Front in Poa 2013",
       description: "O Front in que vai mudar o seu jeito de ver o front end!",
-      date: "November 15",
+      date: "30 de Novembro",
       // If your event is free, just comment this line
       price: "$100",
-      venue: "Coco Bongo",
+      venue: "Senac",
       address: "Boulevard Kukulcan, 30",
-      city: "Cancún",
-      state: "Quintana"
+      city: "Porto Alegre",
+      state: "RS"
     },
 
     // The Call To Action button at the header,

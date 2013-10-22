@@ -3,6 +3,7 @@
   min-height: rem(680px);
   background: url(../images/header.jpg) center center no-repeat;
   background-size: cover;
+  text-align: center;
 }
 .logo-link {
   display: block;
@@ -12,4 +13,17 @@
   @extend %hide-text;
   background: url(../images/front-in-poa.svg) no-repeat;
   background-size: contain;
+}
+.event-head {
+  margin: 0;
+  color: $blue;
+  font-size: rem(34px);
+  font-weight: 200;
+}
+.event-slogan {
+  margin: rem(18px) 0;
+  font: 800 rem(60px)/#{rem(64px)} $main-font;
+  color: white;
+  letter-spacing: rem(-3px);
+  text-transform: uppercase;
 }

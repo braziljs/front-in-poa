@@ -3,8 +3,10 @@ header class: 'header', ->
     h1 class: 'logo', ->
       a class: 'logo-link', href: '#', title: @conf.name, itemprop: 'name', ->
         @conf.name
-    h2 class: 'tagline', ->
-      "#{@conf.date}, #{@conf.venue}, #{@conf.city}"
+    p class: 'event-head', ->
+      "#{@conf.date} • #{@conf.venue} • #{@conf.city}/#{@conf.state}"
+    p class: 'event-slogan', ->
+      @conf.description
     # if @conf.price or @callToAction
     #   <div class="call-action-area">
     #     <% if @conf.price: %>
