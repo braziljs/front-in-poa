@@ -42,23 +42,21 @@ module.exports = {
     // you can also change order here and it will reflect on page
     sections: [
       'about',
-      'location',
       'speakers',
       'schedule',
-      'sponsors',
+      'location',
+      'organizers',
       'partners'
-      // 'contact'
     ],
 
     // Labels which you can translate to other languages
     labels: {
-      about: "About",
-      location: "Location",
-      speakers: "Speakers",
-      schedule: "Schedule",
-      sponsors: "Sponsors",
-      partners: "Partners",
-      contact: "Contact"
+      about: "Sobre",
+      speakers: "Palestrantes",
+      schedule: "Programação",
+      location: "Local",
+      organizers: "Organizadores",
+      partners: "Patrocinadores"
     },
 
     // The entire schedule
