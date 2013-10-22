@@ -1,0 +1,13 @@
+.section-title {
+  font-size: rem(44px);
+  font-weight: 100;
+  color: $dark-grey;
+  letter-spacing: rem(-3px);
+  text-transform: uppercase;
+  text-align: center;
+  margin: rem(50px) 0;
+  strong {
+    display: block;
+    color: $blue;
+  }
+}
