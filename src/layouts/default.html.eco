@@ -10,22 +10,17 @@
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <!-- FACEBOOK -->
   <meta property="fb:app_id" content="372862979453673">
   <meta property="og:type" content="website">
   <meta property="og:url" content="<%= @site.url %>">
   <meta property="og:title" content="<%= @conf.name %>">
   <meta property="og:description" content="<%= @conf.description %>">
   <meta property="og:image" content="<%= @getTheme() %>/img/badge.jpg">
-  <!-- / FACEBOOK -->
 
   <link rel="shortcut icon" href="<%= @getTheme() %>/img/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="<%= @getTheme() %>/img/apple-touch-icon.png">
 
-  <!-- STYLES -->
   <link rel="stylesheet" type="text/css" href="<%= @getTheme() %>/css/main.css">
-  <!-- / STYLES -->
-
 </head>
 <body>
 
@@ -34,18 +29,14 @@
     <%-@partial('nav.html.eco', @)%>
     <%-@partial('header.html.eco', @)%>
 
-    <!-- CONTENT -->
     <div class="content" id="content">
       <div class="wrapper">
         <%- @content %>
-        <!-- FOOTER -->
         <footer class="footer">
           <p>Made with ♥ by <a href="http://confboilerplate.com">Conf Boilerplate</a> :)</p>
         </footer>
-        <!-- / FOOTER -->
       </div>
     </div>
-    <!-- / CONTENT -->
 
   </div>
 
@@ -56,19 +47,16 @@
   <script src="<%= @getTheme() %>/js/map.js"></script>
   <% end %>
 
-  <!-- GOOGLE ANALYTICS -->
   <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', '<%= @site.googleanalytics %>']);
-      _gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '<%= @site.googleanalytics %>']);
+    _gaq.push(['_trackPageview']);
 
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
   </script>
-  <!-- /GOOGLE ANALYTICS -->
-
 </body>
 </html>
