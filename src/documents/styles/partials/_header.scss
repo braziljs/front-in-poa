@@ -1,0 +1,15 @@
+.header {
+  padding: rem(15px);
+  min-height: rem(680px);
+  background: url(../images/header.jpg) center center no-repeat;
+  background-size: cover;
+}
+.logo-link {
+  display: block;
+  width: rem(320px);
+  height: rem(170px);
+  margin: rem(60px) auto;
+  @extend %hide-text;
+  background: url(../images/front-in-poa.svg) no-repeat;
+  background-size: contain;
+}

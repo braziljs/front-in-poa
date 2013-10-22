@@ -7,8 +7,8 @@ module.exports = {
 
     // Conference info
     conf: {
-      name: "Conference name",
-      description: "Conference description",
+      name: "Front in Poa 2013",
+      description: "O Front in que vai mudar o seu jeito de ver o front end!",
       date: "November 15",
       // If your event is free, just comment this line
       price: "$100",

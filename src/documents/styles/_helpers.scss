@@ -1,3 +1,7 @@
 @function rem($px, $base: 16px) {
   @return ($px / $base) * 1rem;
 }
+
+%hide-text {
+  font: 0/0 auto;
+}

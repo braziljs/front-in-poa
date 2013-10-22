@@ -24,21 +24,16 @@
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
+  <%-@partial('nav.html.coffee', @)%>
+  <%-@partial('header.html.coffee', @)%>
 
-  <div class="global">
-
-    <%-@partial('nav.html.coffee', @)%>
-    <%-@partial('header.html.eco', @)%>
-
-    <div class="content" id="content">
-      <div class="wrapper">
-        <%- @content %>
-        <footer class="footer">
-          <p>Made with ♥ by <a href="http://confboilerplate.com">Conf Boilerplate</a> :)</p>
-        </footer>
-      </div>
+  <div class="content" id="content">
+    <div class="wrapper">
+      <%- @content %>
+      <footer class="footer">
+        <p>Made with ♥ by <a href="http://confboilerplate.com">Conf Boilerplate</a> :)</p>
+      </footer>
     </div>
-
   </div>
 
   <script src="<%= @getTheme() %>/js/main.js"></script>
