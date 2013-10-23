@@ -28,9 +28,9 @@ window.mapsAsyncInit = function () {
   })
 }
 
+// Load Scripts
+// ===========
 !function () {
-  // Load Scripts
-  // ===========
   function loadScripts (urls) {
     var script = document.getElementsByTagName('script')[0]
     if (!Array.isArray(urls)) {

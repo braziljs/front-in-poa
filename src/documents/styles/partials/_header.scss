@@ -32,38 +32,3 @@
   margin-top: rem(18px);
   font-size: rem(33px);
 }
-
-.collaborate {
-  @include texture("blue");
-  overflow: hidden;
-  p {
-    text-align: left;
-  }
-}
-.collaborate-item {
-  width: 50%;
-  float: left;
-  color: white;
-  text-align: center;
-  padding: rem(50px) 50px;
-  &:first-child {
-    padding-right: 90px;
-  }
-  &:last-child {
-    padding-left: 90px;
-  }
-}
-.collaborate-title {
-  margin: 0;
-  font-size: rem(44px);
-  font-weight: 100;
-  letter-spacing: rem(-3px);
-  text-transform: uppercase;
-  strong {
-    display: block;
-  }
-}
-.collaborate-link {
-  @include button;
-  margin: rem(14px) 0 0;
-}

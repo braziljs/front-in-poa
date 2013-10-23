@@ -40,11 +40,21 @@ module.exports = {
     // to deactivate comment out with '//'
     // you can also change order here and it will reflect on page
     sections: [
+      'collaborate',
       'about',
       // 'speakers',
       // 'schedule',
       'location',
       'organizers',
+      'partners'
+    ],
+
+    navigation: [
+      'home',
+      'about',
+      // 'speakers',
+      // 'schedule',
+      'location',
       'partners'
     ],
 
