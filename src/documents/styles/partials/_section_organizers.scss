@@ -1,0 +1,25 @@
+.section-organizers {
+  padding-top: rem(10px);
+}
+
+.organizers {
+  list-style: none;
+  margin-top: rem(60px);
+  padding: 0;
+  overflow: hidden;
+}
+.organizer {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.organizer-photo {
+  width: 50%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.organizer-name {
+  margin-top: rem(10px);
+  font-weight: 800;
+}
