@@ -10,10 +10,9 @@ module.exports = {
       name: "Front in Poa 2013",
       description: "O Front in que vai mudar o seu jeito de ver o front end!",
       date: "30 de Novembro",
-      // If your event is free, just comment this line
-      price: "$100",
       venue: "Senac",
-      address: "Boulevard Kukulcan, 30",
+      address: "Rua Cel. Genuíno, 130",
+      neighborhood: "Centro",
       city: "Porto Alegre",
       state: "RS"
     },
@@ -43,7 +42,7 @@ module.exports = {
     sections: [
       'about',
       // 'speakers',
-      'schedule',
+      // 'schedule',
       'location',
       'organizers',
       'partners'
