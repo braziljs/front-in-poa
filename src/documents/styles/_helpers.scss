@@ -6,6 +6,12 @@
   font: 0/0 auto;
 }
 
+%grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'0\'></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: #{"grayscale(100%)"}; /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
 @mixin texture($color) {
   background: url("../images/texture-#{$color}.jpg") center center;
   background-size: 200px 200px;
