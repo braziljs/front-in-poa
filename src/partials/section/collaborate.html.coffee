@@ -1,8 +1,8 @@
 div class: 'wrapper', ->
   div class: 'collaborate-item', ->
     h2 class: 'collaborate-title', ->
-      text 'Inscreva'
-      strong 'sua palestra!'
+      span 'Inscreva'
+      text 'sua palestra!'
     p ->
       'Queremos que você inscreva sua palestra e vote nas melhores.'
     p ->
@@ -11,8 +11,8 @@ div class: 'wrapper', ->
       'Vai lá'
   div class: 'collaborate-item', ->
     h2 class: 'collaborate-title', ->
-      text 'Queremos'
-      strong 'sua opinião!'
+      span 'Queremos'
+      text 'sua opinião!'
     p ->
       'A profissão de desenvolvedor front-end exige diferentes skills.'
     p ->

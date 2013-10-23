@@ -1,6 +1,6 @@
 div class: 'wrapper', ->
   h2 class: 'section-title', ->
-    strong 'Organizadores'
+    'Organizadores'
   ul class: 'organizers', ->
     li class: 'organizer', ->
       img src: 'https://0.gravatar.com/avatar/929ed9958756c5c829a9eed068910646?s=200', class: 'organizer-photo'

@@ -22,10 +22,10 @@
 .collaborate-title {
   margin: 0;
   font-size: rem(44px);
-  font-weight: 100;
   letter-spacing: rem(-3px);
   text-transform: uppercase;
-  strong {
+  span {
+    font-weight: 100;
     display: block;
   }
 }

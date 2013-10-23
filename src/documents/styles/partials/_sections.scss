@@ -4,15 +4,15 @@
 
 .section-title {
   font-size: rem(44px);
-  font-weight: 100;
-  color: $dark-grey;
+  color: $blue;
   letter-spacing: rem(-3px);
   text-transform: uppercase;
   text-align: center;
   margin-top: 0;
-  strong {
+  span {
+    font-weight: 100;
     display: block;
-    color: $blue;
+    color: $dark-grey;
   }
 }
 
