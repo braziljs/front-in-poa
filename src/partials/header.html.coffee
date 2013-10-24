@@ -1,4 +1,4 @@
-header class: 'header', ->
+header id: 'home', class: 'header', ->
   div class: 'wrapper', ->
     h1 class: 'logo', ->
       a class: 'logo-link', href: '#', title: @conf.name, itemprop: 'name', ->

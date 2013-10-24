@@ -1,5 +1,9 @@
 .nav {
   background: white;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
 }
 .nav-items {
   list-style: none;
@@ -12,8 +16,12 @@
   margin: 0 rem(16px);
 }
 .nav-link {
-  font: 600 rem(15px)/#{rem(55px)} $main-font;
+  display: inline-block;
+  font: 600 rem(15px)/#{$nav-height} $main-font;
   text-transform: uppercase;
   text-decoration: none;
   color: $grey;
+  &.active {
+    box-shadow: inset 0 8px 0 $red;
+  }
 }
