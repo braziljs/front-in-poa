@@ -3,10 +3,10 @@ div class: 'wrapper', ->
     span 'Saiba porque você não pode'
     text 'perder o Front in Poa!'
 
-  div itemprop: 'description', ->
+  div class: 'about-text', itemprop: 'description', ->
     p ->
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'
+      'Não poderíamos deixar de fora uma das mais importantes capitais do país desta franquia de eventos <strong>exclusivos de front-end</strong>. E mais do que seguir a tendência, queremos fazer um <strong>evento afudê</strong> como tantos outros de nível nacional que acontecem em nossas terras.'
     p ->
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'
+      'O front-end é a marcação, aparência, acessibilidade, usabilidade e performance da sua aplicação. Tudo isto considerando uma infinidade de navegadores, plataformas, dispositivos e seus diferentes usos. Sim, estamos falando de todos os usos que fazemos da internet. E além dela inclusive.'
     p ->
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'
+      'Este evento é para <strong>todo o profissional</strong> que se preocupa com a experiência e satisfação do usuário. Não só para os front-ends de fato. Seja você designer ou programador: temos a certeza que você irá aproveitar o evento.'
