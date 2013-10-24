@@ -7,7 +7,7 @@ div class: 'wrapper', ->
       'Queremos que você inscreva sua palestra e vote nas melhores.'
     p ->
       'Colabore conosco e nos a ajude a fazer um evento afude!'
-    a href: '#', class: 'collaborate-link', ->
+    a href: 'http://call4paperz.com/events/front-in-poa', class: 'collaborate-link', target: '_blank', ->
       'Vai lá'
   div class: 'collaborate-item', ->
     h2 class: 'collaborate-title', ->
@@ -17,5 +17,5 @@ div class: 'wrapper', ->
       'A profissão de desenvolvedor front-end exige diferentes skills.'
     p ->
       'Deixe sua opinião sobre os temas que você mais gostaria de ver no evento!'
-    a href: '#', class: 'collaborate-link', ->
+    a href: '#', class: 'collaborate-link', target: '_blank', ->
       'Opina aí!'
