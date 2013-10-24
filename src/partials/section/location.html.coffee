@@ -5,9 +5,9 @@ div class: 'wrapper', ->
 
   div class: 'address', itemprop: 'address', itemscope: null, itemtype: 'http://schema.org/PostalAddress', ->
     span itemprop: 'streetAddress', @conf.address
-    text '•'
+    text ' • '
     span itemprop: 'addressLocality', @conf.city
-    text '•'
+    text ' • '
     span itemprop: 'addressRegion', "#{@conf.neighborhood} • #{@conf.state}"
 
 div class: 'address-map', 'data-address': @conf.address
