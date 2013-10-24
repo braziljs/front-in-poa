@@ -17,6 +17,29 @@
   background-size: 200px 200px;
 }
 
+@mixin radial-gradient($color1, $color2) {
+  background: -webkit-radial-gradient(center top, ellipse farthest-side, $color1, $color2);
+  background: radial-gradient(farthest-side at center top, $color1, $color2);
+}
+
+@mixin radial-bottom-border($size, $height: 10px) {
+  $distance: (100% - $size) / 2;
+  &:after {
+    content : '';
+    position: absolute;
+    left: $distance; right: $distance;
+    height: $height;
+    bottom: -$height;
+    @include radial-gradient(rgba(black, .15), rgba(black, 0))
+  }
+}
+
+@mixin hide-radial-bottom-border {
+  &:after {
+    display: none;
+  }
+}
+
 @mixin button {
   display: inline-block;
   font: 800 rem(23px)/#{2.3} $main-font;

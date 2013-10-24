@@ -1,3 +1,7 @@
+.section-location .section-title {
+  @include hide-radial-bottom-border;
+}
+
 .address {
   color: $blue;
   margin-top: -1em;
