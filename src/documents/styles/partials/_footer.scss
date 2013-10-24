@@ -1,0 +1,16 @@
+.footer {
+  font-size: rem(14px);
+}
+
+.credits {
+  display: inline-block;
+  margin-top: rem(40px);
+  padding-bottom: rem(80px);
+  border-bottom: $red solid rem(10px);
+  a {
+    color: $red;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -26,13 +26,8 @@
 <body>
   <%-@partial('nav.html.coffee', @)%>
   <%-@partial('header.html.coffee', @)%>
-
-  <div class="content" id="content">
-    <%- @content %>
-    <footer class="footer">
-      <p>Made with ♥ by <a href="http://confboilerplate.com">Conf Boilerplate</a> :)</p>
-    </footer>
-  </div>
+  <%-@content %>
+  <%-@partial('footer.html.coffee', @)%>
 
   <script src="scripts/main.js"></script>
 
