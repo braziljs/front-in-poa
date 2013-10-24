@@ -16,6 +16,7 @@
 @mixin texture($color) {
   background: url("../images/texture-#{$color}.jpg") center center;
   background-size: 200px 200px;
+  background-attachment: fixed;
 }
 
 // Buttons
