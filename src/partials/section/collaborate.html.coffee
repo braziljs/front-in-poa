@@ -17,5 +17,5 @@ div class: 'wrapper', ->
       'A profissão de desenvolvedor front-end exige diferentes skills.'
     p ->
       'Deixe sua opinião sobre os temas que você mais gostaria de ver no evento!'
-    a href: '#', class: 'collaborate-link', target: '_blank', ->
+    a href: 'https://docs.google.com/forms/d/1Skqu00MGrbbKaF5XR-albKAXJn6q1cg9YMz974_ZlE4', class: 'collaborate-link', target: '_blank', ->
       'Opina aí!'
