@@ -1,5 +1,5 @@
 .section-location .section-title {
-  @include hide-radial-bottom-border;
+  @include hide-bottom-line;
 }
 
 .address {
@@ -11,4 +11,7 @@
 .address-map {
   height: rem(470px);
   margin: rem(40px) 0 0;
+  position: relative;
+  @include top-line(100%, .25);
+  @include bottom-line(100%, .25);
 }

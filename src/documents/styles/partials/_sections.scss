@@ -16,7 +16,7 @@
     color: $dark-grey;
   }
   position: relative;
-  @include radial-bottom-border(40%);
+  @include inverse-bottom-line(40%);
 }
 
 @import "section_collaborate";

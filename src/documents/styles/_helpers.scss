@@ -12,34 +12,13 @@
   -webkit-filter: #{"grayscale(100%)"}; /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
 
+// textures
 @mixin texture($color) {
   background: url("../images/texture-#{$color}.jpg") center center;
   background-size: 200px 200px;
 }
 
-@mixin radial-gradient($color1, $color2) {
-  background: -webkit-radial-gradient(center top, ellipse farthest-side, $color1, $color2);
-  background: radial-gradient(farthest-side at center top, $color1, $color2);
-}
-
-@mixin radial-bottom-border($size, $height: 10px) {
-  $distance: (100% - $size) / 2;
-  &:after {
-    content : '';
-    position: absolute;
-    left: $distance; right: $distance;
-    height: $height;
-    bottom: -$height;
-    @include radial-gradient(rgba(black, .15), rgba(black, 0))
-  }
-}
-
-@mixin hide-radial-bottom-border {
-  &:after {
-    display: none;
-  }
-}
-
+// Buttons
 @mixin button {
   display: inline-block;
   font: 800 rem(23px)/#{2.3} $main-font;
@@ -57,5 +36,53 @@
     padding: 0 rem(20px);
     content: '>';
     font-weight: 200;
+  }
+}
+
+// Gradients
+@mixin radial-gradient($pos, $color1, $color2) {
+  background: -webkit-radial-gradient($pos, ellipse farthest-side, $color1, $color2);
+  background: radial-gradient(farthest-side at $pos, $color1, $color2);
+}
+
+// Lines
+@mixin line($type, $size, $height) {
+  $distance: (100% - $size) / 2;
+  &:#{$type} {
+    content : '';
+    position: absolute;
+    z-index: 1;
+    left: $distance; right: $distance;
+    height: $height;
+  }
+}
+
+@mixin bottom-line($size, $opacity: .15, $height: 10px) {
+  @include line(after, $size, $height);
+  &:after {
+    bottom: 0;
+    @include radial-gradient(center bottom, rgba(black, $opacity), rgba(black, 0))
+  }
+}
+
+@mixin top-line($size, $opacity: .15, $height: 10px) {
+  @include line(before, $size, $height);
+  &:before {
+    top: 0;
+    @include radial-gradient(center top, rgba(black, $opacity), rgba(black, 0))
+  }
+}
+
+@mixin inverse-bottom-line($size, $height: 10px) {
+  @include line(after, $size, $height);
+  &:after {
+    bottom: -$height;
+    @include radial-gradient(center top, rgba(black, .15), rgba(black, 0))
+  }
+}
+
+@mixin hide-bottom-line {
+  &:after {
+    display: none;
   }
 }
