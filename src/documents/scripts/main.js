@@ -39,10 +39,11 @@ window.mapsAsyncInit = function () {
     urls.forEach(function (url) {
       var element = document.createElement('script')
       element.async = true
-      element.src = '//' + url
+      element.src = 'http://' + url
       script.parentNode.insertBefore(element, script)
     })
   }
 
   loadScripts('maps.google.com/maps/api/js?sensor=false&callback=mapsAsyncInit')
+  loadScripts('www.google-analytics.com/ga.js')
 }()

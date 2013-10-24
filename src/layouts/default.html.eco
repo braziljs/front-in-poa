@@ -22,25 +22,21 @@
 
   <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,400,600,800" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+  <script>
+    (function () {
+      window._gaq = [
+          ['_setAccount', '<%= @site.googleanalytics %>']
+        , ['_trackPageview']
+      ]
+    })()
+  </script>
 </head>
 <body>
   <%-@partial('nav.html.coffee', @)%>
   <%-@partial('header.html.coffee', @)%>
   <%-@content %>
   <%-@partial('footer.html.coffee', @)%>
-
   <script src="scripts/main.js"></script>
-
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '<%= @site.googleanalytics %>']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
 </body>
 </html>

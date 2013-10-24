@@ -24,16 +24,11 @@ module.exports = {
       link: "http://eventick.com.br"
     },
 
-    // "Fork me on GitHub", if you don't want this, just remove the forkButton property
-    forkButton: {
-      repository: "https://github.com/braziljs/conf-boilerplate"
-    },
-
     // Site info
     site: {
       theme: "front-in-poa",
       url: "http://frontinpoa.com.br",
-      googleanalytics: "UA-xx-x"
+      googleanalytics: "UA-45100553-1"
     },
 
     // Active sections on the website
