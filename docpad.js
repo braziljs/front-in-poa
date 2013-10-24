@@ -46,7 +46,7 @@ module.exports = {
       // 'schedule',
       'location',
       'organizers',
-      'partners'
+      'sponsors'
     ],
 
     navigation: [
@@ -55,7 +55,7 @@ module.exports = {
       // 'speakers',
       // 'schedule',
       'location',
-      'partners'
+      'sponsors'
     ],
 
     // Labels which you can translate to other languages
@@ -66,7 +66,7 @@ module.exports = {
       schedule: "Programação",
       location: "Local",
       organizers: "Organizadores",
-      partners: "Apoio"
+      sponsors: "Patrocínio"
     },
 
     // The entire schedule
@@ -178,18 +178,9 @@ module.exports = {
     // List of Sponsors
     sponsors: [
       {
-        name: "Eventick",
-        logo: "themes/yellow-swan/img/sponsor.png",
-        url: "http://eventick.com.br"
-      }
-    ],
-
-    // List of Partners
-    partners: [
-      {
-        name: "BrazilJS",
-        logo: "themes/yellow-swan/img/partner.png",
-        url: "http://braziljs.org"
+        name: "Cure Studio Design",
+        logo: "images/cure.svg",
+        url: "http://curestudio.com.br"
       }
     ],
 

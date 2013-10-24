@@ -1,0 +1,18 @@
+.section-sponsors {
+  @include texture("dark-blue");
+}
+
+.sponsors-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.sponsor-item {
+  width: 14%;
+  display: inline-block;
+}
+.sponsor-logo {
+  display: block;
+  width: 100%;
+}
