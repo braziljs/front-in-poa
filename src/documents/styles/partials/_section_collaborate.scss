@@ -12,10 +12,12 @@
   color: white;
   text-align: center;
   padding: 0 50px;
+  position: relative;
   &:first-child {
     padding-right: 90px;
   }
   &:last-child {
+    @include left-line(90%);
     padding-left: 90px;
   }
 }

@@ -46,43 +46,4 @@
 }
 
 // Lines
-@mixin line($type, $size, $height) {
-  $distance: (100% - $size) / 2;
-  &:#{$type} {
-    content : '';
-    position: absolute;
-    z-index: 1;
-    left: $distance; right: $distance;
-    height: $height;
-  }
-}
-
-@mixin bottom-line($size, $opacity: .15, $height: 10px) {
-  @include line(after, $size, $height);
-  &:after {
-    bottom: 0;
-    @include radial-gradient(center bottom, rgba(black, $opacity), rgba(black, 0))
-  }
-}
-
-@mixin top-line($size, $opacity: .15, $height: 10px) {
-  @include line(before, $size, $height);
-  &:before {
-    top: 0;
-    @include radial-gradient(center top, rgba(black, $opacity), rgba(black, 0))
-  }
-}
-
-@mixin inverse-bottom-line($size, $height: 10px) {
-  @include line(after, $size, $height);
-  &:after {
-    bottom: -$height;
-    @include radial-gradient(center top, rgba(black, .15), rgba(black, 0))
-  }
-}
-
-@mixin hide-bottom-line {
-  &:after {
-    display: none;
-  }
-}
+@import "helpers_lines";
