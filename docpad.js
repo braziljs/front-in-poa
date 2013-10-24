@@ -176,6 +176,16 @@ module.exports = {
         name: "Cure Studio Design",
         logo: "images/cure.svg",
         url: "http://curestudio.com.br"
+      },
+      {
+        name: "Grifo",
+        logo: "images/grifo.svg",
+        url: "http://gri.fo"
+      },
+      {
+        name: "Senac",
+        logo: "images/senac.svg",
+        url: "http://www.senac.br"
       }
     ],
 
