@@ -38,6 +38,13 @@
     content: '>';
     font-weight: 200;
   }
+  transition: box-shadow .1s ease-out;
+  &:hover {
+    box-shadow: 0 .1em .2em rgba(black, .2);
+  }
+  &:active {
+    box-shadow: inset 0 .1em .2em rgba(black, .5);
+  }
 }
 
 // Gradients
