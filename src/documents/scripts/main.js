@@ -28,6 +28,44 @@ window.mapsAsyncInit = function () {
   })
 }
 
+// Smooth scroll
+// ===========
+!function () {
+  var id, target, current, previous
+
+  function step() {
+    current = window.pageYOffset - (window.pageYOffset - target) / 5
+
+    document.body.scrollTop = current
+    document.documentElement.scrollTop = current
+
+    if (previous != current) {
+      window.requestAnimationFrame(step)
+    } else {
+      document.location.hash = id
+      delete step.runnig
+    }
+    previous = current
+  }
+
+  function handler() {
+    event.preventDefault()
+    id = this.getAttribute('href')
+    target = document.querySelector(id).getBoundingClientRect().top + window.pageYOffset
+
+    if (!step.runnig) {
+      previous = null
+      step.runnig = true
+      step()
+    }
+  }
+
+  var links = document.querySelectorAll('a[href*="#"]')
+  ;[].slice.call(links).forEach(function (link) {
+    link.addEventListener('click', handler)
+  })
+}()
+
 // Scroll spy
 // ===========
 !function () {
@@ -80,8 +118,6 @@ window.mapsAsyncInit = function () {
   ScrollSpy.prototype.menu = function () {
     var id = this.getActive()
       , item = this.nav.querySelector('a[href="#' + id + '"]')
-
-    console.log(id)
 
     this.active && this.active.classList.remove('active')
     item && item.classList.add('active')

@@ -1,7 +1,6 @@
 .header {
-  margin-top: $nav-height;
-  padding: rem(15px);
-  min-height: rem(680px);
+  padding-top: $nav-height + rem(15px);
+  padding-bottom: rem(15px);
   background: url(../images/header.jpg) center center no-repeat;
   background-size: cover;
   text-align: center;
@@ -32,4 +31,5 @@
   @include button;
   margin-top: rem(18px);
   font-size: rem(33px);
+  margin-bottom: rem(60px);
 }
