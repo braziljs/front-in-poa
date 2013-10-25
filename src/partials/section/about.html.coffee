@@ -7,6 +7,6 @@ div class: 'wrapper', ->
     p ->
       'Não poderíamos deixar de fora uma das mais importantes capitais do país desta franquia de eventos <strong>exclusivos de front-end</strong>. E mais do que seguir a tendência, queremos fazer um <strong>evento afudê</strong> como tantos outros de nível nacional que acontecem em nossas terras.'
     p ->
-      'O front-end é a marcação, aparência, acessibilidade, usabilidade e performance da sua aplicação. Tudo isto considerando uma infinidade de navegadores, plataformas, dispositivos e seus diferentes usos. Sim, estamos falando de todos os usos que fazemos da internet. E além dela inclusive.'
+      'O front-end é a marcação, aparência, acessibilidade, usabilidade e performance da <strong>sua aplicação</strong>. Tudo isto considerando uma infinidade de navegadores, plataformas, dispositivos e suas diferentes interfaces. Estamos falando dos diferentes usos que fazemos da internet, e além dela inclusive.'
     p ->
       'Este evento é para <strong>todo o profissional</strong> que se preocupa com a experiência e satisfação do usuário. Não só para os front-ends de fato. Seja você designer ou programador: temos a certeza que você irá aproveitar o evento.'

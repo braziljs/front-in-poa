@@ -6,7 +6,7 @@ div class: 'wrapper', ->
     p ->
       'Queremos que você inscreva sua palestra e vote nas melhores.'
     p ->
-      'Colabore conosco e nos a ajude a fazer um evento afude!'
+      'Colabore conosco e nos a ajude a fazer um evento afudê!'
     a href: 'http://call4paperz.com/events/front-in-poa', class: 'collaborate-link', target: '_blank', ->
       'Vai lá'
   div class: 'collaborate-item', ->
