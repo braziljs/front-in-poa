@@ -21,7 +21,7 @@ module.exports = {
     // If you don't want this, just remove the callToAction property.
     callToAction: {
       text: "Inscreva-se",
-      link: "http://eventick.com.br"
+      link: "http://www.eventick.com.br/frontinpoa-2013"
     },
 
     // Site info
