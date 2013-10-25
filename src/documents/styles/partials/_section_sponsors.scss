@@ -10,7 +10,8 @@
 }
 .sponsor-item {
   width: 20%;
-  margin: rem(20px) 0;
+  min-width: rem(150px);
+  margin: 4% 0;
   display: inline-block;
 }
 .sponsor-logo {

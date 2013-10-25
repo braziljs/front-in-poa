@@ -1,7 +1,7 @@
 div class: 'wrapper', ->
   h2 class: 'section-title', ->
     span 'Saiba porque você não pode'
-    text 'perder o Front in Poa!'
+    text ' perder o Front in Poa!'
 
   div class: 'about-text', itemprop: 'description', ->
     p ->

@@ -1,35 +1,56 @@
 .header {
-  padding-top: $nav-height + rem(15px);
-  padding-bottom: rem(15px);
+  padding: rem(15px) 0;
   background: url(../images/header.jpg) center center no-repeat;
   background-size: cover;
   text-align: center;
+  @media screen and (min-width:$minor-viewport) {
+    padding-top: $nav-height + rem(15px);
+  }
+}
+.logo {
+  width: rem(320px);
+  max-width: 80%;
+  margin: rem(20px) auto;
 }
 .logo-link {
   display: block;
-  width: rem(320px);
-  height: rem(170px);
-  margin: rem(60px) auto;
+  padding-bottom: percentage(170px / 320px);
   @extend %hide-text;
   background: url(../images/front-in-poa.svg) no-repeat;
   background-size: contain;
+  @media screen and (min-width:$minor-viewport) {
+    margin: rem(60px) auto;
+  }
 }
 .event-head {
   margin: 0;
   color: $blue;
-  font-size: rem(34px);
-  font-weight: 200;
+  font-size: rem(22px);
+  @media screen and (min-width:$minor-viewport) {
+    font-size: rem(34px);
+    font-weight: 200;
+  }
 }
 .event-slogan {
-  margin: rem(18px) 0;
-  font: 800 rem(60px)/#{rem(64px)} $main-font;
-  color: white;
-  letter-spacing: rem(-3px);
-  text-transform: uppercase;
+  @include invisible;
+  @media screen and (min-width:$minor-viewport) {
+    @include visible;
+    margin: rem(18px) 0;
+    font: 800 rem(50px)/#{1.01} $main-font;
+    color: white;
+    letter-spacing: rem(-3px);
+    text-transform: uppercase;
+  }
+  @media screen and (min-width:$maximum-viewport) {
+    font-size: rem(60px);
+  }
 }
 .call-action-link {
   @include button;
-  margin-top: rem(18px);
-  font-size: rem(33px);
-  margin-bottom: rem(60px);
+  margin: rem(20px) 0;
+  @media screen and (min-width:$minor-viewport) {
+    margin-top: rem(18px);
+    font-size: rem(33px);
+    margin-bottom: rem(60px);
+  }
 }

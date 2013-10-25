@@ -12,6 +12,26 @@
   -webkit-filter: #{"grayscale(100%)"}; /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
 
+@mixin item-per-line($items) {
+  float: left;
+  width: percentage(1 / $items);
+  &:nth-child(n) {
+    clear: none;
+  }
+  &:nth-child(#{$items}n + 1) {
+    clear: left;
+  }
+}
+
+@mixin invisible {
+  position: absolute;
+  left: -9999rem;
+}
+
+@mixin visible {
+  position: static;
+}
+
 // textures
 @mixin texture($color) {
   background: url("../images/texture-#{$color}.jpg") center center;
@@ -20,21 +40,27 @@
 }
 
 // Buttons
+@mixin button-spaces($size) {
+  padding-left: $size;
+  &:after {
+    margin-left: $size;
+    padding: 0 $size;
+  }
+}
+
 @mixin button {
   display: inline-block;
-  font: 800 rem(23px)/#{2.3} $main-font;
-  padding-left: rem(20px);
+  font: 800 rem(18px)/#{2.3} $main-font;
   text-transform: uppercase;
   color: white;
   text-decoration: none;
   border-radius: 4px;
+  @include button-spaces(rem(14px));
   @include texture("red");
   &:after {
     border-left: 1px solid rgba(black, .18);
     box-shadow: -1px 0 0 rgba(white, .1);
     display: inline-block;
-    margin-left: rem(20px);
-    padding: 0 rem(20px);
     content: '>';
     font-weight: 200;
   }
@@ -44,6 +70,10 @@
   }
   &:active {
     box-shadow: inset 0 .1em .2em rgba(black, .5);
+  }
+  @media screen and (min-width:$minor-viewport) {
+    font-size: rem(23px);
+    @include button-spaces(rem(20px));
   }
 }
 

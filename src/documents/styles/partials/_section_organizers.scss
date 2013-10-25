@@ -4,14 +4,24 @@
 
 .organizers-list {
   list-style: none;
-  margin-top: rem(60px);
+  margin: 0;
   padding: 0;
   overflow: hidden;
+  @media screen and (min-width:$minor-viewport) {
+    margin-top: rem(30px);
+  }
+  @media screen and (min-width:$medium-viewport) {
+    margin-top: rem(60px);
+  }
 }
 .organizer-item {
-  float: left;
-  width: 25%;
+  @include item-per-line(2);
+  padding: 0 rem(10px);
+  margin-top: rem(20px);
   text-align: center;
+  @media screen and (min-width:$minor-viewport) {
+    @include item-per-line(4);
+  }
 }
 .organizer-photo {
   width: 50%;

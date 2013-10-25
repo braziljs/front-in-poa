@@ -9,9 +9,14 @@
 }
 
 .address-map {
-  height: rem(470px);
-  margin: rem(40px) 0 0;
+  padding-bottom: 60%;
+  margin-top: rem(20px);
   position: relative;
   @include top-line(100%, .25);
   @include bottom-line(100%, .25);
+  @media screen and (min-width:$minor-viewport) {
+    padding: 0;
+    margin-top: rem(40px);
+    height: rem(470px);
+  }
 }

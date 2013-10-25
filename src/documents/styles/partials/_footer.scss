@@ -4,13 +4,18 @@
 
 .credits {
   display: inline-block;
-  margin-top: rem(40px);
-  padding-bottom: rem(80px);
+  max-width: 80%;
+  margin-top: rem(20px);
+  padding-bottom: rem(40px);
   border-bottom: $red solid rem(10px);
   a {
     color: $red;
     &:hover {
       text-decoration: none;
     }
+  }
+  @media screen and (min-width:$minor-viewport) {
+    margin-top: rem(40px);
+    padding-bottom: rem(80px);
   }
 }

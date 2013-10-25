@@ -1,22 +1,31 @@
 .section {
-  padding: rem(50px) 0;
+  padding: rem(30px) 0;
+  @media screen and (min-width:$minor-viewport) {
+    padding: rem(50px) 0;
+  }
 }
 
 .section-title {
-  font-size: rem(44px);
+  font-size: rem(28px);
   color: $blue;
-  letter-spacing: rem(-3px);
   text-transform: uppercase;
   text-align: center;
   margin-top: 0;
   padding-bottom: rem(10px);
   span {
     font-weight: 100;
-    display: block;
     color: $dark-grey;
   }
   position: relative;
-  @include inverse-bottom-line(40%);
+  @include inverse-bottom-line(80%);
+  @media screen and (min-width:$minor-viewport) {
+    font-size: rem(44px);
+    letter-spacing: rem(-3px);
+    span {
+      display: block;
+    }
+    @include inverse-bottom-line(40%);
+  }
 }
 
 @import "section_collaborate";

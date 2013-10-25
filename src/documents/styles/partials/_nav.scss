@@ -1,9 +1,14 @@
 .nav {
   background: white;
-  position: fixed;
   z-index: 2;
   top: 0;
   width: 100%;
+  @include invisible;
+  @media screen and (min-width:$minor-viewport) {
+    @include visible;
+    position: fixed;
+    left: 0;
+  }
 }
 .nav-items {
   list-style: none;

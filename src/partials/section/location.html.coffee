@@ -1,7 +1,7 @@
 div class: 'wrapper', ->
   h2 class: 'section-title', ->
     span 'Saiba como'
-    text 'chegar ao evento!'
+    text ' chegar ao evento!'
 
   div class: 'address', itemprop: 'address', itemscope: null, itemtype: 'http://schema.org/PostalAddress', ->
     span itemprop: 'streetAddress', @conf.address
