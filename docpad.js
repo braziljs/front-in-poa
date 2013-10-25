@@ -187,11 +187,6 @@ module.exports = {
         logo: "images/senac.svg",
         url: "http://www.senac.br"
       }
-    ],
-
-    // Theme path
-    getTheme: function() {
-      return "themes/" + this.site.theme;
-    }
+    ]
   }
 };
