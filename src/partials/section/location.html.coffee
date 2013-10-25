@@ -10,4 +10,4 @@ div class: 'wrapper', ->
     text ' • '
     span itemprop: 'addressRegion', "#{@conf.neighborhood} • #{@conf.state}"
 
-div class: 'address-map', 'data-address': @conf.address
+div class: 'address-map', 'data-address': "#{@conf.address} - #{@conf.city}"
