@@ -13,7 +13,7 @@
   <meta property="og:url" content="<%= @site.url %>">
   <meta property="og:title" content="<%= @conf.name %>">
   <meta property="og:description" content="<%= @conf.description %>">
-  <meta property="og:image" content="images/badge.jpg">
+  <meta property="og:image" content="<%= @site.url %>/images/badge.jpg">
 
   <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,400,600,800" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
