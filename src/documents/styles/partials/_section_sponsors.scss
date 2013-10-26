@@ -2,19 +2,29 @@
   @include texture("dark-blue");
 }
 
-.sponsors-list {
+.sponsors-list, .partners-list {
   list-style: none;
   text-align: center;
   padding: 0;
   margin: 0;
 }
-.sponsor-item {
+.sponsors-list {
+  margin-bottom: rem(30px);
+  @media screen and (min-width:$minor-viewport) {
+    margin-bottom: rem(50px);
+  }
+}
+.sponsor-item, .partner-item {
   width: 20%;
   min-width: rem(150px);
-  margin: 4% 0;
   display: inline-block;
+  margin-bottom: 2%;
 }
-.sponsor-logo {
+.partner-item {
+  width: 15%;
+  min-width: rem(100px);
+}
+.sponsor-logo, .partner-logo {
   display: block;
   width: 100%;
 }

@@ -187,6 +187,20 @@ module.exports = {
         logo: "images/senac.svg",
         url: "http://www.senac.br"
       }
+    ],
+
+    // List of Partners
+    partners: [
+      {
+        name: "Abradi RS",
+        logo: "images/abradi.svg",
+        url: "http://www.abradirs.com.br"
+      },
+      {
+        name: "Codeminer42",
+        logo: "images/codeminer.svg",
+        url: "http://Codeminer42.com.br"
+      }
     ]
   }
 };
