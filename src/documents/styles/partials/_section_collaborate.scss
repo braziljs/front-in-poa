@@ -4,6 +4,9 @@
   p {
     text-align: left;
   }
+  @media screen and (min-width:$minor-viewport) {
+    padding: rem(50px) 0;
+  }
 }
 
 .collaborate-item {

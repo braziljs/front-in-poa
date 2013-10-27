@@ -1,7 +1,7 @@
 .section {
   padding: rem(30px) 0;
   @media screen and (min-width:$minor-viewport) {
-    padding: rem(50px) 0;
+    padding: rem(70px) 0 rem(50px);
   }
 }
 
