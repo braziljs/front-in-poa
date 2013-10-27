@@ -93,13 +93,10 @@ window.mapsAsyncInit = function () {
 
   ScrollSpy.prototype.getActive = function () {
     var scroll = window.pageYOffset
-      , section = this.sections[0]
+      , section
 
     for (var i = 0, l = this.sections.length; i < l; i++) {
-      if (this.sections[i].offset > scroll) {
-        i > 0 && (section = this.sections[i - 1])
-        break
-      }
+      this.sections[i].offset <= scroll && (section = this.sections[i])
     }
     return section.id
   }
