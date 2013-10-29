@@ -48,7 +48,7 @@ window.mapsAsyncInit = function () {
     previous = current
   }
 
-  function handler() {
+  function handler(event) {
     event.preventDefault()
     id = this.getAttribute('href')
     target = document.querySelector(id).getBoundingClientRect().top + window.pageYOffset
