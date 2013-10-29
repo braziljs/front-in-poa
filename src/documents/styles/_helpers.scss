@@ -14,6 +14,7 @@
 
 @mixin item-per-line($items) {
   display: inline-block;
+  vertical-align: top;
   width: percentage(1 / $items);
   &:nth-child(n) {
     clear: none;
