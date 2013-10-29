@@ -1,0 +1,10 @@
+.presenter {
+  @include texture("blue");
+  color: white;
+  padding: rem(80px) 0;
+}
+.presenter-title {
+  font-size: rem(30px);
+  text-align: center;
+  text-transform: uppercase;
+}

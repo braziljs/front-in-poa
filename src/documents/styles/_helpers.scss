@@ -13,7 +13,7 @@
 }
 
 @mixin item-per-line($items) {
-  float: left;
+  display: inline-block;
   width: percentage(1 / $items);
   &:nth-child(n) {
     clear: none;

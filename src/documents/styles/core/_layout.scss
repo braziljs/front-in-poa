@@ -14,10 +14,10 @@ body {
 }
 
 .wrapper {
-  max-width: 990px;
+  max-width: $site-width + ($site-gutter * 2);
   padding: 0 10px;
   margin: 0 auto;
   @media screen and (min-width:$minor-viewport) {
-    padding: 0 25px;
+    padding: 0 $site-gutter;
   }
 }

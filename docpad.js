@@ -37,7 +37,8 @@ module.exports = {
     sections: [
       'collaborate',
       'about',
-      // 'speakers',
+      'speakers',
+      // 'presenter',
       // 'schedule',
       'location',
       'organizers',
@@ -47,7 +48,7 @@ module.exports = {
     navigation: [
       'home',
       'about',
-      // 'speakers',
+      'speakers',
       // 'schedule',
       'location',
       'sponsors'
@@ -67,105 +68,29 @@ module.exports = {
     // The entire schedule
     schedule: [
       {
-        name: "Check-in / Breakfast",
-        time: "9h00"
-      },
-      {
-        name: "Linus Torvalds",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Linux Foundation",
-        link: {
-          href: "http://twitter.com/linus",
-          text: "@linus"
-        },
+        name: "Vitor Carlos",
+        gravatar: "8831190d849c1748dbb2bcdffbf71bc9",
+        bio: "Um gamer da geração atari, *.dev, apaixonado por café e UX. Estuda Jogos Digitais na PUCRS e trabalha como Front-End na Joy Interactive.",
+        comment: "<a href=\"https://github.com/v42/HTML-Game-Engine\" target=\"_blank\">Confere só o que ele já fez.</a> Claro, Vitor vai falar sobre games. Com certeza uma das coisas que mais entende e dedica por diversão e estudo grande parte do seu tempo. ",
+        company: "Joy",
+        twitter: "Vitor42",
+        github: "v42",
         presentation: {
-          title: "Digging into a Linux Kernel",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "10h00"
+          title: "I want to play a game...",
+          description: "Quer fazer um game para web e não tem nem noção por onde começar? I know that feels, bro. Vamos ver então como estruturar um projeto de game, conhecer conceitos básicos de game design, rever algumas tecnologias disponíveis e conhecer técnicas para contornar as limitações dos games na nossa plataforma favorita, que é a web! :)"
         }
       },
       {
-        name: "Bill Gates",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Microsoft",
-        link: {
-          href: "http://github.com/billy95",
-          text: "@billy95"
-        },
+        name: "Átila Fassina",
+        gravatar: "7469dd76fa3e9ae524119b194c466e96",
+        bio: "Front-end Dev que acredita no Design Responsivo como primeiro passo para uma boa UX, flanelinha de Designer e zagueiro-SEO nas horas vagas.",
+        comment: "Um desenvolvedor dedicado e sempre presente em todos os eventos com as melhores perguntas. Chegou a vez do Átila dar uma aula sobre RWD.",
+        company: "Lenova Internet",
+        twitter: "atilafassina",
+        github: "atilafassina",
         presentation: {
-          title: "Introducing Windows 12",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "11h00"
-        }
-      },
-      {
-        name: "Lunch",
-        time: "12h00"
-      },
-      {
-        name: "Chuck Norris",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Delta Command",
-        link: {
-          href: "http://twitter.com/littlechuck",
-          text: "@littlechuck"
-        },
-        presentation: {
-          title: "How to kill a elephant with one finger",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "13h00"
-        }
-      },
-      {
-        name: "Steve Jobs",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Apple, Inc.",
-        link: {
-          href: "http://github.com/stevie",
-          text: "@stevie"
-        },
-        presentation: {
-          title: "Presenting iPad",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "14h00"
-        }
-      },
-      {
-        name: "Coffee-break",
-        time: "15h00"
-      },
-      {
-        name: "Mark Zuckerberg",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Facebook",
-        link: {
-          href: "http://twitter.com/zuck",
-          text: "@zuck"
-        },
-        presentation: {
-          title: "Revealing Facebook Secrets",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "16h00"
-        }
-      },
-      {
-        name: "Steve Wozniak",
-        photo: "themes/yellow-swan/img/speaker.jpg",
-        bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-        company: "Apple, Inc.",
-        link: {
-          href: "http://twitter.com/woz",
-          text: "@woz"
-        },
-        presentation: {
-          title: "Why do I prefer Android over iPhone",
-          description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-          time: "17h00"
+          title: "Responsive Web Workflow",
+          description: "Trabalhar com Web Design Responsivo pode ser confuso, é um cenário em constante e rápida evolução, cheio de diferentes opções para escolher e se adaptar, novas tendências. Não existe bala de prata, mas nessa talk vamos avaliar práticas sugeridas e escolher nossas metodologias com um toolset básico para montar um projeto com nossas próprias guidelines."
         }
       }
     ],
