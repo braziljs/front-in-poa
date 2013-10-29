@@ -76,14 +76,18 @@ window.mapsAsyncInit = function () {
   }
 
   ScrollSpy.prototype.init = function () {
+    this.addEventListeners()
+    this.updateSections()
+  }
+
+  ScrollSpy.prototype.updateSections = function () {
     var elements = document.querySelectorAll('header, section')
     this.sections = this.getSections(elements)
     this.menu()
-    this.addEventListeners()
   }
 
-  ScrollSpy.prototype.getSections = function (sections) {
-    return [].slice.call(sections).map(function (element) {
+  ScrollSpy.prototype.getSections = function (elements) {
+    return [].slice.call(elements).map(function (element) {
       return {
         id: element.id
       , offset: element.getBoundingClientRect().top + window.pageYOffset - 20
@@ -103,6 +107,8 @@ window.mapsAsyncInit = function () {
 
   ScrollSpy.prototype.addEventListeners = function () {
     document.addEventListener('scroll', this.onScroll.bind(this))
+    document.addEventListener('DOMContentLoaded', this.onLoad.bind(this))
+    window.addEventListener('load', this.onLoad.bind(this))
   }
 
   ScrollSpy.prototype.onScroll = function (event) {
@@ -110,6 +116,10 @@ window.mapsAsyncInit = function () {
       this.scrollLast = Date.now()
       this.menu()
     }
+  }
+
+  ScrollSpy.prototype.onLoad = function (event) {
+    this.updateSections();
   }
 
   ScrollSpy.prototype.menu = function () {
@@ -121,10 +131,7 @@ window.mapsAsyncInit = function () {
     this.active = item
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    ;(new ScrollSpy).init()
-  }, false)
-
+  ;(new ScrollSpy).init()
 }()
 
 // Load Scripts
