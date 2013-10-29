@@ -86,7 +86,7 @@ window.mapsAsyncInit = function () {
     return [].slice.call(sections).map(function (element) {
       return {
         id: element.id
-      , offset: element.getBoundingClientRect().top - 20
+      , offset: element.getBoundingClientRect().top + window.pageYOffset - 20
       }
     })
   }
@@ -121,7 +121,10 @@ window.mapsAsyncInit = function () {
     this.active = item
   }
 
-  ;(new ScrollSpy).init()
+  document.addEventListener('DOMContentLoaded', function () {
+    ;(new ScrollSpy).init()
+  }, false)
+
 }()
 
 // Load Scripts
