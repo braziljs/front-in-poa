@@ -10,9 +10,6 @@
   border-bottom: $red solid rem(10px);
   a {
     color: $red;
-    &:hover {
-      text-decoration: none;
-    }
   }
   @media screen and (min-width:$minor-viewport) {
     margin-top: rem(40px);
