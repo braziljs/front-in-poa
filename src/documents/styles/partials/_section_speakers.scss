@@ -37,16 +37,19 @@
   color: white;
 }
 .speaker-name {
-  font-size: rem(30px);
+  font-size: rem(22px);
   margin: 0;
   position: relative;
-  &:before {
-    top: 16%;
-    bottom: 16%;
-    left: percentage(-20px/640px);
-    position: absolute;
-    border-left: $marker-size solid $red;
-    content: '';
+  @media screen and (min-width:$minor-viewport) {
+    font-size: rem(30px);
+    &:before {
+      top: 16%;
+      bottom: 16%;
+      left: percentage(-20px/640px);
+      position: absolute;
+      border-left: $marker-size solid $red;
+      content: '';
+    }
   }
 }
 .speaker-bio {
