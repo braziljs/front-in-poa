@@ -71,7 +71,7 @@ module.exports = {
         name: "Jaydson Gomes",
         gravatar: "572696200604e59baa59ee90d61f7d02",
         bio: "Mais de 8 anos de experiência em desenvolvimento Web, apaixonado por JavaScript, curador da BrazilJS Conf e um dos criadores e líderes da BrazilJS Foundation. Trabalha atualmente no Terra criando ferramentas e APIs JavaScript e pesquisando novas tecnologias, como HTML5 e todo o seu guarda-chuva, Node.JS e, é claro, JavaScript",
-        comment: "Apoiado na evolução do desenvolvimento front-end e como um verdadeiro <a href=\"http://jaydson.org/cultura-maldita-no-desenvolvimento-de-software/\" target=\"_blank\">exterminar <del>do futuro</del> da cultura maldita,</a> Jaydson vai falar sobre a revolução a qual liderou em nome de produtos mais robustos, escaláveis e de qualidade.",
+        comment: "Apoiado na evolução do desenvolvimento front-end e como um verdadeiro <a href=\"http://jaydson.org/cultura-maldita-no-desenvolvimento-de-software/\" target=\"_blank\">exterminar <del>do futuro</del> da cultura maldita</a>, Jaydson vai falar sobre a revolução a qual liderou em nome de produtos mais robustos, escaláveis e de qualidade.",
         company: "Terra",
         twitter: "jaydson",
         github: "jaydson",
@@ -91,6 +91,19 @@ module.exports = {
         presentation: {
           title: "I want to play a game...",
           description: "Quer fazer um game para web e não tem nem noção por onde começar? I know that feels, bro. Vamos ver então como estruturar um projeto de game, conhecer conceitos básicos de game design, rever algumas tecnologias disponíveis e conhecer técnicas para contornar as limitações dos games na nossa plataforma favorita, que é a web! :)"
+        }
+      },
+      {
+        name: "Glauber Ramos",
+        gravatar: "5716ab9479c715eecc6a9a7f2139da75",
+        bio: "Trabalho como UX designer e front-end developer na Thoughtworks Brasil em Porto Alegre. Gosta de trabalhar em ambientes ágeis onde possa colaborar com outros e construir a melhor experiência com foco no usuário. Acredita na web como um ambiente de inovação onde é possível aprender, compartilhar seu trabalho, inspirar e ser inspirado por outras pessoas.",
+        comment: "Sabemos, não podia faltar uma palestra sobre folhas de estilo. Mas muito além do bê-a-ba, Glauber vai falar de pré-processadores e técnicas de organização de CSS.",
+        company: "Thoughtworks",
+        twitter: "glauberamos",
+        github: "glauberramos",
+        presentation: {
+          title: "Técnicas e organização de CSS",
+          description: "Nessa talk falarei sobre técnicas e organização de CSS, como podemos usar pré-processadores hoje em dia, variáveis, nesting e mixins. Diferentes técnicas de organização de CSS como SMACSS, BEM, DRY CSS e OOCSS. Normalize, grids semânticos, dicas de CSS e como utilizar boas práticas utilizadas pelos frameworks mais famosos (Bootstrap, Inuit, Pure, Foundation) para criar seu próprio framework."
         }
       },
       {
