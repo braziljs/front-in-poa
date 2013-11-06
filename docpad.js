@@ -134,7 +134,7 @@ module.exports = {
       },
       {
         name: "Randal Maia",
-        gravatar: "02bb6d790ea355609c1eaed994465054",
+        gravatar: "7686d851c6720552ec05917e42abeb66",
         bio: "Já foi sobrinho, menino do HTML e atualmente, Front-end Engineer no ContaAzul, startup B2B brasileira. Focado em resultados, acredita na influência de um bom front-end na experiência do usuário e nas métricas de um software. Também entusiasta web, empreendedor e graduando em Análise de Sistemas pela UDESC.",
         comment: "Viu no crescimento da equipe em que trabalha o desafio de acelerar o desenvolvimento e manter a qualidade do produto. Randal nos apresentará o processo de criação de um Guia de Estilos, solução para seus problemas.",
         company: "ContaAzul",
