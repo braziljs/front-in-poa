@@ -73,7 +73,7 @@ module.exports = {
         bio: "Possui graduação em Análise de Sistemas pela UNISINOS (1991) e mestrado em Ciências da Computação pela UFRGS (1995). Atualmente é professor / coordenador do curso superior de tecnologia em Produção Multimídia - Faculdade Senac Porto Alegre. Tem experiência na área de Ciência da Computação, com ênfase em Computação Gráfica e Usabilidade, atuando principalmente nos seguintes temas: Computação 2D e 3D, User Experience e Games.",
         comment: "",
         company: "Faculdade Senac",
-        twitter: "",
+        twitter: "franzfigueroa",
         github: "",
         presentation: {
           title: "",
