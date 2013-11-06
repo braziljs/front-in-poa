@@ -68,6 +68,19 @@ module.exports = {
     // The entire schedule
     schedule: [
       {
+        name: "Reinaldo Ferraz",
+        image: "images/speakers/reinaldo-ferraz.jpg",
+        bio: "Especialista em desenvolvimento web do W3C Brasil. Formado em desenho e computação gráfica e pós graduado em design de hipermídia pela Universidade Anhembi Morumbi em São Paulo. Trabalha há mais de 12 anos com desenvolvimento web. Coordenador do Prêmio Nacional de Acessibilidade na Web e do Grupo de Trabalho em Acessibilidade na Web e representante do W3C Brasil em plenárias técnicas do W3C.",
+        comment: "E que tal trazer um dos mestres da W3C para falar sobre acessibilidade? Reinaldo promete mostrar como quebrar as barreiras do inacessível das aplicações web.",
+        company: "W3C Brasil",
+        twitter: "reinaldoferraz",
+        github: "reinaldoferraz",
+        presentation: {
+          title: "Acessibilidade na web modo Jedi Master",
+          description: "Já conhece o básico de acessibilidade na Web? Então está na hora de partir do modo Padawan para Jedi Master entendendo o potencial do HTML5 para acessibilidade e como utilizar WAI-ARIA para manipular elementos e enriquecer sua aplicação Web."
+        }
+      },
+      {
         name: "Franz Figueroa",
         image: "images/speakers/franz-figueroa.jpg",
         bio: "Possui graduação em Análise de Sistemas pela UNISINOS (1991) e mestrado em Ciências da Computação pela UFRGS (1995). Atualmente é professor / coordenador do curso superior de tecnologia em Produção Multimídia - Faculdade Senac Porto Alegre. Tem experiência na área de Ciência da Computação, com ênfase em Computação Gráfica e Usabilidade, atuando principalmente nos seguintes temas: Computação 2D e 3D, User Experience e Games.",
