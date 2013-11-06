@@ -109,7 +109,7 @@ module.exports = {
       {
         name: "Glauber Ramos",
         gravatar: "5716ab9479c715eecc6a9a7f2139da75",
-        bio: "Trabalho como UX designer e front-end developer na Thoughtworks Brasil em Porto Alegre. Gosta de trabalhar em ambientes ágeis onde possa colaborar com outros e construir a melhor experiência com foco no usuário. Acredita na web como um ambiente de inovação onde é possível aprender, compartilhar seu trabalho, inspirar e ser inspirado por outras pessoas.",
+        bio: "Trabalha como UX designer e front-end developer na Thoughtworks Brasil em Porto Alegre. Gosta de trabalhar em ambientes ágeis onde possa colaborar com outros e construir a melhor experiência com foco no usuário. Acredita na web como um ambiente de inovação onde é possível aprender, compartilhar seu trabalho, inspirar e ser inspirado por outras pessoas.",
         comment: "Sabemos, não podia faltar uma palestra sobre folhas de estilo. Mas muito além do bê-a-ba, Glauber vai falar de pré-processadores e técnicas de organização de CSS.",
         company: "Thoughtworks",
         twitter: "glauberamos",
