@@ -151,17 +151,17 @@ module.exports = {
     sponsors: [
       {
         name: "Cure Studio Design",
-        logo: "images/cure.svg",
+        logo: "images/sponsors/cure.svg",
         url: "http://curestudio.com.br"
       },
       {
         name: "Grifo",
-        logo: "images/grifo.svg",
+        logo: "images/sponsors/grifo.svg",
         url: "http://gri.fo"
       },
       {
         name: "Senac",
-        logo: "images/senac.svg",
+        logo: "images/sponsors/senac.svg",
         url: "http://www.senac.br"
       }
     ],
@@ -170,13 +170,18 @@ module.exports = {
     partners: [
       {
         name: "Abradi RS",
-        logo: "images/abradi.svg",
+        logo: "images/sponsors/abradi.svg",
         url: "http://www.abradirs.com.br"
       },
       {
         name: "Codeminer42",
-        logo: "images/codeminer.svg",
-        url: "http://Codeminer42.com.br"
+        logo: "images/sponsors/codeminer.svg",
+        url: "http://www.codeminer42.com"
+      },
+      {
+        name: "Brazil JS",
+        logo: "images/sponsors/brazil-js.svg",
+        url: "http://braziljs.org"
       }
     ]
   }
