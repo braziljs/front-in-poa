@@ -68,6 +68,19 @@ module.exports = {
     // The entire schedule
     schedule: [
       {
+        name: "Franz Figueroa",
+        image: "images/speakers/franz-figueroa.jpg",
+        bio: "Possui graduação em Análise de Sistemas pela UNISINOS (1991) e mestrado em Ciências da Computação pela UFRGS (1995). Atualmente é professor / coordenador do curso superior de tecnologia em Produção Multimídia - Faculdade Senac Porto Alegre. Tem experiência na área de Ciência da Computação, com ênfase em Computação Gráfica e Usabilidade, atuando principalmente nos seguintes temas: Computação 2D e 3D, User Experience e Games.",
+        comment: "",
+        company: "Faculdade Senac",
+        twitter: "",
+        github: "",
+        presentation: {
+          title: "",
+          description: ""
+        }
+      },
+      {
         name: "Jaydson Gomes",
         gravatar: "572696200604e59baa59ee90d61f7d02",
         bio: "Mais de 8 anos de experiência em desenvolvimento Web, apaixonado por JavaScript, curador da BrazilJS Conf e um dos criadores e líderes da BrazilJS Foundation. Trabalha atualmente no Terra criando ferramentas e APIs JavaScript e pesquisando novas tecnologias, como HTML5 e todo o seu guarda-chuva, Node.JS e, é claro, JavaScript",
