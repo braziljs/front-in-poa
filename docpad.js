@@ -38,7 +38,7 @@ module.exports = {
       'collaborate',
       'about',
       'speakers',
-      // 'presenter',
+      'presenter',
       // 'schedule',
       'location',
       'organizers',
