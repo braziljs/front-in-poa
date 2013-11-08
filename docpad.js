@@ -157,6 +157,19 @@ module.exports = {
           title: "Acelere, faça amigos e aprenda com seu guia de estilos",
           description: "Sabe aquele momento em que o designer entrega milhões de telas e você sente que não vai dar conta de todas as tarefas? Nesta talk, quero falar sobre como acelerar seu processo de desenvolvimento, fazer amigos dentro da sua equipe, compartilhar seu conhecimento e ter seu próprio guia de estilos."
         }
+      },
+      {
+        name: "Bruno Azevedo",
+        image: "images/speakers/bruno-azevedo.jpg",
+        bio: "Desenvolvedor web especializado em Front-End. Com mais de 7 anos de experiência, trabalhou em alguns dos maiores players do Brasil, como o Grupo RBS e o Terra Networks. Atualmente e co-fundador && Front-End developer na marimbondo, um estúdio que tem como objetivo fazer da web um lugar mais bonito.",
+        comment: "E que tal melhorar o seu workflow de trabalho utilizando Grunt? Bruno vai mostrar como economizar seu tempo e agilizar seu dia-a-dia automatizando tarefas com Node.js.",
+        company: "Marimbondo",
+        twitter: "bazevedo",
+        github: "bazevedo",
+        presentation: {
+          title: "Não seja um desenvolvedor Chucro! Como economizar tempo e melhorar os seus projetos utilizando Grunt",
+          description: "Um guia prático de utilização da ferramenta Grunt. Veremos como o nosso desenvolvimento pode se tornar mais fácil e quanto tempo podemos economizar automatizado tarefas repetitivas."
+        }
       }
     ],
 
