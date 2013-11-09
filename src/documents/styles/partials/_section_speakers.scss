@@ -2,6 +2,7 @@
   @include texture("dark-blue");
   .section-title {
     @include hide-bottom-line;
+    margin-bottom: 0;
     @media screen and (min-width:$minor-viewport) {
       font-size: rem(55px);
     }
@@ -11,9 +12,11 @@
 .speakers-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 .speaker-item {
-  margin-bottom: rem(50px);
+  margin-top: rem(-40px);
+  padding-top: rem(100px);
 }
 .speaker-photo {
   width: percentage(240px/$site-width);

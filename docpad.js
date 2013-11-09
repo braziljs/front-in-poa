@@ -18,7 +18,7 @@ module.exports = {
     },
 
     // The Call To Action button at the header,
-    // If you don't want this, just remove the callToAction property.
+    // If you don"t want this, just remove the callToAction property.
     callToAction: {
       text: "Inscreva-se",
       link: "http://www.eventick.com.br/frontinpoa-2013"
@@ -32,26 +32,26 @@ module.exports = {
     },
 
     // Active sections on the website
-    // to deactivate comment out with '//'
+    // to deactivate comment out with "//"
     // you can also change order here and it will reflect on page
     sections: [
-      'collaborate',
-      'about',
-      'speakers',
-      'presenter',
-      // 'schedule',
-      'location',
-      'organizers',
-      'sponsors'
+      "collaborate",
+      "about",
+      "speakers",
+      "presenter",
+      "schedule",
+      "location",
+      "organizers",
+      "sponsors"
     ],
 
     navigation: [
-      'home',
-      'about',
-      'speakers',
-      // 'schedule',
-      'location',
-      'sponsors'
+      "home",
+      "about",
+      "speakers",
+      "schedule",
+      "location",
+      "sponsors"
     ],
 
     // Labels which you can translate to other languages
@@ -153,46 +153,89 @@ module.exports = {
     // The entire schedule
     schedule: [
       {
-        time: '9:00',
+        time: "8:30",
+        name: "Credenciamento",
+        image: "images/schedule/check-in.svg"
+      },
+      {
+        time: "8:50",
         speaker: "Randal Maia",
         name: "Acelere, faça amigos e aprenda com seu guia de estilos",
         description: "Sabe aquele momento em que o designer entrega milhões de telas e você sente que não vai dar conta de todas as tarefas? Nesta talk, quero falar sobre como acelerar seu processo de desenvolvimento, fazer amigos dentro da sua equipe, compartilhar seu conhecimento e ter seu próprio guia de estilos."
       },
       {
-        time: '10:30',
+        time: "9:30",
+        speaker: "Eduardo Gouvêa",
+        name: "Festival da boa vizinhança: UX - Front end",
+        description: "Hoje em dia, profissionais de UX são bastante requeridos nas empresas que focam em serviços e produtos digitais. E como fica a interação entre essa área de UX e os desenvolvedores no final do processo? Nesta talk, quero falar sobre a importância de planejar a Experiência do Usuário e como ela afeta e influencia o front-end e vice-versa."
+      },
+      {
+        time: "10:00",
+        name: "Cafezinho rápido",
+        image: "images/schedule/coffee.svg"
+      },
+      {
+        time: "10:20",
         speaker: "Reinaldo Ferraz",
         name: "Acessibilidade na web modo Jedi Master",
         description: "Já conhece o básico de acessibilidade na Web? Então está na hora de partir do modo Padawan para Jedi Master entendendo o potencial do HTML5 para acessibilidade e como utilizar WAI-ARIA para manipular elementos e enriquecer sua aplicação Web."
       },
       {
-        time: '11:40',
-        speaker: 'Bruno Azevedo',
+        time: "11:10",
+        speaker: "Cynthia Zanoni",
+        name: "SEO",
+        description: "Em breve."
+      },
+      {
+        time: "11:30",
+        speaker: "Bruno Azevedo",
         name: "Não seja um desenvolvedor Chucro! Como economizar tempo e melhorar os seus projetos utilizando Grunt",
         description: "Um guia prático de utilização da ferramenta Grunt. Veremos como o nosso desenvolvimento pode se tornar mais fácil e quanto tempo podemos economizar automatizado tarefas repetitivas."
       },
       {
-        time: '14:20',
+        time: "12:00",
+        name: "Almoço",
+        image: "images/schedule/lunch.svg"
+      },
+      {
+        time: "13:30",
+        speaker: "Franz Figueroa",
+        name: "Em breve",
+        description: "Em breve"
+      },
+      {
+        time: "14:20",
         speaker: "Átila Fassina",
         name: "Responsive Web Workflow",
         description: "Trabalhar com Web Design Responsivo pode ser confuso, é um cenário em constante e rápida evolução, cheio de diferentes opções para escolher e se adaptar, novas tendências. Não existe bala de prata, mas nessa talk vamos avaliar práticas sugeridas e escolher nossas metodologias com um toolset básico para montar um projeto com nossas próprias guidelines."
       },
       {
-        time: '15:10',
+        time: "15:10",
         speaker: "Glauber Ramos",
         name: "Técnicas e organização de CSS",
         description: "Nessa talk falarei sobre técnicas e organização de CSS, como podemos usar pré-processadores hoje em dia, variáveis, nesting e mixins. Diferentes técnicas de organização de CSS como SMACSS, BEM, DRY CSS e OOCSS. Normalize, grids semânticos, dicas de CSS e como utilizar boas práticas utilizadas pelos frameworks mais famosos (Bootstrap, Inuit, Pure, Foundation) para criar seu próprio framework."
       },
       {
-        time: '16:30',
+        time: "16:00",
+        name: "Cafezinho",
+        image: "images/schedule/coffee.svg"
+      },
+      {
+        time: "16:30",
         speaker: "Jaydson Gomes",
         name: "Processo de Desenvolvimento FrontEnd - Do caos ao Sublime",
         description: "O mundo muda constantemente. Na tecnologia isso é mais evidente, o avanço é exponêncial, e quase não conseguimos acompanhar o que há de mais novo na área em que atuamos. No desenvolvimento de software, a mudança pode influenciar diretamente no sucesso do mesmo. Novas tecnologias, novas ferramentas, novas linguagens, tudo isso deve ser considerado. O JavaScript ocupou o lugar de linguagem mais querida e popular no mundo, depois de passar anos sendo incompreendida. Esta mudança é reflexo do avanço da linguagem, das ferramentas e de todas as tecnologias que a cercam. O modo de se desenvolver código client-side mudou, e para melhor. O ambiente de desenvolvimento não é mais o mesmo, hoje temos um arsenal de ferramentas que nos ajudam a criar aplicações robustas, escaláveis e de qualidade. Praticamente tudo que existe para melhorar o desenvolvimento de software em alguma outra linguagem, também existe para JavaScript. Testes unitários, testes funcionais, ferramentas de build, validação de sintaxe, validação de convenções, integração contínua, etc. Todos os itens acima, e muitos outros, são essenciais em qualquer tipo de software, e atualmente temos o poder de tornar nossas aplicações JavaScript muito mais confiáveis do que há alguns anos. O objetivo da palestra é apresentar as principais ferramentas, tecnologias e técnicas disponíveis para o desenvolvimento de aplicações client-side, além de mostrar na prática, como mudamos completamente o processo de desenvolvimento FrontEnd em um dos maiores portais da América Latina, o Terra."
       },
       {
-        time: '17:30',
+        time: "17:30",
         speaker: "Vitor Carlos",
         name: "I want to play a game...",
         description: "Quer fazer um game para web e não tem nem noção por onde começar? I know that feels, bro. Vamos ver então como estruturar um projeto de game, conhecer conceitos básicos de game design, rever algumas tecnologias disponíveis e conhecer técnicas para contornar as limitações dos games na nossa plataforma favorita, que é a web! :)"
+      },
+      {
+        time: "18:20",
+        name: "Encerramento",
+        image: "images/schedule/closing.svg"
       }
     ],
 
@@ -234,8 +277,30 @@ module.exports = {
       }
     ],
 
+    nameId: function (name) {
+      return name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+    },
+
+    speakerId: function (name) {
+      return 'speakers-' + this.nameId(name);
+    },
+
+    scheduleId: function (name) {
+      return 'schedule-' + this.nameId(name);
+    },
+
+    slotImgSrc: function (slot) {
+      return slot.image || this.speakerImgSrc(this.slotSpeaker(slot));
+    },
+
+    slotSpeaker: function (slot) {
+      return slot.speaker && this.speakers.filter(function (speaker) {
+        return speaker.name == slot.speaker;
+      })[0];
+    },
+
     speakerImgSrc: function (speaker) {
-      return speaker.image || 'https://0.gravatar.com/avatar/' + speaker.gravatar + '?s=400'
+      return speaker && (speaker.image || "https://0.gravatar.com/avatar/" + speaker.gravatar + "?s=400")
     }
 
   }

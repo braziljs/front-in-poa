@@ -4,7 +4,7 @@ div class: 'wrapper', ->
 
   ul class: 'speakers-list', ->
     for @speaker in @speakers
-      li class: 'speaker-item', itemprop: 'performer', itemscope: '', itemtype: 'http://schema.org/Person', ->
+      li id: @speakerId(@speaker.name), class: 'speaker-item', itemprop: 'performer', itemscope: '', itemtype: 'http://schema.org/Person', ->
         img class: 'speaker-photo', src: @speakerImgSrc(@speaker), alt: @speaker.name, itemprop: 'image'
         div class: 'speaker-info', ->
           h3 class: 'speaker-name', ->
