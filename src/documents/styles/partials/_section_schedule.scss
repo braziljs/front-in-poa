@@ -1,5 +1,7 @@
 .section-schedule {
+  padding-bottom: 0;
   .section-title {
+    padding-bottom: rem(30px);
     @include inverse-bottom-line(100%);
   }
 }
