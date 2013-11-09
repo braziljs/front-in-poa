@@ -78,15 +78,17 @@
 .schedule-description {
   max-height: 0;
   overflow: hidden;
-  margin: 0 0 0 percentage(-240px/720px);
+  margin: 0;
   @media screen and (min-width:$minor-viewport) {
-    margin-left: 0;
+    margin-left: percentage(240px/$site-width);
   }
 }
 .schedule-item:target {
+  .schedule-intro, .schedule-slot {
+    margin-bottom: rem(10px);
+  }
   .schedule-description-button {
     @include button-simbol('↑');
-    margin-bottom: rem(10px);
   }
   .schedule-description {
     transition: all 1s linear;
