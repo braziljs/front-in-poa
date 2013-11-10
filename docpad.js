@@ -150,7 +150,7 @@ module.exports = {
         name: "Cynthia Zanoni",
         gravatar: "acf2c97fd68b165d50bdf8f446afc0e7",
         bio: "Desenvolvedora web há 4 anos e graduanda do curso de Sistemas para Internet. É fundadora da Think, Startup Digital com foco em soluções <em>bespoke</em>, onde trabalha com Front-end e Search Intelligence. Geek, fã de Schweppes e entusiasta de mobile, participa de comunidades locais e é uma das organizadoras da Mobile Brazil Conference.",
-        comment: "Dedicada a pesquisa nas áreas de Search e UX Design. Cynthia vai falar de forma objetiva sobre algo bastante pertinente: Search engine optimization.",
+        comment: "Dedicada a pesquisa nas áreas de Search e UX Design, Cynthia vai falar de forma objetiva sobre algo bastante pertinente: Search engine optimization.",
         company: "Think",
         twitter: "cynthia_zanoni",
         github: "cyz"
