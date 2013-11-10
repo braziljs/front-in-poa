@@ -131,6 +131,13 @@ module.exports = {
         github: "randalmaia"
       },
       {
+        name: "Eduardo Gouvêa",
+        image: "images/speakers/eduardo-gouvea.jpg",
+        bio: "Formado em Design Gráfico, ex front-end, ex analista de produtos, atual UX/UI Designer e ilustrador nas horas extras. Busca a melhor maneira de envolver usuários em seus projetos sempre de forma amigável com os desenvolvedores.",
+        comment: "Nada como o Eduardo, que já atuou em diversas áreas, para falar do planejamento da experiência do usuário e a interação entre diferentes profissionais rumo a produtos de internet de sucesso.",
+        company: "Brivia"
+      },
+      {
         name: "Bruno Azevedo",
         image: "images/speakers/bruno-azevedo.jpg",
         bio: "Desenvolvedor web especializado em Front-End. Com mais de 7 anos de experiência, trabalhou em alguns dos maiores players do Brasil, como o Grupo RBS e o Terra Networks. Atualmente e co-fundador && Front-End developer na marimbondo, um estúdio que tem como objetivo fazer da web um lugar mais bonito.",
