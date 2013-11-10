@@ -278,7 +278,7 @@ module.exports = {
     ],
 
     nameId: function (name) {
-      return name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+      return name.toLowerCase().replace(/\s+/g, '-').replace(/[.!:?;,]/g, '');
     },
 
     speakerId: function (name) {
