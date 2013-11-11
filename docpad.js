@@ -190,8 +190,8 @@ module.exports = {
       {
         time: "11:10",
         speaker: "Cynthia Zanoni",
-        name: "SEO",
-        description: "Em breve."
+        name: "E que tal descobrir que você entende muito de SEO?",
+        description: "SEO é visto como um diferencial competitivo no mercado, mas você já parou para pensar o quanto você é importante no processo de otimização? Vamos traçar um Roadmap sobre otimização e você vai descobrir que manja mais de SEO do que imaginava. Esqueça os clichês sobre posicionamento e vamos otimizar!"
       },
       {
         time: "11:30",
