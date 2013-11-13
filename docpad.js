@@ -281,6 +281,11 @@ module.exports = {
         name: "Brazil JS",
         logo: "images/sponsors/brazil-js.svg",
         url: "http://braziljs.org"
+      },
+      {
+        name: "Editora Novatec",
+        logo: "images/sponsors/novatec.svg",
+        url: "http://novatec.com.br"
       }
     ],
 
