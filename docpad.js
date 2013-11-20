@@ -261,7 +261,7 @@ module.exports = {
       {
         name: "Senac",
         logo: "images/sponsors/senac.svg",
-        url: "http://www.senac.br"
+        url: "http://portal.senacrs.com.br"
       }
     ],
 
