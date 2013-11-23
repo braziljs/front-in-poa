@@ -236,7 +236,7 @@ module.exports = {
       {
         time: "17:30",
         speaker: "Vitor Carlos",
-        name: "I want to play a game...",
+        name: "Press Start",
         description: "Quer fazer um game para web e não tem nem noção por onde começar? I know that feels, bro. Vamos ver então como estruturar um projeto de game, conhecer conceitos básicos de game design, rever algumas tecnologias disponíveis e conhecer técnicas para contornar as limitações dos games na nossa plataforma favorita, que é a web! :)"
       },
       {
