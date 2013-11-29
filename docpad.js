@@ -291,6 +291,11 @@ module.exports = {
         name: "Editora Novatec",
         logo: "images/sponsors/novatec.svg",
         url: "http://novatec.com.br"
+      },
+      {
+        name: "Target Trust",
+        logo: "images/sponsors/target-trust.svg",
+        url: "http://www.targettrust.com.br/"
       }
     ],
 
