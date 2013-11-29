@@ -262,6 +262,11 @@ module.exports = {
         name: "Senac",
         logo: "images/sponsors/senac.svg",
         url: "http://portal.senacrs.com.br"
+      },
+      {
+        name: "Terra",
+        logo: "images/sponsors/terra.svg",
+        url: "http://terra.com.br"
       }
     ],
 
