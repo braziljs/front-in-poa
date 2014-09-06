@@ -1,0 +1,136 @@
+h1 {
+  display: block;
+  font: 0/0 auto;
+  width: 100vw;
+  height: 100vh;
+  background: #ccc;
+  background: url('../images/frontinpoa.svg') no-repeat bottom left;
+  background-color: transparent;
+  background-size: cover;
+  text-indent: -200px;
+  @include font(lato-black);
+  position: absolute;
+}
+
+.fip-background, .fip-background:before {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/FRONTINPOA2014.jpg') no-repeat bottom left;
+  background-size: cover;
+
+  &:before {
+    content: " ";
+    background: url('../images/FIP-T3.png') no-repeat bottom left;
+    background-size: cover;
+    z-index: 10;
+    position: absolute;
+  }
+}
+
+.fip-menu {
+  display: block;
+  position: absolute;
+  //width: calc( 70vw);
+  width: 100%;
+  //height: 110px;
+  bottom: 0;
+  right: 0;
+  //left: calc(30vw + 42px);
+  z-index: 20;
+  overflow: hidden;
+
+  ul {
+    float: right;
+    margin-right: -1.5em;
+  }
+
+  li {
+    float: left;
+    padding: 0 .5em;
+    //margin-left: 42px;
+    @include transform(skewX(20deg));
+
+    a {
+      float: left;
+      @include font("lato-black");
+      color: #fff;
+      font-size: 36px;
+      letter-spacing: -1px;
+      height: 110px;
+      position: relative;
+      padding: 37px 0;
+      text-align: center;
+      @include transform(skewX(-21deg));
+      /*
+      &:before, &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 110px;
+        width: 42px;
+        @include transform(skewX(-21deg));
+      }
+
+      &:before { right: -21px; }
+      &:after { left: -21px; }
+      */
+
+      &.speaker {
+        width: calc(40vw - 42px);
+        //background: $FIP;
+        //&:after, &:before { background: $FIP; }
+      }
+
+      &.social {
+        width: calc(15vw - 42px);
+        padding: 34px 0;
+
+        //&.tw, &.tw:after, &.tw:before { background: $TWITTER;}
+        //&.fb, &.fb:after, &.fb:before { background: $FACEBOOK;}
+      }
+
+      &.fb svg { @include size(42px); margin-left: -10px; }
+      &.tw svg { @include size(52px 42px); }
+    }
+
+    a, a:before, a:after { @include transition (background .25s $ease-out-quart);
+    &:hover { @include transition (background .5s $ease-out-quart); }}
+
+    //.speaker:hover, .speaker:hover:after, .speaker:hover:before { background: darken($FIP, 5%); }
+    //.social.tw:hover, .social.tw:hover:after, .social.tw:hover:before { background: darken($TWITTER, 5%); }
+    //.social.fb:hover, .social.fb:hover:after, .social.fb:hover:before { background: darken($FACEBOOK, 5%); }
+    //.social.fb:before { display: none; }
+  }
+}
+
+.fip-speaker {
+  background-color: $FIP;
+  @include transition(all 300ms ease-in-out);
+
+  &:hover,
+  &:focus {
+    background-color: darken($FIP, 5%);
+  }
+}
+
+.fip-tw {
+  background-color: $TWITTER;
+  @include transition(all 300ms ease-in-out);
+
+  &:hover,
+  &:focus {
+    background-color: darken($TWITTER, 5%);
+  }
+}
+
+.fip-fb {
+  background-color: $FACEBOOK;
+  @include transition(all 300ms ease-in-out);
+
+  &:hover,
+  &:focus {
+    background-color: darken($FACEBOOK, 5%);
+  }
+}

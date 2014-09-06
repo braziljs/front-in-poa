@@ -1,0 +1,30 @@
+//---------- TYPOGRAPHY ----------//
+//--------------------------------//
+@mixin font($f) {
+
+    @if ($f == "lato-black") {
+    font-family: 'LatoBlack', sans-serif;
+
+  } @else if ($f == "cooper-thin") {
+    font-family: 'CooperHewitt Thin', sans-serif;
+  }
+}
+
+
+//---------- COLOR SCHEME ----------//
+//----------------------------------//
+
+$FIP: #ff3565;
+
+$FACEBOOK: #3B5998;
+$TWITTER: #00ACED;
+
+
+//---------- RESPONSIVE BREAKPOINTS ----------//
+//--------------------------------------------//
+
+$VIP:     "only screen and (min-width : 1920px)";
+$PREMIUM:   "only screen and (min-width : 1680px)";
+$STANDARD:  "only screen and (min-width : 1366px)";
+$COMPACT:   "only screen and (max-width : 1280px)";
+$TABLET:  "only screen and (max-width : 1024px)";

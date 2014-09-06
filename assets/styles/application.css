@@ -1,0 +1,178 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'LatoBlack';
+  src: url("../fonts/Lato/Lato-Black.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Lato/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Black.woff") format("woff"), url("../fonts/Lato/Lato-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+body {
+  background: #85d8ce;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFF;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+h1 {
+  display: block;
+  font: 0/0 auto;
+  width: 100vw;
+  height: 100vh;
+  background: #ccc;
+  background: url("../images/frontinpoa.svg") no-repeat bottom left;
+  background-color: transparent;
+  background-size: cover;
+  text-indent: -200px;
+  font-family: 'LatoBlack', sans-serif;
+  position: absolute; }
+
+.fip-background, .fip-background:before {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/FRONTINPOA2014.jpg") no-repeat bottom left;
+  background-size: cover; }
+  .fip-background:before, .fip-background:before:before {
+    content: " ";
+    background: url("../images/FIP-T3.png") no-repeat bottom left;
+    background-size: cover;
+    z-index: 10;
+    position: absolute; }
+
+.fip-menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 20;
+  overflow: hidden; }
+  .fip-menu ul {
+    float: right;
+    margin-right: -1.5em; }
+  .fip-menu li {
+    float: left;
+    padding: 0 .5em;
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+    transform: skewX(20deg); }
+    .fip-menu li a {
+      float: left;
+      font-family: 'LatoBlack', sans-serif;
+      color: #fff;
+      font-size: 36px;
+      letter-spacing: -1px;
+      height: 110px;
+      position: relative;
+      padding: 37px 0;
+      text-align: center;
+      -webkit-transform: skewX(-21deg);
+      -moz-transform: skewX(-21deg);
+      -ms-transform: skewX(-21deg);
+      -o-transform: skewX(-21deg);
+      transform: skewX(-21deg);
+      /*
+      &:before, &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 110px;
+        width: 42px;
+        @include transform(skewX(-21deg));
+      }
+
+      &:before { right: -21px; }
+      &:after { left: -21px; }
+      */ }
+      .fip-menu li a.speaker {
+        width: calc(40vw - 42px); }
+      .fip-menu li a.social {
+        width: calc(15vw - 42px);
+        padding: 34px 0; }
+      .fip-menu li a.fb svg {
+        height: 42px;
+        width: 42px;
+        margin-left: -10px; }
+      .fip-menu li a.tw svg {
+        height: 42px;
+        width: 52px; }
+    .fip-menu li a, .fip-menu li a:before, .fip-menu li a:after {
+      -webkit-transition: background 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+      -moz-transition: background 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: background 0.25s cubic-bezier(0.165, 0.84, 0.44, 1); }
+      .fip-menu li a:hover, .fip-menu li a:before:hover, .fip-menu li a:after:hover {
+        -webkit-transition: background 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        -moz-transition: background 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: background 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.fip-speaker {
+  background-color: #ff3565;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+  .fip-speaker:hover, .fip-speaker:focus {
+    background-color: #ff1c52; }
+
+.fip-tw {
+  background-color: #00ACED;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+  .fip-tw:hover, .fip-tw:focus {
+    background-color: #0099d3; }
+
+.fip-fb {
+  background-color: #3B5998;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+  .fip-fb:hover, .fip-fb:focus {
+    background-color: #344e86; }
+
+/*# sourceMappingURL=application.css.map */
