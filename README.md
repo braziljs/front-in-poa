@@ -1,4 +1,4 @@
-gaja-clothing
-=============
+Front-in POA 2014
+===============
 
-Upcoming website for Gaja's clothing business.
+> Comming soon
