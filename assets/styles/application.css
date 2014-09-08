@@ -59,8 +59,8 @@ body {
 h1 {
   display: block;
   width: 100%;
+  max-width: 300px;
   min-height: 350px;
-  margin: 5vh auto;
   font: 0/0 auto;
   background: #ccc;
   background: url("../images/short-frontinpoa.svg") no-repeat;
@@ -68,15 +68,30 @@ h1 {
   background-color: transparent;
   background-size: contain;
   position: absolute;
+  top: 5vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
   font-family: 'LatoBlack', sans-serif; }
   @media (min-width: 1000px) {
     h1 {
+      top: 0;
+      left: 0;
+      max-width: 100vw;
+      max-height: 100vh;
       width: 100vw;
       height: 100vh;
-      margin: 0;
       background-image: url("../images/frontinpoa.svg");
       background-position: bottom left;
-      background-size: cover; } }
+      background-size: cover;
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0); } }
 
 .fip-background, .fip-background:before {
   display: block;

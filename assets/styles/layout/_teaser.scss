@@ -1,8 +1,9 @@
 h1 {
   display: block;
   width: 100%;
+  max-width: 300px;
   min-height: 350px;
-  margin: 5vh auto;
+  //margin: 5vh auto;
   font: 0/0 auto;
   background: #ccc;
   background: url('../images/short-frontinpoa.svg') no-repeat;
@@ -10,15 +11,22 @@ h1 {
   background-color: transparent;
   background-size: contain;
   position: absolute;
+  top: 5vh;
+  left: 50%;
+  @include transform(translateX(-50%));
   @include font(lato-black);
 
   @media (min-width: 1000px) {
+    top: 0;
+    left: 0;
+    max-width: 100vw;
+    max-height: 100vh;
     width: 100vw;
     height: 100vh;
-    margin: 0;
     background-image: url('../images/frontinpoa.svg');
     background-position: bottom left;
     background-size: cover;
+    @include transform(translateX(0));
 
   }
 }
