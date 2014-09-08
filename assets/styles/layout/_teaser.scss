@@ -1,0 +1,162 @@
+h1 {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  min-height: 350px;
+  //margin: 5vh auto;
+  font: 0/0 auto;
+  background: #ccc;
+  background: url('../images/short-frontinpoa.svg') no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-size: contain;
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  @include transform(translateX(-50%));
+  @include font(lato-black);
+
+  @media (min-width: 1000px) {
+    top: 0;
+    left: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/frontinpoa.svg');
+    background-position: bottom left;
+    background-size: cover;
+    @include transform(translateX(0));
+
+  }
+}
+
+
+.fip-background, .fip-background:before {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/FRONTINPOA2014.jpg') no-repeat bottom left;
+  background-size: cover;
+
+  &:before {
+    content: " ";
+    background: url('../images/FIP-T3.png') no-repeat bottom left;
+    background-size: cover;
+    z-index: 10;
+    position: absolute;
+  }
+}
+
+.fip-menu {
+  display: block;
+  position: absolute;
+  //width: calc( 70vw);
+  width: 100%;
+  //height: 110px;
+  bottom: 0;
+  right: 0;
+  //left: calc(30vw + 42px);
+  z-index: 20;
+  overflow: hidden;
+
+  ul {
+    float: right;
+    margin-right: -1.5em;
+
+    @media (max-width: 550px) {
+      width: 60vw;
+    }
+  }
+
+  li {
+    float: left;
+    padding: 0 .5em;
+    @include transform(skewX(20deg));
+
+    @media (max-width: 550px) {
+      float: none;
+    }
+
+    a,
+    span {
+      //float: left;
+      display: block;
+      @include font("lato-black");
+      color: #fff;
+      font-size: 2.5rem;
+      letter-spacing: -1px;
+      height: 100%;
+      position: relative;
+      padding: 2rem;
+      text-align: center;
+      @include transition;
+      @include transform(skewX(-21deg));
+
+      @media (max-width: 550px) {
+        font-size: 2rem;
+        padding: .5rem;
+      }
+
+      &.speaker {
+        //width: calc(40vw - 42px);
+      }
+
+      &.social {
+        //width: calc(15vw - 42px);
+        //padding: 34px 2em;
+      }
+
+      svg {
+        width: 2.5rem;
+        height: 2.5rem;
+
+        @media (max-width: 550px) {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+      //&.fb svg { @include size(42px); margin-left: -10px; }
+      //&.tw svg { @include size(52px 42px); }
+    }
+
+    a, a:before, a:after { @include transition (background .25s $ease-out-quart);
+    &:hover { @include transition (background .5s $ease-out-quart); }}
+
+  }
+}
+
+.fip-speaker {
+  background-color: $FIP80;
+  @include transition(all 300ms ease-in-out);
+
+  &:hover,
+  &:focus {
+    background-color: darken($FIP, 5%);
+  }
+
+  &.disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+}
+
+.fip-tw {
+  background-color: $TWITTER80;
+  @include transition(all 300ms ease-in-out);
+
+  &:hover,
+  &:focus {
+    background-color: darken($TWITTER, 5%);
+  }
+}
+
+.fip-fb {
+  background-color: $FACEBOOK80;
+  @include transition(all 300ms ease-in-out);
+
+  &:hover,
+  &:focus {
+    background-color: darken($FACEBOOK, 5%);
+  }
+}
