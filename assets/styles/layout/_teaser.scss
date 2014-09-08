@@ -78,7 +78,8 @@ h1 {
       float: none;
     }
 
-    a {
+    a,
+    span {
       //float: left;
       display: block;
       @include font("lato-black");
@@ -132,6 +133,11 @@ h1 {
   &:hover,
   &:focus {
     background-color: darken($FIP, 5%);
+  }
+
+  &.disabled {
+    opacity: 0.3;
+    cursor: default;
   }
 }
 
