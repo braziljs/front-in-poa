@@ -42,7 +42,7 @@ table {
 body {
   background: #85d8ce;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.2;
   color: #FFF;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -58,16 +58,25 @@ body {
 
 h1 {
   display: block;
+  width: 100%;
+  min-height: 350px;
+  margin: 5vh auto;
   font: 0/0 auto;
-  width: 100vw;
-  height: 100vh;
   background: #ccc;
-  background: url("../images/frontinpoa.svg") no-repeat bottom left;
+  background: url("../images/short-frontinpoa.svg") no-repeat;
+  background-position: center;
   background-color: transparent;
-  background-size: cover;
-  text-indent: -200px;
-  font-family: 'LatoBlack', sans-serif;
-  position: absolute; }
+  background-size: contain;
+  position: absolute;
+  font-family: 'LatoBlack', sans-serif; }
+  @media (min-width: 1000px) {
+    h1 {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      background-image: url("../images/frontinpoa.svg");
+      background-position: bottom left;
+      background-size: cover; } }
 
 .fip-background, .fip-background:before {
   display: block;
@@ -93,6 +102,9 @@ h1 {
   .fip-menu ul {
     float: right;
     margin-right: -1.5em; }
+    @media (max-width: 550px) {
+      .fip-menu ul {
+        width: 60vw; } }
   .fip-menu li {
     float: left;
     padding: 0 .5em;
@@ -101,47 +113,38 @@ h1 {
     -ms-transform: skewX(20deg);
     -o-transform: skewX(20deg);
     transform: skewX(20deg); }
+    @media (max-width: 550px) {
+      .fip-menu li {
+        float: none; } }
     .fip-menu li a {
-      float: left;
+      display: block;
       font-family: 'LatoBlack', sans-serif;
       color: #fff;
-      font-size: 36px;
+      font-size: 2.5rem;
       letter-spacing: -1px;
-      height: 110px;
+      height: 100%;
       position: relative;
-      padding: 37px 0;
+      padding: 2rem;
       text-align: center;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s;
       -webkit-transform: skewX(-21deg);
       -moz-transform: skewX(-21deg);
       -ms-transform: skewX(-21deg);
       -o-transform: skewX(-21deg);
-      transform: skewX(-21deg);
-      /*
-      &:before, &:after {
-        content: " ";
-        display: block;
-        position: absolute;
-        top: 0;
-        height: 110px;
-        width: 42px;
-        @include transform(skewX(-21deg));
-      }
-
-      &:before { right: -21px; }
-      &:after { left: -21px; }
-      */ }
-      .fip-menu li a.speaker {
-        width: calc(40vw - 42px); }
-      .fip-menu li a.social {
-        width: calc(15vw - 42px);
-        padding: 34px 0; }
-      .fip-menu li a.fb svg {
-        height: 42px;
-        width: 42px;
-        margin-left: -10px; }
-      .fip-menu li a.tw svg {
-        height: 42px;
-        width: 52px; }
+      transform: skewX(-21deg); }
+      @media (max-width: 550px) {
+        .fip-menu li a {
+          font-size: 2rem;
+          padding: .5rem; } }
+      .fip-menu li a svg {
+        width: 2.5rem;
+        height: 2.5rem; }
+        @media (max-width: 550px) {
+          .fip-menu li a svg {
+            width: 2rem;
+            height: 2rem; } }
     .fip-menu li a, .fip-menu li a:before, .fip-menu li a:after {
       -webkit-transition: background 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
       -moz-transition: background 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -152,7 +155,7 @@ h1 {
         transition: background 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
 
 .fip-speaker {
-  background-color: #ff3565;
+  background-color: rgba(255, 53, 101, 0.8);
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out; }
@@ -160,7 +163,7 @@ h1 {
     background-color: #ff1c52; }
 
 .fip-tw {
-  background-color: #00ACED;
+  background-color: rgba(0, 172, 237, 0.8);
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out; }
@@ -168,7 +171,7 @@ h1 {
     background-color: #0099d3; }
 
 .fip-fb {
-  background-color: #3B5998;
+  background-color: rgba(59, 89, 152, 0.8);
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out; }

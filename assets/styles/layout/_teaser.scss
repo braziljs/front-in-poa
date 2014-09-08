@@ -1,16 +1,28 @@
 h1 {
   display: block;
+  width: 100%;
+  min-height: 350px;
+  margin: 5vh auto;
   font: 0/0 auto;
-  width: 100vw;
-  height: 100vh;
   background: #ccc;
-  background: url('../images/frontinpoa.svg') no-repeat bottom left;
+  background: url('../images/short-frontinpoa.svg') no-repeat;
+  background-position: center;
   background-color: transparent;
-  background-size: cover;
-  text-indent: -200px;
-  @include font(lato-black);
+  background-size: contain;
   position: absolute;
+  @include font(lato-black);
+
+  @media (min-width: 1000px) {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../images/frontinpoa.svg');
+    background-position: bottom left;
+    background-size: cover;
+
+  }
 }
+
 
 .fip-background, .fip-background:before {
   display: block;
@@ -43,70 +55,70 @@ h1 {
   ul {
     float: right;
     margin-right: -1.5em;
+
+    @media (max-width: 550px) {
+      width: 60vw;
+    }
   }
 
   li {
     float: left;
     padding: 0 .5em;
-    //margin-left: 42px;
     @include transform(skewX(20deg));
 
+    @media (max-width: 550px) {
+      float: none;
+    }
+
     a {
-      float: left;
+      //float: left;
+      display: block;
       @include font("lato-black");
       color: #fff;
-      font-size: 36px;
+      font-size: 2.5rem;
       letter-spacing: -1px;
-      height: 110px;
+      height: 100%;
       position: relative;
-      padding: 37px 0;
+      padding: 2rem;
       text-align: center;
+      @include transition;
       @include transform(skewX(-21deg));
-      /*
-      &:before, &:after {
-        content: " ";
-        display: block;
-        position: absolute;
-        top: 0;
-        height: 110px;
-        width: 42px;
-        @include transform(skewX(-21deg));
+
+      @media (max-width: 550px) {
+        font-size: 2rem;
+        padding: .5rem;
       }
 
-      &:before { right: -21px; }
-      &:after { left: -21px; }
-      */
-
       &.speaker {
-        width: calc(40vw - 42px);
-        //background: $FIP;
-        //&:after, &:before { background: $FIP; }
+        //width: calc(40vw - 42px);
       }
 
       &.social {
-        width: calc(15vw - 42px);
-        padding: 34px 0;
-
-        //&.tw, &.tw:after, &.tw:before { background: $TWITTER;}
-        //&.fb, &.fb:after, &.fb:before { background: $FACEBOOK;}
+        //width: calc(15vw - 42px);
+        //padding: 34px 2em;
       }
 
-      &.fb svg { @include size(42px); margin-left: -10px; }
-      &.tw svg { @include size(52px 42px); }
+      svg {
+        width: 2.5rem;
+        height: 2.5rem;
+
+        @media (max-width: 550px) {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+      //&.fb svg { @include size(42px); margin-left: -10px; }
+      //&.tw svg { @include size(52px 42px); }
     }
 
     a, a:before, a:after { @include transition (background .25s $ease-out-quart);
     &:hover { @include transition (background .5s $ease-out-quart); }}
 
-    //.speaker:hover, .speaker:hover:after, .speaker:hover:before { background: darken($FIP, 5%); }
-    //.social.tw:hover, .social.tw:hover:after, .social.tw:hover:before { background: darken($TWITTER, 5%); }
-    //.social.fb:hover, .social.fb:hover:after, .social.fb:hover:before { background: darken($FACEBOOK, 5%); }
-    //.social.fb:before { display: none; }
   }
 }
 
 .fip-speaker {
-  background-color: $FIP;
+  background-color: $FIP80;
   @include transition(all 300ms ease-in-out);
 
   &:hover,
@@ -116,7 +128,7 @@ h1 {
 }
 
 .fip-tw {
-  background-color: $TWITTER;
+  background-color: $TWITTER80;
   @include transition(all 300ms ease-in-out);
 
   &:hover,
@@ -126,7 +138,7 @@ h1 {
 }
 
 .fip-fb {
-  background-color: $FACEBOOK;
+  background-color: $FACEBOOK80;
   @include transition(all 300ms ease-in-out);
 
   &:hover,
