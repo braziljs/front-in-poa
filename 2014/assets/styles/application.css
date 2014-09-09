@@ -37,7 +37,7 @@ table {
   /* IE9 Compat Modes */
   src: url("../fonts/Lato/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Black.woff") format("woff"), url("../fonts/Lato/Lato-Black.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   text-rendering: optimizeLegibility; }
 body {
   background: #85d8ce;
@@ -75,7 +75,8 @@ h1 {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  font-family: 'LatoBlack', sans-serif; }
+  font-family: 'LatoBlack', sans-serif;
+  z-index: 5; }
   @media (min-width: 1000px) {
     h1 {
       top: 0;
@@ -116,31 +117,35 @@ h1 {
   overflow: hidden; }
   .fip-menu ul {
     float: right;
+    width: 70vw;
     margin-right: -1.5em; }
-    @media (max-width: 550px) {
+    @media (min-width: 750px) {
       .fip-menu ul {
-        width: 60vw; } }
+        width: 40vw; } }
+    @media (min-width: 990px) {
+      .fip-menu ul {
+        width: auto; } }
   .fip-menu li {
-    float: left;
+    float: none;
     padding: 0 .5em;
     -webkit-transform: skewX(20deg);
     -moz-transform: skewX(20deg);
     -ms-transform: skewX(20deg);
     -o-transform: skewX(20deg);
     transform: skewX(20deg); }
-    @media (max-width: 550px) {
+    @media (min-width: 990px) {
       .fip-menu li {
-        float: none; } }
+        float: left; } }
     .fip-menu li a,
     .fip-menu li span {
       display: block;
       font-family: 'LatoBlack', sans-serif;
       color: #fff;
-      font-size: 2.5rem;
+      font-size: 2rem;
+      padding: .5rem;
       letter-spacing: -1px;
       height: 100%;
       position: relative;
-      padding: 2rem;
       text-align: center;
       -webkit-transition: all 0.15s ease-out 0s;
       -moz-transition: all 0.15s ease-out 0s;
@@ -150,16 +155,16 @@ h1 {
       -ms-transform: skewX(-21deg);
       -o-transform: skewX(-21deg);
       transform: skewX(-21deg); }
-      @media (max-width: 550px) {
+      @media (min-width: 990px) {
         .fip-menu li a,
         .fip-menu li span {
-          font-size: 2rem;
-          padding: .5rem; } }
+          font-size: 2.5rem;
+          padding: 2rem; } }
       .fip-menu li a svg,
       .fip-menu li span svg {
         width: 2.5rem;
         height: 2.5rem; }
-        @media (max-width: 550px) {
+        @media (max-width: 990px) {
           .fip-menu li a svg,
           .fip-menu li span svg {
             width: 2rem;
@@ -182,7 +187,7 @@ h1 {
     background-color: #ff1c52; }
   .fip-speaker.disabled {
     opacity: 0.3;
-    cursor: default; }
+    cursor: not-allowed; }
 
 .fip-tw {
   background-color: rgba(0, 172, 237, 0.8);
@@ -199,5 +204,15 @@ h1 {
   transition: all 300ms ease-in-out; }
   .fip-fb:hover, .fip-fb:focus {
     background-color: #344e86; }
+
+.fip-info {
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+  .fip-info:hover, .fip-info:focus {
+    background-color: #f2f2f2; }
+  .fip-info span {
+    color: #000 !important; }
 
 /*# sourceMappingURL=application.css.map */
