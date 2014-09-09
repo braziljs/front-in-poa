@@ -1,0 +1,22 @@
+// Sizes
+$site-width: 940px;
+$site-gutter: 25px;
+$marker-size: 8px;
+
+// Typography
+$main-font: 'Raleway', sans-serif;
+
+// Colors
+$grey: #6C6C6C;
+$dark-grey: #333333;
+$blue: #5AA1B8;
+$dark-blue: darken($blue, 20);
+$red: #F13C47;
+
+// Viewports
+$maximum-viewport: rem(920px);
+$medium-viewport: rem(800px);
+$minor-viewport: rem(600px);
+
+// Sizes
+$nav-height: rem(55px);

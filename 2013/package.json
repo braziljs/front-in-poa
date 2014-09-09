@@ -1,0 +1,26 @@
+{
+  "name": "FrontInPoa",
+  "version": "0.2.0",
+  "description": "Front in Poa event website",
+  "homepage": "http://frontinpoa.com.br",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/braziljs/front-in-poa.git"
+  },
+  "engines": {
+    "node": ">0.8.x",
+    "npm": "1.1.x"
+  },
+  "scripts": {
+    "test": "docpad generate"
+  },
+  "dependencies": {
+    "docpad-plugin-eco": "2.0.2",
+    "docpad-plugin-marked": "2.1.1",
+    "docpad-plugin-partials": "~2.8.0",
+    "docpad-plugin-nodesass": "~2.1.0",
+    "docpad-plugin-ghpages": "2.0.2",
+    "docpad-plugin-coffeekup": "~2.2.0",
+    "docpad": "~6.53.4"
+  }
+}

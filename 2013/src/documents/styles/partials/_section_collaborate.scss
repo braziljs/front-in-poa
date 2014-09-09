@@ -1,0 +1,62 @@
+.section-collaborate {
+  @include texture("blue");
+  p {
+    text-align: left;
+  }
+  @media screen and (min-width:$minor-viewport) {
+    padding: rem(50px) 0;
+  }
+}
+
+.collaborate-item {
+  color: white;
+  text-align: center;
+  position: relative;
+  &:first-child {
+    margin-bottom: rem(30px);
+  }
+  @media screen and (min-width:$minor-viewport) {
+    @include item-per-line(2);
+    &:first-child {
+      margin-bottom: 0;
+      padding-right: 5%;
+    }
+    &:last-child {
+      @include left-line(90%);
+      padding-left: 5%;
+    }
+  }
+  @media screen and (min-width:$medium-viewport) {
+    padding: 0 5%;
+    &:first-child {
+      padding-right: 10%;
+    }
+    &:last-child {
+      @include left-line(90%);
+      padding-left: 10%;
+    }
+  }
+}
+.collaborate-title {
+  margin: 0;
+  font-size: rem(28px);
+  text-transform: uppercase;
+  span {
+    font-weight: 100;
+    display: block;
+  }
+  @media screen and (min-width:$minor-viewport) {
+    letter-spacing: rem(-3px);
+    font-size: rem(36px);
+  }
+  @media screen and (min-width:$maximum-viewport) {
+    font-size: rem(44px);
+  }
+}
+.collaborate-link {
+  @include button;
+  margin-top: rem(4px);
+  @media screen and (min-width:$minor-viewport) {
+    margin-top: rem(14px);
+  }
+}

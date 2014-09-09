@@ -1,0 +1,32 @@
+.nav {
+  background: white;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  @include invisible;
+  @media screen and (min-width:$minor-viewport) {
+    @include visible;
+    position: fixed;
+    left: 0;
+  }
+}
+.nav-items {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.nav-item {
+  display: inline-block;
+  margin: 0 rem(16px);
+}
+.nav-link {
+  display: inline-block;
+  font: 600 rem(15px)/#{$nav-height} $main-font;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $grey;
+  &.active {
+    box-shadow: inset 0 $marker-size 0 $red;
+  }
+}

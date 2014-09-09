@@ -1,0 +1,118 @@
+.section-schedule {
+  padding-bottom: 0;
+  .section-title {
+    padding-bottom: rem(30px);
+    @include inverse-bottom-line(100%);
+  }
+}
+.schedule {
+  list-style: none;
+  padding: 0;
+}
+.schedule-item {
+  position: relative;
+  padding: rem(80px) 0 rem(30px) 0;
+  margin: rem(-80px) 0 rem(30px) 0;
+  @include inverse-bottom-line(100%);
+}
+.schedule-intro, .schedule-slot {
+  display: inline-block;
+  vertical-align: top;
+}
+.schedule-intro {
+  width: percentage(220px/$site-width);
+}
+.schedule-slot {
+  width: percentage(720px/$site-width);
+  padding: rem(5px) 0 rem(5px) percentage(20px/$site-width);
+}
+
+.schedule-intro-board {
+  color: white;
+  border-radius: 6px 6px 50% 50% / 6px 6px 40% 40%;
+  @media screen and (min-width:$minor-viewport) {
+    border-radius: 6px 25% 25% 6px / 6px 50% 50% 6px;
+  }
+}
+.schedule-time, .schedule-image {
+  width: 100%;
+  display: block;
+  @media screen and (min-width:$minor-viewport) {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.schedule-time {
+  font-size: rem(20px);
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 600;
+  @media screen and (min-width:$medium-viewport) {
+    font-size: rem(30px);
+  }
+}
+.schedule-image {
+  border-radius: 50%;
+}
+.schedule-activity {
+  font-size: rem(20px);
+  line-height: 1.1;
+  font-weight: 800;
+  margin: rem(10px) 0;
+  @media screen and (min-width:$medium-viewport) {
+    font-size: rem(28px);
+  }
+}
+.schedule-description-button {
+  @include button('↓');
+  position: relative;
+  z-index: 1;
+  font-size: rem(12px);
+  @include button-spaces(rem(8px));
+  @media screen and (min-width:$minor-viewport) {
+    font-size: rem(14px);
+    @include button-spaces(rem(10px));
+  }
+}
+.schedule-description {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
+  @media screen and (min-width:$minor-viewport) {
+    margin-left: percentage(240px/$site-width);
+  }
+}
+.schedule-item:target {
+  .schedule-intro, .schedule-slot {
+    margin-bottom: rem(10px);
+  }
+  .schedule-description-button {
+    @include button-simbol('↑');
+  }
+  .schedule-description {
+    transition: all 1s linear;
+    max-height: 60em;
+  }
+}
+
+.schedule-item-other {
+  .schedule-intro, .schedule-slot {
+    vertical-align: middle;
+  }
+  .schedule-intro-board {
+    @include texture("grey");
+  }
+  .schedule-image {
+    @extend %grayscale;
+    background: $dark-grey;
+  }
+}
+.schedule-item-speaker {
+  .schedule-intro-board {
+    @include texture("blue");
+  }
+  .schedule-image {
+    @extend %grayscale;
+  }
+}
