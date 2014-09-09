@@ -1,3 +1,4 @@
 node_modules
 out
 .sass-cache
+.DS_Store
