@@ -15,6 +15,7 @@ h1 {
   left: 50%;
   @include transform(translateX(-50%));
   @include font(lato-black);
+  z-index: 5;
 
   @media (min-width: 1000px) {
     top: 0;
@@ -30,7 +31,6 @@ h1 {
 
   }
 }
-
 
 .fip-background, .fip-background:before {
   display: block;
@@ -62,20 +62,25 @@ h1 {
 
   ul {
     float: right;
+    width: 70vw;
     margin-right: -1.5em;
 
-    @media (max-width: 550px) {
-      width: 60vw;
+    @media (min-width: 750px) {
+      width: 40vw;
+    }
+
+    @media (min-width: 990px) {
+      width: auto;
     }
   }
 
   li {
-    float: left;
+    float: none;
     padding: 0 .5em;
     @include transform(skewX(20deg));
 
-    @media (max-width: 550px) {
-      float: none;
+    @media (min-width: 990px) {
+      float: left;
     }
 
     a,
@@ -84,18 +89,22 @@ h1 {
       display: block;
       @include font("lato-black");
       color: #fff;
-      font-size: 2.5rem;
+      font-size: 2rem;
+      padding: .5rem;
       letter-spacing: -1px;
       height: 100%;
       position: relative;
-      padding: 2rem;
       text-align: center;
       @include transition;
       @include transform(skewX(-21deg));
 
-      @media (max-width: 550px) {
-        font-size: 2rem;
-        padding: .5rem;
+      //@media (min-width: 990px) {
+      //  font-size: 1.5rem;
+      //}
+
+      @media (min-width: 990px) {
+        font-size: 2.5rem;
+        padding: 2rem;
       }
 
       &.speaker {
@@ -111,7 +120,7 @@ h1 {
         width: 2.5rem;
         height: 2.5rem;
 
-        @media (max-width: 550px) {
+        @media (max-width: 990px) {
           width: 2rem;
           height: 2rem;
         }
@@ -137,7 +146,7 @@ h1 {
 
   &.disabled {
     opacity: 0.3;
-    cursor: default;
+    cursor: not-allowed;
   }
 }
 
@@ -158,5 +167,19 @@ h1 {
   &:hover,
   &:focus {
     background-color: darken($FACEBOOK, 5%);
+  }
+}
+
+.fip-info {
+  background-color: $INFO80;
+  @include transition(all 300ms ease-in-out);
+
+  &:hover,
+  &:focus {
+    background-color: darken($INFO, 5%);
+  }
+
+  span {
+    color: #000 !important;
   }
 }
