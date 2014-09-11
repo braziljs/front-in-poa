@@ -58,17 +58,18 @@ body {
 
 h1 {
   display: block;
-  width: 35vw;
+  width: 100%;
+  height: 100px;
   background-position: 50% 10vh;
-  height: 100vh;
   font: 0/0 auto;
   background: #ccc;
   background: url("../images/short-frontinpoa.svg") no-repeat;
+  background-position: center;
   background-color: transparent;
   background-size: contain;
   position: absolute;
   left: 50%;
-  top: 5vh;
+  top: 2vh;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -78,20 +79,20 @@ h1 {
   z-index: 5; }
   @media (min-height: 400px) {
     h1 {
-      width: 35vw;
-      background-position: 50% 20vh; } }
+      top: 5vh;
+      height: 200px; } }
   @media (min-height: 500px) {
     h1 {
-      top: -5vh;
       width: 100%;
       max-width: 300px;
-      min-height: 350px;
+      height: 350px;
       background-position: center; } }
   @media (min-width: 1000px) {
     h1 {
       top: 0;
       left: 0;
       max-width: 100vw;
+      height: 100vh;
       width: 100vw;
       height: 100vh;
       background-image: url("../images/frontinpoa.svg");

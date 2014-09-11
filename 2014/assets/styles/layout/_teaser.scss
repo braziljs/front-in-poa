@@ -1,31 +1,36 @@
 h1 {
   display: block;
-  width: 35vw;
+  width: 100%;
+  height: 100px;
   background-position: 50% 10vh;
-  height: 100vh;
   //margin: 5vh auto;
   font: 0/0 auto;
   background: #ccc;
   background: url('../images/short-frontinpoa.svg') no-repeat;
+  background-position: center;
   background-color: transparent;
   background-size: contain;
   position: absolute;
   left: 50%;
-  top: 5vh;
+  top: 2vh;
   @include transform(translateX(-50%));
   @include font(lato-black);
   z-index: 5;
 
+
+
   @media (min-height: 400px) {
-    width: 35vw;
-    background-position: 50% 20vh;
+    top: 5vh;
+    //width: 40vw;
+    height: 200px;
+    //background-position: ;
   }
 
   @media (min-height: 500px) {
-    top: -5vh;
+    //top: -5vh;
     width: 100%;
     max-width: 300px;
-    min-height: 350px;
+    height: 350px;
     background-position: center;
   }
 
@@ -33,6 +38,7 @@ h1 {
     top: 0;
     left: 0;
     max-width: 100vw;
+    height: 100vh;
     width: 100vw;
     height: 100vh;
     background-image: url('../images/frontinpoa.svg');
