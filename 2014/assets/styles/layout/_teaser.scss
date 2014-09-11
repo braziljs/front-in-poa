@@ -11,8 +11,8 @@ h1 {
   background-color: transparent;
   background-size: contain;
   position: absolute;
-  top: 5vh;
   left: 50%;
+  top: -5vh;
   @include transform(translateX(-50%));
   @include font(lato-black);
   z-index: 5;
@@ -89,9 +89,8 @@ h1 {
       display: block;
       @include font("lato-black");
       color: #fff;
-      font-size: 2rem;
       padding: .5rem;
-      letter-spacing: -1px;
+      font-size: 1rem;
       height: 100%;
       position: relative;
       text-align: center;
@@ -102,7 +101,12 @@ h1 {
       //  font-size: 1.5rem;
       //}
 
+      @media (min-width: 500px) {
+        font-size: 1.5rem;
+      }
+
       @media (min-width: 990px) {
+        letter-spacing: -1px;
         font-size: 2.5rem;
         padding: 2rem;
       }
