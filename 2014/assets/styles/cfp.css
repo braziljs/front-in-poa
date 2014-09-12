@@ -110,7 +110,8 @@ small {
   height: 3rem;
   position: absolute;
   bottom: -1.5rem;
-  overflow: hidden; }
+  overflow: hidden;
+  -moz-transform: translateX(-50%); }
   .social ul {
     width: 100%;
     height: 100%;
@@ -120,18 +121,24 @@ small {
   .social svg {
     height: 2rem; }
   .social__item {
+    -ms-transform: skew(-15deg);
+    -moz-transform: skew(-15deg);
     transform: skew(-15deg);
     background-color: #ccc;
     transition: all 300ms ease-in-out; }
     .social__item a {
       padding: .5rem 2rem;
       display: inline-block;
+      -ms-transform: skew(15deg);
+      -moz-transform: skew(15deg);
       transform: skew(15deg); }
     .social__item.twitter {
       background-color: #00aced; }
     .social__item.facebook {
       background-color: #3b5998; }
     .social__item:focus, .social__item:hover {
+      -ms-transform: skew(-15deg) translateY(-2px);
+      -moz-transform: skew(-15deg) translateY(-2px);
       transform: skew(-15deg) translateY(-2px); }
 
 .subject {
@@ -230,6 +237,8 @@ small {
     height: 2rem;
     width: .5rem;
     background-color: #ff3565;
+    -ms-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
     transform: skew(-30deg); }
 
 .bottom {

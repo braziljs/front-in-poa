@@ -104,6 +104,7 @@ small {
   position: absolute;
   bottom: -1.5rem;
   overflow: hidden;
+  -moz-transform: translateX(-50%);
 
   ul {
     width: 100%;
@@ -120,6 +121,8 @@ small {
   }
 
   &__item {
+    -ms-transform: skew(-15deg);
+    -moz-transform: skew(-15deg);
     transform: skew(-15deg);
     background-color: #ccc;
     transition: all 300ms ease-in-out;
@@ -127,6 +130,8 @@ small {
     a {
       padding: .5rem 2rem;
       display: inline-block;
+      -ms-transform: skew(15deg);
+      -moz-transform: skew(15deg);
       transform: skew(15deg);
     }
 
@@ -140,6 +145,8 @@ small {
 
     &:focus,
     &:hover {
+      -ms-transform: skew(-15deg) translateY(-2px);
+      -moz-transform: skew(-15deg) translateY(-2px);
       transform: skew(-15deg) translateY(-2px);
     }
   }
@@ -274,6 +281,8 @@ small {
     height: 2rem;
     width: .5rem;
     background-color: $fip-pink; // pink
+    -ms-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
     transform: skew(-30deg);
   }
 }
