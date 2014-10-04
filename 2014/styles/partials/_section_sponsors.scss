@@ -1,0 +1,30 @@
+.section-sponsors {
+  @include texture("dark-blue");
+}
+
+.sponsors-list, .partners-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.sponsors-list {
+  margin-bottom: rem(30px);
+  @media screen and (min-width:$minor-viewport) {
+    margin-bottom: rem(50px);
+  }
+}
+.sponsor-item, .partner-item {
+  width: 20%;
+  margin: 0 .5% 2% .5%;
+  min-width: rem(150px);
+  display: inline-block;
+}
+.partner-item {
+  width: 15%;
+  min-width: rem(100px);
+}
+.sponsor-logo, .partner-logo {
+  display: block;
+  width: 100%;
+}

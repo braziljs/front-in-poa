@@ -1,0 +1,22 @@
+.section-location .section-title {
+  @include hide-bottom-line;
+}
+
+.address {
+  color: $blue;
+  margin-top: -1em;
+  text-align: center;
+}
+
+.address-map {
+  padding-bottom: 60%;
+  margin-top: rem(20px);
+  position: relative;
+  @include top-line(100%, .25);
+  @include bottom-line(100%, .25);
+  @media screen and (min-width:$minor-viewport) {
+    padding: 0;
+    margin-top: rem(40px);
+    height: rem(470px);
+  }
+}

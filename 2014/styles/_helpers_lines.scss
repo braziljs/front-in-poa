@@ -1,0 +1,59 @@
+// Lines
+@mixin line($mode, $type, $size, $thickness) {
+  $distance: (100% - $size) / 2;
+  &:#{$type} {
+    content : '';
+    position: absolute;
+    z-index: 1;
+    @if $mode == horizontal {
+      left: $distance; right: $distance;
+      height: $thickness;
+    } @else {
+      top: $distance; bottom: $distance;
+      width: $thickness;
+    }
+  }
+}
+
+@mixin line-gradient($pos, $opacity) {
+  @include radial-gradient($pos, rgba(black, $opacity), rgba(black, 0));
+}
+
+@mixin left-line($size, $opacity: .15, $thickness: 10px) {
+  @include line(vertical, before, $size, $thickness);
+  &:before {
+    left: 0;
+    @include line-gradient(left center, $opacity);
+  }
+}
+
+@mixin bottom-line($size, $opacity: .15, $thickness: 10px) {
+  @include line(horizontal, after, $size, $thickness);
+  &:after {
+    bottom: 0;
+    @include line-gradient(center bottom, $opacity);
+
+  }
+}
+
+@mixin top-line($size, $opacity: .15, $thickness: 10px) {
+  @include line(horizontal, before, $size, $thickness);
+  &:before {
+    top: 0;
+    @include line-gradient(center top, $opacity);
+  }
+}
+
+@mixin inverse-bottom-line($size, $opacity: .15, $thickness: 10px) {
+  @include line(horizontal, after, $size, $thickness);
+  &:after {
+    bottom: -$thickness;
+    @include line-gradient(center top, $opacity);
+  }
+}
+
+@mixin hide-bottom-line {
+  &:after {
+    display: none;
+  }
+}
