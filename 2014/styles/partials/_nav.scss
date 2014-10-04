@@ -1,11 +1,10 @@
 .nav {
+  display: none;
   background: white;
   z-index: 2;
   top: 0;
   width: 100%;
-  @include invisible;
   @media screen and (min-width:$minor-viewport) {
-    @include visible;
     position: fixed;
     left: 0;
   }
@@ -22,7 +21,6 @@
 }
 .nav-link {
   display: inline-block;
-  font: 600 rem(15px)/#{$nav-height} $main-font;
   text-transform: uppercase;
   text-decoration: none;
   color: $grey;

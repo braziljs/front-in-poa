@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: $main-font;
+  font-family: $font-lato;
   color: $dark-grey;
   @media screen and (min-width:$minor-viewport) {
     font-size: rem(18px);

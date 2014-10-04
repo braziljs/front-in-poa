@@ -1,5 +1,5 @@
 .section-location .section-title {
-  @include hide-bottom-line;
+
 }
 
 .address {
@@ -12,8 +12,6 @@
   padding-bottom: 60%;
   margin-top: rem(20px);
   position: relative;
-  @include top-line(100%, .25);
-  @include bottom-line(100%, .25);
   @media screen and (min-width:$minor-viewport) {
     padding: 0;
     margin-top: rem(40px);

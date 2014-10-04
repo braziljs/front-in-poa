@@ -1,5 +1,4 @@
 .section-presenter {
-  @include texture("blue");
   color: white;
   .section-title {
     margin-bottom: rem(40px);
@@ -31,7 +30,6 @@
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-  @extend %grayscale;
   @media screen and (min-width:$minor-viewport) {
     width: 50%;
   }

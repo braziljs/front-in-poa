@@ -14,20 +14,15 @@
   }
 }
 .organizer-item {
-  @include item-per-line(2);
   padding: 0 rem(10px);
   margin-top: rem(20px);
   text-align: center;
-  @media screen and (min-width:$minor-viewport) {
-    @include item-per-line(4);
-  }
 }
 .organizer-photo {
   width: 50%;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-  @extend %grayscale;
 }
 .organizer-name {
   margin-top: rem(10px);

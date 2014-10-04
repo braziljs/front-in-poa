@@ -1,5 +1,4 @@
 .section-collaborate {
-  @include texture("blue");
   p {
     text-align: left;
   }
@@ -16,13 +15,11 @@
     margin-bottom: rem(30px);
   }
   @media screen and (min-width:$minor-viewport) {
-    @include item-per-line(2);
     &:first-child {
       margin-bottom: 0;
       padding-right: 5%;
     }
     &:last-child {
-      @include left-line(90%);
       padding-left: 5%;
     }
   }
@@ -32,7 +29,6 @@
       padding-right: 10%;
     }
     &:last-child {
-      @include left-line(90%);
       padding-left: 10%;
     }
   }
@@ -54,7 +50,6 @@
   }
 }
 .collaborate-link {
-  @include button;
   margin-top: rem(4px);
   @media screen and (min-width:$minor-viewport) {
     margin-top: rem(14px);

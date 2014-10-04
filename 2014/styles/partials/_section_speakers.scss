@@ -1,7 +1,5 @@
 .section-speakers {
-  @include texture("dark-blue");
   .section-title {
-    @include hide-bottom-line;
     margin-bottom: 0;
     @media screen and (min-width:$minor-viewport) {
       font-size: rem(55px);
@@ -23,7 +21,6 @@
   margin-right: percentage(60px/$site-width);
   display: inline-block;
   border-radius: 50%;
-  @extend %grayscale;
 }
 .speaker-info {
   width: percentage(640px/$site-width);
@@ -54,5 +51,4 @@
 .speaker-comment {
   position: relative;
   padding-left: 20px;
-  @include left-line(100%);
 }

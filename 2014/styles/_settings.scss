@@ -4,9 +4,11 @@ $site-gutter: 25px;
 $marker-size: 8px;
 
 // Typography
-$main-font: 'Raleway', sans-serif;
+$font-lato: 'Lato', sans-serif;
 
 // Colors
+$pink: #ff3565;
+
 $grey: #6C6C6C;
 $dark-grey: #333333;
 $blue: #5AA1B8;
@@ -14,6 +16,7 @@ $dark-blue: darken($blue, 20);
 $red: #F13C47;
 
 // Viewports
+$large-viewport: rem(1100px);
 $maximum-viewport: rem(920px);
 $medium-viewport: rem(800px);
 $minor-viewport: rem(600px);

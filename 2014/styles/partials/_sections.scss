@@ -17,14 +17,12 @@
     color: $dark-grey;
   }
   position: relative;
-  @include inverse-bottom-line(80%);
   @media screen and (min-width:$minor-viewport) {
     font-size: rem(44px);
     letter-spacing: rem(-3px);
     span {
       display: block;
     }
-    @include inverse-bottom-line(40%);
   }
 }
 
