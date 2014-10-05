@@ -537,21 +537,18 @@ a {
 
 .section-title {
   font-size: 1.75rem;
-  color: #5AA1B8;
-  text-transform: uppercase;
   text-align: center;
   margin-top: 0;
   padding-bottom: 0.625rem;
+  font-weight: 100;
   position: relative; }
-  .section-title span {
-    font-weight: 100;
-    color: #333333; }
   @media screen and (min-width: 37.5rem) {
     .section-title {
-      font-size: 2.75rem;
-      letter-spacing: -0.1875rem; }
-      .section-title span {
-        display: block; } }
+      font-size: 4.375rem;
+      letter-spacing: -0.1875rem; } }
+
+.section-title-highlight {
+  font-weight: 700; }
 
 .section-collaborate p {
   text-align: left; }

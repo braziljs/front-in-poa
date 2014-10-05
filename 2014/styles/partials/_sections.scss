@@ -7,23 +7,19 @@
 
 .section-title {
   font-size: rem(28px);
-  color: $blue;
-  text-transform: uppercase;
   text-align: center;
   margin-top: 0;
   padding-bottom: rem(10px);
-  span {
-    font-weight: 100;
-    color: $dark-grey;
-  }
+  font-weight: 100;
   position: relative;
   @media screen and (min-width:$minor-viewport) {
-    font-size: rem(44px);
+    font-size: rem(70px);
     letter-spacing: rem(-3px);
-    span {
-      display: block;
-    }
   }
+}
+
+.section-title-highlight {
+  font-weight: 700;
 }
 
 @import "section_collaborate";
