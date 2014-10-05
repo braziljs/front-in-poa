@@ -322,6 +322,26 @@ a {
   color: #5AA1B8;
   text-decoration: none; }
 
+.call-action-link {
+  background: #ff3565;
+  -webkit-transform: skewX(-21deg);
+      -ms-transform: skewX(-21deg);
+          transform: skewX(-21deg);
+  position: relative;
+  left: -1rem; }
+  @media screen and (max-width: 50rem) {
+    .call-action-link {
+      font: 0/0 a; } }
+
+.call-action-text {
+  color: white;
+  -webkit-transform: skewX(21deg);
+      -ms-transform: skewX(21deg);
+          transform: skewX(21deg);
+  display: block;
+  font-weight: 700;
+  line-height: 2.3; }
+
 .wrapper {
   max-width: 990px;
   padding: 0 10px;
@@ -442,9 +462,6 @@ a {
   background-size: cover;
   overflow: hidden;
   position: relative; }
-  @media screen and (min-width: 50rem) {
-    .header {
-      height: 100vh; } }
   .header:before {
     content: '';
     position: absolute;
@@ -455,6 +472,12 @@ a {
     background: url(../images/header-building.png) bottom left;
     background-size: cover;
     z-index: 1; }
+  @media screen and (min-width: 50rem) {
+    .header {
+      height: 100vh;
+      background-attachment: fixed; }
+      .header:before {
+        background-attachment: fixed; } }
 
 .logo {
   margin: 0;
@@ -508,26 +531,8 @@ a {
   font-weight: 100;
   text-transform: uppercase; }
 
-.call-action-link {
-  background: #ff3565;
-  -webkit-transform: skewX(-21deg);
-      -ms-transform: skewX(-21deg);
-          transform: skewX(-21deg);
-  display: block;
-  position: relative;
-  left: -1rem; }
-  @media screen and (max-width: 50rem) {
-    .call-action-link {
-      font: 0/0 a; } }
-
-.call-action-text {
-  color: white;
-  -webkit-transform: skewX(21deg);
-      -ms-transform: skewX(21deg);
-          transform: skewX(21deg);
-  display: block;
-  font-weight: 700;
-  line-height: 2.3; }
+.header-call-action-link {
+  display: block; }
 
 .section {
   padding: 1.875rem 0; }
@@ -602,6 +607,17 @@ a {
   @media screen and (min-width: 37.5rem) {
     .about-text {
       width: 70%; } }
+
+.section-about-tail {
+  background: url('../images/about.jpg') no-repeat center top;
+  background-size: cover;
+  font-size: 2.5rem;
+  text-align: center; }
+
+.section-about-call-action-link {
+  display: inline-block;
+  padding: 0 2.5em;
+  margin: 6em 0 1.6em 0; }
 
 .section-speakers .section-title {
   margin-bottom: 0; }
