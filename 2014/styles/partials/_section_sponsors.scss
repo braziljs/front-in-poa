@@ -1,4 +1,9 @@
 .section-sponsors {
+  background-color: $pink;
+
+  .section-title {
+    color: #fff;
+  }
 }
 
 .sponsors-list, .partners-list {
@@ -14,10 +19,13 @@
   }
 }
 .sponsor-item, .partner-item {
+  position: relative;
   width: 20%;
-  margin: 0 .5% 2% .5%;
+  padding: .5rem;
+  margin: 2rem .5%;
   min-width: rem(150px);
   display: inline-block;
+  background-color: #000;
 }
 .partner-item {
   width: 15%;
@@ -26,4 +34,52 @@
 .sponsor-logo, .partner-logo {
   display: block;
   width: 100%;
+}
+
+%down-triangle {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: solid 40px #000;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: solid 6rem transparent;
+}
+
+%up-triangle {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 0;
+  border-right: solid 6rem transparent;
+  border-bottom: solid 40px #000;
+  border-left: 0;
+}
+
+.sponsor-item:nth-child(odd) {
+  &::after {
+    @extend %down-triangle;
+    border-left: solid 9rem transparent
+  }
+}
+.sponsor-item:nth-child(even) {
+  &::after {
+    @extend %up-triangle;
+    border-right: solid 9rem transparent;
+  }
+}
+.partner-item:nth-child(odd) {
+  &::after {
+    @extend %down-triangle;
+  }
+}
+.partner-item:nth-child(even) {
+  &::after {
+    @extend %up-triangle;
+  }
 }

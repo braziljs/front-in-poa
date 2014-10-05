@@ -850,6 +850,11 @@ a {
   margin-top: 0.625rem;
   font-weight: 800; }
 
+.section-sponsors {
+  background-color: #ff3565; }
+  .section-sponsors .section-title {
+    color: #fff; }
+
 .sponsors-list, .partners-list {
   list-style: none;
   text-align: center;
@@ -863,10 +868,13 @@ a {
       margin-bottom: 3.125rem; } }
 
 .sponsor-item, .partner-item {
+  position: relative;
   width: 20%;
-  margin: 0 0.5% 2% 0.5%;
+  padding: 0.5rem;
+  margin: 2rem 0.5%;
   min-width: 9.375rem;
-  display: inline-block; }
+  display: inline-block;
+  background-color: #000; }
 
 .partner-item {
   width: 15%;
@@ -875,6 +883,35 @@ a {
 .sponsor-logo, .partner-logo {
   display: block;
   width: 100%; }
+
+.sponsor-item:nth-child(odd)::after, .partner-item:nth-child(odd)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: solid 40px #000;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: solid 6rem transparent; }
+
+.sponsor-item:nth-child(even)::after, .partner-item:nth-child(even)::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 0;
+  border-right: solid 6rem transparent;
+  border-bottom: solid 40px #000;
+  border-left: 0; }
+
+.sponsor-item:nth-child(odd)::after {
+  border-left: solid 9rem transparent; }
+
+.sponsor-item:nth-child(even)::after {
+  border-right: solid 9rem transparent; }
 
 .footer {
   font-size: 0.875rem; }
