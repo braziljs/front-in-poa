@@ -319,7 +319,7 @@ body {
       font-size: 1.125rem; } }
 
 a {
-  color: #5AA1B8;
+  color: #ff3565;
   text-decoration: none; }
 
 .call-action-link {
@@ -619,33 +619,42 @@ a {
   padding: 0 2.5em;
   margin: 6em 0 1.6em 0; }
 
-.section-speakers .section-title {
-  margin-bottom: 0; }
-  @media screen and (min-width: 37.5rem) {
-    .section-speakers .section-title {
-      font-size: 3.4375rem; } }
-
 .speakers-list {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
 
 .speaker-item {
-  margin-top: -2.5rem;
-  padding-top: 6.25rem; }
+  width: 30%;
+  display: inline-block;
+  margin: 0 1.2em;
+  text-align: left;
+  vertical-align: top; }
+  .speaker-item:nth-child(even) {
+    margin-top: 4em; }
+
+.speaker-photo-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  margin-right: 6.38298%;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-transform: skewX(21deg) translate3d(0, 0, 0);
+          transform: skewX(21deg) translate3d(0, 0, 0); }
 
 .speaker-photo {
-  width: 25.53191%;
-  margin-right: 6.38298%;
-  display: inline-block;
-  border-radius: 50%; }
+  display: block;
+  margin: -20%;
+  width: 140%;
+  height: 140%;
+  -webkit-transform: skewX(-21deg);
+      -ms-transform: skewX(-21deg);
+          transform: skewX(-21deg); }
 
 .speaker-info {
-  width: 68.08511%;
-  padding-left: 2.12766%;
-  display: inline-block;
-  vertical-align: top;
-  color: white; }
+  margin-left: 20%; }
 
 .speaker-name {
   font-size: 1.375rem;
@@ -653,21 +662,16 @@ a {
   position: relative; }
   @media screen and (min-width: 37.5rem) {
     .speaker-name {
-      font-size: 1.875rem; }
-      .speaker-name:before {
-        top: 16%;
-        bottom: 16%;
-        left: -3.125%;
-        position: absolute;
-        border-left: 8px solid #F13C47;
-        content: ''; } }
+      font-size: 1.875rem; } }
+
+.speaker-twitter {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0.3125rem 0; }
 
 .speaker-bio {
-  margin: 1.25rem 0 0; }
-
-.speaker-comment {
-  position: relative;
-  padding-left: 20px; }
+  margin: 0; }
 
 .section-presenter {
   color: white; }
