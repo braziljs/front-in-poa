@@ -1,30 +1,105 @@
 .nav {
-  display: none;
-  background: white;
-  z-index: 2;
-  top: 0;
   width: 100%;
-  @media screen and (min-width:$minor-viewport) {
-    position: fixed;
-    left: 0;
+  background: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  //z-index: 2;
+  //top: 0;
+
+  @media screen and (min-width:$large-viewport) {
+    overflow: hidden;
+    //position: fixed;
+    //left: 0;
+    flex-flow: row;
   }
 }
+
 .nav-items {
   list-style: none;
   text-align: center;
   margin: 0;
   padding: 0;
+  display: none;
+  @media screen and (min-width:$large-viewport) {
+    display: block
+  }
 }
 .nav-item {
   display: inline-block;
   margin: 0 rem(16px);
 }
 .nav-link {
+  margin: .5em 0;
   display: inline-block;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  color: $grey;
+  color: $dark-grey;
+  border-bottom: solid 4px #fff;
+
+  &:hover {
+    border-bottom-color: $pink;
+  }
   &.active {
     box-shadow: inset 0 $marker-size 0 $red;
   }
 }
+
+.nav-logo {
+  display: none;
+
+  @media screen and (min-width:$large-viewport) {
+      display: block;
+      position: relative;
+      left: -15px;
+      width: 8rem;
+      height: 5rem;
+      padding: 1rem 1rem 0 2rem;
+      transform: skew(-15deg);
+      background-color: $pink;
+
+      div {
+        transform: skew(15deg);
+      }
+
+      svg {
+        height: 3rem;
+      }
+  }
+}
+
+.social-list {
+  position: relative;
+  top: -1rem;
+  margin: 0;
+  //@include clearfix;
+    @media screen and (min-width:$large-viewport) {
+      top: 0;
+      right: -5px;
+  }
+}
+
+.social-item {
+  float: left;
+  height: 5rem;
+  list-style: none;
+  transform: skew(-15deg);
+  background-color: $dark-grey;
+}
+
+.social-link {
+  width: 4rem;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  transform: skew(15deg);
+
+  svg {
+    height: 3rem;
+  }
+}
+
+.social-item.facebook {background-color: $facebook}
+.social-item.twitter {background-color: $twitter}

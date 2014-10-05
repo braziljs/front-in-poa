@@ -8,6 +8,8 @@
 body {
   font-family: $font-lato;
   color: $dark-grey;
+  overflow-x: hidden;
+
   @media screen and (min-width:$minor-viewport) {
     font-size: rem(18px);
   }
@@ -16,9 +18,9 @@ body {
 a {
   color: $blue;
   text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
+  //&:hover {
+  //  text-decoration: underline;
+  //}
 }
 
 .wrapper {
