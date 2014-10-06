@@ -1,29 +1,29 @@
 .section-location {
   height: 80vh;
+  min-height: 600px;
   position: relative;
   padding: 0;
-  .wrapper {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    z-index: 1000;
-    text-align: center;
-  }
+  text-align: center;
   .section-title {
     margin-bottom: rem(20px);
   }
 }
+.address-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1000;
+}
 .address {
-  width: 50%;
+  width: 460px;
   display: inline-block;
   margin: 0 auto;
   text-align: right;
   position: relative;
 }
 .address-data {
-  padding: 2.5em 2em;
+  padding: 2.5em 2em 4.5em 2em;
   position: relative;
   z-index: 1;
 }

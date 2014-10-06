@@ -807,30 +807,31 @@ a {
 
 .section-location {
   height: 80vh;
+  min-height: 600px;
   position: relative;
-  padding: 0; }
-  .section-location .wrapper {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    z-index: 1000;
-    text-align: center; }
+  padding: 0;
+  text-align: center; }
   .section-location .section-title {
     margin-bottom: 1.25rem; }
 
+.address-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: 1000; }
+
 .address {
-  width: 50%;
+  width: 460px;
   display: inline-block;
   margin: 0 auto;
   text-align: right;
   position: relative; }
 
 .address-data {
-  padding: 2.5em 2em;
+  padding: 2.5em 2em 4.5em 2em;
   position: relative;
   z-index: 1; }
 
