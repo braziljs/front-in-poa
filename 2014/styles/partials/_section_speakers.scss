@@ -35,7 +35,7 @@
 }
 .speaker-name {
   font-size: rem(22px);
-  margin: 0;
+  margin: 0.2em 0;
   position: relative;
   @media screen and (min-width:$minor-viewport) {
     font-size: rem(30px);

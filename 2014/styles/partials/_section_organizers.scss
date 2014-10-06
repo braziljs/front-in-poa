@@ -1,30 +1,15 @@
-.section-organizers {
-  padding-top: rem(10px);
-}
-
-.organizers-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  @media screen and (min-width:$minor-viewport) {
-    margin-top: rem(20px);
-  }
-  @media screen and (min-width:$medium-viewport) {
-    margin-top: rem(40px);
-  }
-}
 .organizer-item {
-  padding: 0 rem(10px);
-  margin-top: rem(20px);
-  text-align: center;
-}
-.organizer-photo {
-  width: 50%;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
+  width: 20%;
+  &:last-child {
+    margin-top: 8em;
+  }
 }
 .organizer-name {
-  margin-top: rem(10px);
-  font-weight: 800;
+  font-size: rem(18px);
+  margin-bottom: 0;
+}
+.organizer-twitter {
+  font-size: rem(16px);
+  font-weight: 400;
+  margin: 0;
 }

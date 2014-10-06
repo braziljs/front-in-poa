@@ -656,7 +656,7 @@ a {
 
 .speaker-name {
   font-size: 1.375rem;
-  margin: 0;
+  margin: 0.2em 0;
   position: relative; }
   @media screen and (min-width: 37.5rem) {
     .speaker-name {
@@ -811,34 +811,19 @@ a {
       margin-top: 2.5rem;
       height: 29.375rem; } }
 
-.section-organizers {
-  padding-top: 0.625rem; }
-
-.organizers-list {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  @media screen and (min-width: 37.5rem) {
-    .organizers-list {
-      margin-top: 1.25rem; } }
-  @media screen and (min-width: 50rem) {
-    .organizers-list {
-      margin-top: 2.5rem; } }
-
 .organizer-item {
-  padding: 0 0.625rem;
-  margin-top: 1.25rem;
-  text-align: center; }
-
-.organizer-photo {
-  width: 50%;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto; }
+  width: 20%; }
+  .organizer-item:last-child {
+    margin-top: 8em; }
 
 .organizer-name {
-  margin-top: 0.625rem;
-  font-weight: 800; }
+  font-size: 1.125rem;
+  margin-bottom: 0; }
+
+.organizer-twitter {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0; }
 
 .section-sponsors {
   background-color: #ff3565; }
