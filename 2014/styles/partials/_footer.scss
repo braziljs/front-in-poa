@@ -1,18 +1,12 @@
 .footer {
+  background: $pink;
   font-size: rem(14px);
+  color: white;
 }
 
 .credits {
-  display: inline-block;
-  max-width: 80%;
-  margin-top: rem(20px);
-  padding-bottom: rem(40px);
-  border-bottom: $red solid rem(10px);
+  padding: rem(40px) 0;
   a {
-    color: $red;
-  }
-  @media screen and (min-width:$minor-viewport) {
-    margin-top: rem(40px);
-    padding-bottom: rem(80px);
+    color: rgba(white, .7);
   }
 }

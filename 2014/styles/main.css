@@ -906,17 +906,11 @@ a {
   border-right: solid 9rem transparent; }
 
 .footer {
-  font-size: 0.875rem; }
+  background: #ff3565;
+  font-size: 0.875rem;
+  color: white; }
 
 .credits {
-  display: inline-block;
-  max-width: 80%;
-  margin-top: 1.25rem;
-  padding-bottom: 2.5rem;
-  border-bottom: #F13C47 solid 0.625rem; }
+  padding: 2.5rem 0; }
   .credits a {
-    color: #F13C47; }
-  @media screen and (min-width: 37.5rem) {
-    .credits {
-      margin-top: 2.5rem;
-      padding-bottom: 5rem; } }
+    color: rgba(255, 255, 255, 0.7); }
