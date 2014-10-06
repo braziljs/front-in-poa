@@ -716,95 +716,87 @@ a {
     display: inline-block;
     vertical-align: top; } }
 
-.section-schedule {
-  padding-bottom: 0; }
-  .section-schedule .section-title {
-    padding-bottom: 1.875rem; }
-
-.schedule {
+.schedule-list {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
+  .schedule-list:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border: 1px solid #AAA; }
 
 .schedule-item {
   position: relative;
-  padding: 5rem 0 1.875rem 0;
-  margin: -5rem 0 1.875rem 0; }
+  min-height: 7.5rem; }
 
-.schedule-intro, .schedule-slot {
-  display: inline-block;
-  vertical-align: top; }
-
-.schedule-intro {
-  width: 23.40426%; }
-
-.schedule-slot {
-  width: 76.59574%;
-  padding: 0.3125rem 0 0.3125rem 2.12766%; }
-
-.schedule-intro-board {
-  color: white;
-  border-radius: 6px 6px 50% 50%/6px 6px 40% 40%; }
-  @media screen and (min-width: 37.5rem) {
-    .schedule-intro-board {
-      border-radius: 6px 25% 25% 6px/6px 50% 50% 6px; } }
-
-.schedule-time, .schedule-image {
-  width: 100%;
-  display: block; }
-  @media screen and (min-width: 37.5rem) {
-    .schedule-time, .schedule-image {
-      width: 50%;
-      display: inline-block;
-      vertical-align: middle; } }
+.schedule-slot:before, .schedule-slot:after {
+  content: " ";
+  display: table; }
+.schedule-slot:after {
+  clear: both; }
 
 .schedule-time {
-  font-size: 1.25rem;
-  line-height: 1.5;
+  display: block;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  padding: 0.75rem 0;
+  width: 7.25rem;
+  margin: 0 auto -3rem auto;
   text-align: center;
-  font-weight: 600; }
-  @media screen and (min-width: 50rem) {
-    .schedule-time {
-      font-size: 1.875rem; } }
-
-.schedule-image {
-  border-radius: 50%; }
+  font-weight: 700;
+  color: #ff3565;
+  background: white;
+  position: relative; }
+  .schedule-time:before {
+    content: '•';
+    font-size: 50%;
+    color: #CCC;
+    position: absolute;
+    top: 0.75rem;
+    left: 0; }
+    .schedule-item:nth-child(even) .schedule-time:before {
+      right: 0;
+      left: auto; }
 
 .schedule-activity {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700; }
+
+.schedule-speaker {
   font-size: 1.25rem;
-  line-height: 1.1;
-  font-weight: 800;
-  margin: 0.625rem 0; }
-  @media screen and (min-width: 50rem) {
-    .schedule-activity {
-      font-size: 1.75rem; } }
+  line-height: 2rem;
+  display: block;
+  font-weight: 700;
+  margin-top: -2rem; }
 
-.schedule-description-button {
-  position: relative;
-  z-index: 1;
-  font-size: 0.75rem; }
-  @media screen and (min-width: 37.5rem) {
-    .schedule-description-button {
-      font-size: 0.875rem; } }
+.schedule-slot, .schedule-description {
+  width: 50%;
+  padding: 0 4.375rem;
+  text-align: right; }
+  .schedule-item:nth-child(even) .schedule-slot, .schedule-item:nth-child(even) .schedule-description {
+    text-align: left;
+    margin-left: 50%; }
 
-.schedule-description {
-  max-height: 0;
-  overflow: hidden;
-  margin: 0; }
-  @media screen and (min-width: 37.5rem) {
-    .schedule-description {
-      margin-left: 25.53191%; } }
+.schedule-item:first-child .schedule-time:before, .schedule-item:last-child .schedule-time:before {
+  display: none; }
+.schedule-item:first-child .schedule-slot, .schedule-item:last-child .schedule-slot {
+  width: auto;
+  text-align: center;
+  background: white; }
 
-.schedule-item:target .schedule-intro, .schedule-item:target .schedule-slot {
-  margin-bottom: 0.625rem; }
-.schedule-item:target .schedule-description {
-  -webkit-transition: all 1s linear;
-          transition: all 1s linear;
-  max-height: 60em; }
+.schedule-item:first-child .schedule-time {
+  padding-top: 0;
+  margin-bottom: 4.375rem; }
 
-.schedule-item-other .schedule-intro, .schedule-item-other .schedule-slot {
-  vertical-align: middle; }
-.schedule-item-other .schedule-image {
-  background: #333333; }
+.schedule-item:last-child {
+  min-height: 0; }
+  .schedule-item:last-child .schedule-time {
+    padding-bottom: 0;
+    margin-bottom: 0; }
 
 .address {
   color: #5AA1B8;
