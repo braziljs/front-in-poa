@@ -10,15 +10,15 @@ $font-lato: 'Lato', sans-serif;
 $pink: #ff3565;
 $grey: #AAA;
 $light-grey: #CCC;
-$twitter: #00aced;
-$facebook: #3b5998;
+$overlay-dark: rgba(black, .1);
+
+$twitter-color: #00aced;
+$facebook-color: #3b5998;
 
 $dark-grey: #333333;
 $blue: #5AA1B8;
 $dark-blue: darken($blue, 20);
 $red: #F13C47;
-
-$overlay-dark: rgba(0,0,0,.3);
 
 // Viewports
 $large-viewport: rem(1100px);

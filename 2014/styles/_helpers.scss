@@ -13,30 +13,12 @@
   }
 }
 
-$overlay-dark: rgba(0,0,0,.3);
-
-%down-triangle {
-  content: "";
+%triangle {
+  content: '';
   position: absolute;
-  bottom: -40px;
   right: 0;
-  width: 0;
-  height: 0;
-  border-top: solid 40px $overlay-dark;
-  border-right: 0;
-  border-bottom: 0;
-  border-left: solid 6.25rem transparent;
-}
-
-%up-triangle {
-  content: "";
-  position: absolute;
-  top: -40px;
   left: 0;
-  width: 0;
+  right: 0;
   height: 0;
-  border-top: 0;
-  border-right: solid 6.25rem transparent;
-  border-bottom: solid 40px $overlay-dark;
-  border-left: 0;
+  border: 0;
 }

@@ -6,7 +6,8 @@
   }
 }
 
-.sponsors-list, .partners-list {
+.sponsors-list,
+.partners-list {
   list-style: none;
   text-align: center;
   padding: 0;
@@ -14,47 +15,41 @@
 }
 .sponsors-list {
   margin-bottom: rem(30px);
-  @media screen and (min-width:$minor-viewport) {
+  @media screen and (min-width: $minor-viewport) {
     margin-bottom: rem(50px);
   }
 }
-.sponsor-item, .partner-item {
+.sponsor-item,
+.partner-item {
   position: relative;
-  width: 9rem;
-  padding: .5rem;
-  margin: 2rem .5%;
-  min-width: rem(150px);
+  width: 15rem;
+  font-size: 15rem;
+  padding: .1em;
+  margin: .15em rem(5px);
   display: inline-block;
   background-color: $overlay-dark;
 }
 .partner-item {
-  width: 6rem;
-  min-width: rem(100px);
+  width: 8rem;
+  font-size: 8rem;
 }
-.sponsor-logo, .partner-logo {
+.sponsor-logo,
+.partner-logo {
   display: block;
   width: 100%;
 }
 
-.sponsor-item:nth-child(odd) {
-  &::after {
-    @extend %down-triangle;
-    border-left: solid 9.25rem transparent;
-  }
+.sponsor-item:nth-child(odd):after,
+.partner-item:nth-child(odd):after {
+  @extend %triangle;
+  top: 100%;
+  border-top: solid .15em $overlay-dark;
+  border-left: solid 1em transparent;
 }
-.sponsor-item:nth-child(even) {
-  &::after {
-    @extend %up-triangle;
-    border-right: solid 9.25rem transparent;
-  }
-}
-.partner-item:nth-child(odd) {
-  &::after {
-    @extend %down-triangle;
-  }
-}
-.partner-item:nth-child(even) {
-  &::after {
-    @extend %up-triangle;
-  }
+.sponsor-item:nth-child(even):after,
+.partner-item:nth-child(even):after {
+  @extend %triangle;
+  bottom: 100%;
+  border-right: solid 1em transparent;
+  border-bottom: solid .15em $overlay-dark;
 }
