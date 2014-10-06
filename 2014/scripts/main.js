@@ -19,11 +19,6 @@ window.mapsAsyncInit = function () {
 
   search.geocode({ address: address }, function (data) {
     var location = data[0].geometry.location
-
-    new google.maps.Marker({
-      map: map
-    , position: location
-    })
     map.setCenter(location)
   })
 }

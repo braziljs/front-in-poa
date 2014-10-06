@@ -1,20 +1,49 @@
-.section-location .section-title {
-
-}
-
-.address {
-  color: $blue;
-  margin-top: -1em;
-  text-align: center;
-}
-
-.address-map {
-  padding-bottom: 60%;
-  margin-top: rem(20px);
+.section-location {
+  height: 80vh;
   position: relative;
-  @media screen and (min-width:$minor-viewport) {
-    padding: 0;
-    margin-top: rem(40px);
-    height: rem(470px);
+  padding: 0;
+  .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    text-align: center;
   }
+  .section-title {
+    margin-bottom: rem(20px);
+  }
+}
+.address {
+  width: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: right;
+  position: relative;
+}
+.address-data {
+  padding: 2.5em 2em;
+  position: relative;
+  z-index: 1;
+}
+.address-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.address-name {
+  font-size: rem(30px);
+  font-weight: 700;
+  display: block;
+  margin-bottom: .2em;
+}
+.address-link {
+  font-size: rem(20px);
+  font-weight: 700;
+  display: inline-block;
+  margin-top: .2em;
+}
+.address-map {
+  height: 100%;
 }
