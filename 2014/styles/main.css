@@ -314,9 +314,6 @@ body {
   font-family: 'Lato', sans-serif;
   color: #333333;
   overflow-x: hidden; }
-  @media screen and (min-width: 37.5rem) {
-    body {
-      font-size: 1.125rem; } }
 
 a {
   color: #ff3565;
@@ -603,7 +600,8 @@ a {
       margin-top: 0.875rem; } }
 
 .about-text {
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 1.25rem; }
   @media screen and (min-width: 37.5rem) {
     .about-text {
       width: 70%; } }

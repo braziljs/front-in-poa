@@ -9,10 +9,6 @@ body {
   font-family: $font-lato;
   color: $dark-grey;
   overflow-x: hidden;
-
-  @media screen and (min-width:$minor-viewport) {
-    font-size: rem(18px);
-  }
 }
 
 a {

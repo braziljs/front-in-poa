@@ -1,5 +1,6 @@
 .about-text {
   margin: 0 auto;
+  font-size: rem(20px);
   @media screen and (min-width:$minor-viewport) {
     width: 70%;
   }
