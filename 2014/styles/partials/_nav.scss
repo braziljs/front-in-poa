@@ -1,4 +1,4 @@
-$nav-height: rem(80px);
+$nav-height: rem(70px);
 
 .nav-container {
   height: $nav-height;
@@ -24,7 +24,7 @@ $nav-height: rem(80px);
   display: none;
   position: absolute;
   top: 0;
-  left: -15px;
+  left: -14px;
   height: $nav-height;
   padding: rem(10px) rem(45px);
   transform: skew(-21deg);
@@ -85,7 +85,7 @@ $nav-height: rem(80px);
   list-style: none;
   @media screen and (min-width:$large-viewport) {
     top: 0;
-    right: -15px;
+    right: -14px;
   }
 }
 .social-item {
@@ -94,11 +94,11 @@ $nav-height: rem(80px);
 .social-link {
   height: $nav-height;
   display: block;
-  padding: rem(10px) rem(45px);
+  padding: rem(10px) rem(25px);
   transform: skew(-21deg);
   svg {
-    height: 100%;
-    transform: skew(21deg);
+    height: 50%;
+    transform: translateY(50%) skew(21deg);
   }
 }
 .social-link-facebook {

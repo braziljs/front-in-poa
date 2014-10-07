@@ -357,7 +357,7 @@ a {
       padding: 0 25px; } }
 
 .nav-container {
-  height: 5rem; }
+  height: 4.375rem; }
 
 .nav {
   position: relative;
@@ -371,15 +371,15 @@ a {
   @media screen and (min-width: 68.75rem) {
     .nav {
       overflow: hidden;
-      height: 5rem;
+      height: 4.375rem;
       background: white; } }
 
 .nav-logo {
   display: none;
   position: absolute;
   top: 0;
-  left: -15px;
-  height: 5rem;
+  left: -14px;
+  height: 4.375rem;
   padding: 0.625rem 2.8125rem;
   -webkit-transform: skew(-21deg);
       -ms-transform: skew(-21deg);
@@ -400,7 +400,7 @@ a {
   text-align: center;
   margin: 0;
   padding: 0;
-  line-height: 5rem;
+  line-height: 4.375rem;
   display: none; }
   @media screen and (min-width: 68.75rem) {
     .nav-items {
@@ -439,23 +439,23 @@ a {
   @media screen and (min-width: 68.75rem) {
     .social-list {
       top: 0;
-      right: -15px; } }
+      right: -14px; } }
 
 .social-item {
   float: left; }
 
 .social-link {
-  height: 5rem;
+  height: 4.375rem;
   display: block;
-  padding: 0.625rem 2.8125rem;
+  padding: 0.625rem 1.5625rem;
   -webkit-transform: skew(-21deg);
       -ms-transform: skew(-21deg);
           transform: skew(-21deg); }
   .social-link svg {
-    height: 100%;
-    -webkit-transform: skew(21deg);
-        -ms-transform: skew(21deg);
-            transform: skew(21deg); }
+    height: 50%;
+    -webkit-transform: translateY(50%) skew(21deg);
+        -ms-transform: translateY(50%) skew(21deg);
+            transform: translateY(50%) skew(21deg); }
 
 .social-link-facebook {
   background: #3b5998; }
