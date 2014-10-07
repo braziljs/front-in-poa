@@ -422,7 +422,7 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   color: #333333;
-  line-height: 1;
+  line-height: 1.2;
   border-top: solid 3px transparent;
   border-bottom: solid 3px transparent;
   vertical-align: middle; }

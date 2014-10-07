@@ -29,7 +29,7 @@ window.mapsAsyncInit = function () {
   var id, target, current, previous
 
   function step() {
-    current = window.pageYOffset - (window.pageYOffset - target) / 5
+    current = window.pageYOffset - (window.pageYOffset - target) / (target ? 5 : 2)
 
     document.body.scrollTop = current
     document.documentElement.scrollTop = current
@@ -46,7 +46,11 @@ window.mapsAsyncInit = function () {
   function handler(event) {
     event.preventDefault()
     id = this.getAttribute('href')
-    target = document.querySelector(id).getBoundingClientRect().top + window.pageYOffset
+    if (id == '#') {
+      target = 0;
+    } else {
+      target = document.querySelector(id).getBoundingClientRect().top + window.pageYOffset
+    }
 
     if (!step.runnig) {
       previous = null
