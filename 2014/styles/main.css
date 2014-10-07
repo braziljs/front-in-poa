@@ -794,6 +794,7 @@ a {
   display: none; }
 .schedule-item:first-child .schedule-slot, .schedule-item:last-child .schedule-slot {
   width: auto;
+  margin-left: 0;
   text-align: center;
   background: white; }
 
