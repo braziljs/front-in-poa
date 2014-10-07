@@ -103,8 +103,9 @@ window.mapsAsyncInit = function () {
 
   ScrollSpy.prototype.addEventListeners = function () {
     document.addEventListener('scroll', this.onScroll.bind(this))
-    document.addEventListener('DOMContentLoaded', this.onLoad.bind(this))
-    window.addEventListener('load', this.onLoad.bind(this))
+    document.addEventListener('DOMContentLoaded', this.updateSections.bind(this))
+    document.addEventListener('resize', this.updateSections.bind(this))
+    window.addEventListener('load', this.updateSections.bind(this))
   }
 
   ScrollSpy.prototype.onScroll = function (event) {
@@ -112,10 +113,6 @@ window.mapsAsyncInit = function () {
       this.scrollLast = Date.now()
       this.menu()
     }
-  }
-
-  ScrollSpy.prototype.onLoad = function (event) {
-    this.updateSections();
   }
 
   ScrollSpy.prototype.menu = function () {
