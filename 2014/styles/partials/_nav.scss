@@ -1,19 +1,32 @@
 .nav {
-  width: 100%;
   background: white;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
-  //z-index: 2;
-  //top: 0;
 
   @media screen and (min-width:$large-viewport) {
     overflow: hidden;
-    //position: fixed;
-    //left: 0;
     flex-flow: row;
+    background: white;
   }
+}
+
+.nav-logo {
+  display: none;
+  position: relative;
+  left: -15px;
+  height: rem(80px);
+  padding: rem(10px) rem(45px);
+  transform: skew(-21deg);
+  background-color: $pink;
+  @media screen and (min-width:$large-viewport) {
+    display: block;
+  }
+}
+.nav-logo-image {
+  height: 100%;
+  transform: skew(21deg);
 }
 
 .nav-items {
@@ -28,45 +41,29 @@
 }
 .nav-item {
   display: inline-block;
-  margin: 0 rem(16px);
+  margin: 0 rem(16px) 0 0;
+  &:before {
+    content: '•';
+    margin-right: rem(16px);
+    font-size: 50%;
+    display: inline-block;
+    color: $light-grey;
+  }
 }
 .nav-link {
-  margin: .5em 0;
   display: inline-block;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   color: $dark-grey;
-  border-bottom: solid 4px #fff;
-
+  border-top: solid 3px transparent;
+  border-bottom: solid 3px transparent;
+  vertical-align: middle;
   &:hover {
     border-bottom-color: $pink;
   }
   &.active {
-    box-shadow: inset 0 $marker-size 0 $red;
-  }
-}
-
-.nav-logo {
-  display: none;
-
-  @media screen and (min-width:$large-viewport) {
-      display: block;
-      position: relative;
-      left: -15px;
-      width: 8rem;
-      height: 5rem;
-      padding: 1rem 1rem 0 2rem;
-      transform: skew(-15deg);
-      background-color: $pink;
-
-      div {
-        transform: skew(15deg);
-      }
-
-      svg {
-        height: 3rem;
-      }
+    border-bottom-color: $pink;
   }
 }
 
@@ -74,32 +71,28 @@
   position: relative;
   top: -1rem;
   margin: 0;
-  //@include clearfix;
-    @media screen and (min-width:$large-viewport) {
-      top: 0;
-      right: -5px;
+  list-style: none;
+  @media screen and (min-width:$large-viewport) {
+    top: 0;
+    right: -15px;
   }
 }
-
 .social-item {
   float: left;
-  height: 5rem;
-  list-style: none;
-  transform: skew(-15deg);
-  background-color: $dark-grey;
 }
-
 .social-link {
-  width: 4rem;
-  padding: 1rem;
+  height: rem(80px);
   display: block;
-  text-align: center;
-  transform: skew(15deg);
-
+  padding: rem(10px) rem(45px);
+  transform: skew(-21deg);
   svg {
-    height: 3rem;
+    height: 100%;
+    transform: skew(21deg);
   }
 }
-
-.social-item.facebook { background-color: $facebook-color; }
-.social-item.twitter { background-color: $twitter-color; }
+.social-link-facebook {
+  background: $facebook-color;
+}
+.social-link-twitter {
+  background: $twitter-color;
+}
