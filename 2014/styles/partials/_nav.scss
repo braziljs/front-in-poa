@@ -1,22 +1,31 @@
-.nav {
-  background: white;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: center;
+$nav-height: rem(80px);
 
+.nav-container {
+  height: $nav-height;
+}
+.nav {
+  position: relative;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 1px 3px rgba(black, .2);
+  &.fixed {
+    position: fixed;
+  }
   @media screen and (min-width:$large-viewport) {
     overflow: hidden;
-    flex-flow: row;
+    height: $nav-height;
     background: white;
   }
 }
 
 .nav-logo {
   display: none;
-  position: relative;
+  position: absolute;
+  top: 0;
   left: -15px;
-  height: rem(80px);
+  height: $nav-height;
   padding: rem(10px) rem(45px);
   transform: skew(-21deg);
   background-color: $pink;
@@ -34,6 +43,7 @@
   text-align: center;
   margin: 0;
   padding: 0;
+  line-height: $nav-height;
   display: none;
   @media screen and (min-width:$large-viewport) {
     display: block
@@ -56,6 +66,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $dark-grey;
+  line-height: 1;
   border-top: solid 3px transparent;
   border-bottom: solid 3px transparent;
   vertical-align: middle;
@@ -68,7 +79,7 @@
 }
 
 .social-list {
-  position: relative;
+  position: absolute;
   top: -1rem;
   margin: 0;
   list-style: none;
@@ -81,7 +92,7 @@
   float: left;
 }
 .social-link {
-  height: rem(80px);
+  height: $nav-height;
   display: block;
   padding: rem(10px) rem(45px);
   transform: skew(-21deg);

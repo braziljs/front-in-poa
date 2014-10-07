@@ -78,6 +78,7 @@ window.mapsAsyncInit = function () {
   ScrollSpy.prototype.updateSections = function () {
     var elements = document.querySelectorAll('header, section')
     this.sections = this.getSections(elements)
+    this.nav_offset = this.nav.getBoundingClientRect().top + window.pageYOffset;
     this.menu()
   }
 
@@ -123,6 +124,7 @@ window.mapsAsyncInit = function () {
 
     this.active && this.active.classList.remove('active')
     item && item.classList.add('active')
+    this.nav.classList[this.nav_offset < window.pageYOffset ? 'add' : 'remove']('fixed')
     this.active = item
   }
 
