@@ -26,7 +26,7 @@ gulp.task('webserver', function() {
     .pipe(webserver({
       host: '0.0.0.0',
       directoryListing: true,
-      livereload: true
+      livereload: false
     }));
 });
 

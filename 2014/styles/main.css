@@ -335,9 +335,10 @@ a {
           transform: skewX(-21deg);
   position: relative;
   left: -1rem; }
-  @media screen and (max-width: 50rem) {
+  @media screen and (min-width: 50rem) {
     .call-action-link {
-      font: 0/0 a; } }
+      display: inline-block;
+      padding: 0.25em 0.5em; } }
 
 .call-action-text {
   color: white;
@@ -540,7 +541,10 @@ a {
   text-transform: uppercase; }
 
 .header-call-action-link {
-  display: block; }
+  display: none; }
+  @media screen and (min-width: 50rem) {
+    .header-call-action-link {
+      display: block; } }
 
 .section {
   padding: 1.875rem 0; }
@@ -637,16 +641,16 @@ a {
 .speaker-item {
   width: 60%;
   display: inline-block;
-  margin: 0 1.2em;
+  margin: 4em 1.5em 0;
   text-align: left;
   vertical-align: top;
   -webkit-transition: all 300ms linear;
           transition: all 300ms linear; }
-  .speaker-item:nth-child(even) {
-    margin-top: 4em; }
-  @media (min-width: 50rem) {
+  @media screen and (min-width: 37.5rem) {
     .speaker-item {
-      width: 30%; } }
+      width: 30%; }
+      .speaker-item:nth-child(even) {
+        margin-top: 8em; } }
 
 .speaker-photo-container {
   width: 100%;
@@ -668,7 +672,11 @@ a {
           transform: skewX(-21deg); }
 
 .speaker-info {
-  margin-left: 20%; }
+  margin-left: 0;
+  width: 110%; }
+  @media screen and (min-width: 37.5rem) {
+    .speaker-info {
+      margin-left: 20%; } }
 
 .speaker-name {
   font-size: 1.375rem;
@@ -685,7 +693,13 @@ a {
   margin: 0.3125rem 0; }
 
 .speaker-bio {
-  margin: 0; }
+  margin: 0;
+  width: 80vw;
+  padding-right: 5vw; }
+  @media screen and (min-width: 37.5rem) {
+    .speaker-bio {
+      width: auto;
+      padding-right: 0; } }
 
 .section-presenter {
   color: white; }
@@ -864,9 +878,10 @@ a {
   height: 100%; }
 
 .organizer-item {
-  width: 20%; }
+  width: 20%;
+  margin: 4em 1.5em 0; }
   .organizer-item:last-child {
-    margin-top: 8em; }
+    margin-top: 12em; }
 
 .organizer-name {
   font-size: 1.125rem;

@@ -82,5 +82,9 @@
   text-transform: uppercase;
 }
 .header-call-action-link {
-  display: block;
+  display: none;
+
+  @media screen and (min-width: $medium-viewport) {
+    display: block;
+  }
 }

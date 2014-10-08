@@ -1,7 +1,10 @@
 .organizer-item {
   width: 20%;
+  $gap-top: 4em;
+  margin: $gap-top 1.5em 0;
+
   &:last-child {
-    margin-top: 8em;
+    margin-top: $gap-top + 8em;
   }
 }
 .organizer-name {

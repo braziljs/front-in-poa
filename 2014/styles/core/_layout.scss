@@ -21,8 +21,10 @@ a {
   transform: skewX(-21deg);
   position: relative;
   left: -1rem;
-  @media screen and (max-width: $medium-viewport) {
-    font: 0/0 a;
+  @media screen and (min-width: $medium-viewport) {
+    //font: 0/0 a;
+    display: inline-block;
+    padding: .25em .5em;
   }
 }
 .call-action-text {
