@@ -880,14 +880,18 @@ a {
   height: 100%; }
 
 .organizer-item {
-  width: 20%;
-  margin: 4em 1.5em 0; }
-  .organizer-item:last-child {
-    margin-top: 12em; }
+  width: 20%; }
+  .organizer-item:nth-child(2) {
+    margin-top: 10%; }
+  .organizer-item:nth-child(3) {
+    margin-top: 20%; }
 
 .organizer-name {
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-bottom: 0; }
+  @media screen and (min-width: 37.5rem) {
+    .organizer-name {
+      font-size: 1.125rem; } }
 
 .organizer-twitter {
   font-size: 1rem;

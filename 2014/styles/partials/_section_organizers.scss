@@ -1,15 +1,18 @@
 .organizer-item {
   width: 20%;
-  $gap-top: 4em;
-  margin: $gap-top 1.5em 0;
-
-  &:last-child {
-    margin-top: $gap-top + 8em;
+  &:nth-child(2) {
+    margin-top: 10%;
+  }
+  &:nth-child(3) {
+    margin-top: 20%;
   }
 }
 .organizer-name {
-  font-size: rem(18px);
+  font-size: rem(16px);
   margin-bottom: 0;
+  @media screen and (min-width: $minor-viewport) {
+    font-size: rem(18px);
+  }
 }
 .organizer-twitter {
   font-size: rem(16px);
