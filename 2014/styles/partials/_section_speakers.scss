@@ -13,12 +13,12 @@ $gap-top: 4em;
   text-align: left;
   vertical-align: top;
   transition: all 300ms linear;
+  &:nth-child(even) {
+      margin-top: $gap-top + 4em;
+    }
 
   @media screen and (min-width: $minor-viewport) {
     width: 30%;
-    &:nth-child(even) {
-      margin-top: $gap-top + 4em;
-    }
   }
 
 }
