@@ -357,38 +357,39 @@ a {
     .wrapper {
       padding: 0 25px; } }
 
-.nav-container {
-  height: 4.375rem; }
+@media screen and (min-width: 68.75rem) {
+  .nav-container {
+    height: 4.375rem; } }
 
 .nav {
   position: relative;
   z-index: 10000;
-  top: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
-  .nav.fixed {
-    position: fixed; }
+  text-align: center; }
   @media screen and (min-width: 68.75rem) {
     .nav {
       overflow: hidden;
       height: 4.375rem;
-      background: white; } }
+      background: white;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+      .nav.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0; } }
 
 .nav-logo {
-  display: none;
   position: absolute;
   top: 0;
-  left: -14px;
   height: 4.375rem;
   padding: 0.625rem 2.8125rem;
   -webkit-transform: skew(-21deg);
       -ms-transform: skew(-21deg);
           transform: skew(-21deg);
-  background-color: #ff3565; }
+  background-color: #ff3565;
+  left: -9999em; }
   @media screen and (min-width: 68.75rem) {
     .nav-logo {
-      display: block; } }
+      left: -14px; } }
 
 .nav-logo-image {
   height: 100%;
@@ -402,10 +403,11 @@ a {
   margin: 0;
   padding: 0;
   line-height: 4.375rem;
-  display: none; }
+  position: absolute;
+  left: -9999em; }
   @media screen and (min-width: 68.75rem) {
     .nav-items {
-      display: block; } }
+      position: static; } }
 
 .nav-item {
   display: inline-block;
@@ -433,25 +435,32 @@ a {
     border-bottom-color: #ff3565; }
 
 .social-list {
-  position: absolute;
-  top: -1rem;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+  margin-top: -1.5625rem;
   list-style: none; }
   @media screen and (min-width: 68.75rem) {
     .social-list {
+      position: absolute;
       top: 0;
-      right: -14px; } }
+      right: -14px;
+      margin-top: 0; } }
 
 .social-item {
   float: left; }
 
 .social-link {
-  height: 4.375rem;
+  height: 3.125rem;
   display: block;
-  padding: 0.625rem 1.5625rem;
+  padding: 0.3125rem 0.9375rem;
   -webkit-transform: skew(-21deg);
       -ms-transform: skew(-21deg);
           transform: skew(-21deg); }
+  @media screen and (min-width: 68.75rem) {
+    .social-link {
+      height: 4.375rem;
+      padding: 0.625rem 1.5625rem; } }
   .social-link svg {
     height: 50%;
     -webkit-transform: translateY(50%) skew(21deg);
@@ -510,7 +519,7 @@ a {
   text-align: center;
   position: absolute;
   font-size: 1.125rem;
-  bottom: 5vw;
+  bottom: 6vw;
   left: 0;
   right: 0;
   z-index: 2; }

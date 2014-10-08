@@ -1,36 +1,39 @@
+$litte-nav-height: rem(50px);
 $nav-height: rem(70px);
 
 .nav-container {
-  height: $nav-height;
+  @media screen and (min-width:$large-viewport) {
+    height: $nav-height;
+  }
 }
 .nav {
   position: relative;
   z-index: 10000;
-  top: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 1px 3px rgba(black, .2);
-  &.fixed {
-    position: fixed;
-  }
+  text-align: center;
   @media screen and (min-width:$large-viewport) {
     overflow: hidden;
     height: $nav-height;
     background: white;
+    box-shadow: 0 1px 3px rgba(black, .2);
+    &.fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
   }
 }
 
 .nav-logo {
-  display: none;
   position: absolute;
   top: 0;
-  left: -14px;
   height: $nav-height;
   padding: rem(10px) rem(45px);
   transform: skew(-21deg);
   background-color: $pink;
+  left: -9999em;
   @media screen and (min-width:$large-viewport) {
-    display: block;
+    left: -14px;
   }
 }
 .nav-logo-image {
@@ -44,9 +47,10 @@ $nav-height: rem(70px);
   margin: 0;
   padding: 0;
   line-height: $nav-height;
-  display: none;
+  position: absolute;
+  left: -9999em;
   @media screen and (min-width:$large-viewport) {
-    display: block
+    position: static;
   }
 }
 .nav-item {
@@ -79,23 +83,30 @@ $nav-height: rem(70px);
 }
 
 .social-list {
-  position: absolute;
-  top: -1rem;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+  margin-top: -$litte-nav-height/2;
   list-style: none;
   @media screen and (min-width:$large-viewport) {
+    position: absolute;
     top: 0;
     right: -14px;
+    margin-top: 0;
   }
 }
 .social-item {
   float: left;
 }
 .social-link {
-  height: $nav-height;
+  height: $litte-nav-height;
   display: block;
-  padding: rem(10px) rem(25px);
+  padding: rem(5px) rem(15px);
   transform: skew(-21deg);
+  @media screen and (min-width:$large-viewport) {
+    height: $nav-height;
+    padding: rem(10px) rem(25px);
+  }
   svg {
     height: 50%;
     transform: translateY(50%) skew(21deg);
