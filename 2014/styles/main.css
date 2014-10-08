@@ -906,11 +906,13 @@ a {
   height: 100%; }
 
 .organizer-item {
-  width: 20%; }
+  width: 20%;
+  margin: 0 2% 0;
+  padding: 0; }
   .organizer-item:nth-child(2) {
-    margin-top: 10%; }
+    margin-top: 5%; }
   .organizer-item:nth-child(3) {
-    margin-top: 20%; }
+    margin-top: 10%; }
 
 .organizer-name {
   font-size: 1rem;
