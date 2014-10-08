@@ -365,7 +365,7 @@ a {
       height: 4.375rem;
       background: white;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
-      .nav.fixed {
+      .fixed .nav {
         position: fixed;
         top: 0;
         left: 0;
@@ -661,7 +661,7 @@ a {
 
 .speaker-photo-container {
   width: 100%;
-  height: 0;
+  max-height: 20rem;
   padding-bottom: 100%;
   margin-right: 6.38298%;
   overflow: hidden;
@@ -750,17 +750,22 @@ a {
   list-style: none;
   padding: 0;
   position: relative; }
-  .schedule-list:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    border: 1px solid #AAA; }
+  @media screen and (min-width: 50rem) {
+    .schedule-list:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      border: 1px solid #AAA; } }
 
 .schedule-item {
   position: relative;
-  min-height: 7.5rem; }
+  margin-bottom: 1.25rem; }
+  @media screen and (min-width: 50rem) {
+    .schedule-item {
+      min-height: 7.5rem;
+      margin-bottom: 0; } }
 
 .schedule-slot:before, .schedule-slot:after {
   content: " ";
@@ -770,76 +775,95 @@ a {
 
 .schedule-time {
   display: block;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  padding: 0.75rem 0;
-  width: 7.25rem;
-  margin: 0 auto -3rem auto;
-  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.2;
   font-weight: 700;
-  color: #ff3565;
-  background: white;
+  color: #AAA;
   position: relative; }
-  .schedule-time:before {
-    content: '•';
-    font-size: 50%;
-    color: #CCC;
-    position: absolute;
-    top: 0.75rem;
-    left: 0; }
-    .schedule-item:nth-child(even) .schedule-time:before {
-      right: 0;
-      left: auto; }
+  @media screen and (min-width: 50rem) {
+    .schedule-time {
+      color: #ff3565;
+      font-size: 1.875rem;
+      padding: 0.75rem 0;
+      width: 7.25rem;
+      margin: 0 auto -3rem auto;
+      text-align: center;
+      background: white; }
+      .schedule-time:before {
+        content: '•';
+        font-size: 50%;
+        line-height: 2.4;
+        color: #CCC;
+        position: absolute;
+        top: 0.75rem;
+        left: 0; }
+        .schedule-item:nth-child(even) .schedule-time:before {
+          right: 0;
+          left: auto; } }
 
 .schedule-activity {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
   font-weight: 700; }
+  @media screen and (min-width: 50rem) {
+    .schedule-activity {
+      font-size: 1.875rem; } }
 
 .schedule-speaker {
-  font-size: 1.25rem;
-  line-height: 2rem;
+  font-size: 1.125rem;
   display: block;
-  font-weight: 700;
-  margin-top: -2rem; }
+  font-weight: 700; }
+  @media screen and (min-width: 50rem) {
+    .schedule-speaker {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      margin-top: -1.6em; } }
 
-.schedule-slot, .schedule-description {
-  width: 50%;
-  padding: 0 4.375rem;
-  text-align: right; }
-  .schedule-item:nth-child(even) .schedule-slot, .schedule-item:nth-child(even) .schedule-description {
-    text-align: left;
-    margin-left: 50%; }
-
-.schedule-item:first-child .schedule-time:before, .schedule-item:last-child .schedule-time:before {
-  display: none; }
-.schedule-item:first-child .schedule-slot, .schedule-item:last-child .schedule-slot {
-  width: auto;
-  margin-left: 0;
-  text-align: center;
-  background: white; }
-
-.schedule-item:first-child .schedule-time {
-  padding-top: 0;
-  margin-bottom: 4.375rem; }
-
-.schedule-item:last-child {
-  min-height: 0; }
-  .schedule-item:last-child .schedule-time {
-    padding-bottom: 0;
-    margin-bottom: 0; }
+@media screen and (min-width: 50rem) {
+  .schedule-list {
+    padding-top: 2.5rem; }
+  .schedule-slot, .schedule-description {
+    width: 50%;
+    padding: 0 4.375rem;
+    text-align: right; }
+    .schedule-item:nth-child(even) .schedule-slot, .schedule-item:nth-child(even) .schedule-description {
+      text-align: left;
+      margin-left: 50%; }
+  .schedule-item:first-child .schedule-time:before, .schedule-item:last-child .schedule-time:before {
+    display: none; }
+  .schedule-item:first-child .schedule-slot, .schedule-item:last-child .schedule-slot {
+    width: auto;
+    margin-left: 0;
+    text-align: center;
+    background: white; }
+  .schedule-item:first-child .schedule-slot {
+    background: white;
+    margin-top: -5.625rem;
+    padding-bottom: 0.625rem; }
+  .schedule-item:first-child .schedule-time {
+    padding-top: 0; }
+  .schedule-item:last-child {
+    min-height: 0; }
+    .schedule-item:last-child .schedule-time {
+      padding-bottom: 0;
+      margin-bottom: 0; } }
 
 .section-location {
   height: 80vh;
-  min-height: 600px;
+  min-height: 400px;
   position: relative;
   padding: 0;
   text-align: center; }
   .section-location .section-title {
     margin-bottom: 1.25rem; }
+  @media screen and (min-width: 37.5rem) {
+    .section-location {
+      min-height: 600px; } }
 
 .address-container {
   position: absolute;
+  width: 460px;
+  max-width: 95%;
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -848,9 +872,6 @@ a {
   z-index: 1000; }
 
 .address {
-  width: 460px;
-  display: inline-block;
-  margin: 0 auto;
   text-align: right;
   position: relative; }
 
@@ -865,31 +886,38 @@ a {
   left: 0; }
 
 .address-name {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   font-weight: 700;
   display: block;
   margin-bottom: 0.2em; }
+  @media screen and (min-width: 37.5rem) {
+    .address-name {
+      font-size: 1.875rem; } }
 
 .address-link {
-  font-size: 1.25rem;
   font-weight: 700;
   display: inline-block;
   margin-top: 0.2em; }
+  @media screen and (min-width: 37.5rem) {
+    .address-link {
+      font-size: 1.25rem; } }
 
 .address-map {
   height: 100%; }
 
 .organizer-item {
-  width: 20%;
-  margin: 4em 1.5em 0; }
-  .organizer-item:first-child {
-    margin-top: 0; }
-  .organizer-item:last-child {
-    margin: 12em 2.5em 0; }
+  width: 20%; }
+  .organizer-item:nth-child(2) {
+    margin-top: 5%; }
+  .organizer-item:nth-child(3) {
+    margin-top: 10%; }
 
 .organizer-name {
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-bottom: 0; }
+  @media screen and (min-width: 37.5rem) {
+    .organizer-name {
+      font-size: 1.125rem; } }
 
 .organizer-twitter {
   font-size: 1rem;

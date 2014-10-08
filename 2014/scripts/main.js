@@ -70,7 +70,7 @@ window.mapsAsyncInit = function () {
 !function () {
   function ScrollSpy() {
     this.scrollLast = 0
-    this.nav = document.querySelector('nav')
+    this.nav = document.querySelector('[data-nav]')
     this.active = null
   }
 
