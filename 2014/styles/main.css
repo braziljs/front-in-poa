@@ -882,8 +882,10 @@ a {
 .organizer-item {
   width: 20%;
   margin: 4em 1.5em 0; }
+  .organizer-item:first-child {
+    margin-top: 0; }
   .organizer-item:last-child {
-    margin-top: 12em; }
+    margin: 12em 2.5em 0; }
 
 .organizer-name {
   font-size: 1.125rem;
