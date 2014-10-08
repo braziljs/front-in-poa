@@ -618,11 +618,11 @@ a {
       margin-top: 0.875rem; } }
 
 .about-text {
-  margin: 0 auto;
-  font-size: 1.25rem; }
+  margin: 0 auto; }
   @media screen and (min-width: 37.5rem) {
     .about-text {
-      width: 70%; } }
+      width: 70%;
+      font-size: 1.25rem; } }
 
 .section-about-tail {
   background: url('../images/about.jpg') no-repeat center top;
@@ -647,16 +647,17 @@ a {
 .speaker-item {
   width: 60%;
   display: inline-block;
-  margin: 4em 1.5em 0;
+  padding-top: 5%;
+  margin: 0 1.5em 0;
   text-align: left;
   vertical-align: top;
   -webkit-transition: all 300ms linear;
           transition: all 300ms linear; }
-  .speaker-item:nth-child(even) {
-    margin-top: 8em; }
   @media screen and (min-width: 37.5rem) {
     .speaker-item {
-      width: 30%; } }
+      width: 30%; }
+      .speaker-item:nth-child(even) {
+        margin-top: 4em; } }
 
 .speaker-photo-container {
   width: 100%;
@@ -678,11 +679,12 @@ a {
           transform: skewX(-21deg); }
 
 .speaker-info {
-  margin-left: 0;
-  width: 110%; }
+  margin-left: -10%;
+  width: 120%; }
   @media screen and (min-width: 37.5rem) {
     .speaker-info {
-      margin-left: 20%; } }
+      margin-left: 20%;
+      width: auto; } }
 
 .speaker-name {
   font-size: 1.375rem;
@@ -699,13 +701,7 @@ a {
   margin: 0.3125rem 0; }
 
 .speaker-bio {
-  margin: 0;
-  width: 80vw;
-  padding-right: 5vw; }
-  @media screen and (min-width: 37.5rem) {
-    .speaker-bio {
-      width: auto;
-      padding-right: 0; } }
+  margin: 0; }
 
 .section-presenter {
   color: white; }
