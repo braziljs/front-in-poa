@@ -673,7 +673,6 @@ a {
   display: block;
   margin: -20%;
   width: 140%;
-  height: 140%;
   -webkit-transform: skewX(-21deg);
       -ms-transform: skewX(-21deg);
           transform: skewX(-21deg); }
