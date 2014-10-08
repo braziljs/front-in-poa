@@ -5,14 +5,20 @@
   text-align: center;
 }
 .speaker-item {
-  width: 30%;
+  width: 60%;
   display: inline-block;
   margin: 0 1.2em;
   text-align: left;
   vertical-align: top;
+  transition: all 300ms linear;
   &:nth-child(even) {
     margin-top: 4em;
   }
+
+  @media (min-width: $medium-viewport) {
+    width: 30%;
+  }
+
 }
 .speaker-photo-container {
   width: 100%;
@@ -22,6 +28,7 @@
   overflow: hidden;
   display: inline-block;
   transform: skewX(21deg) translate3d(0,0,0);
+
 }
 .speaker-photo {
   display: block;

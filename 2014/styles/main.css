@@ -635,13 +635,18 @@ a {
   text-align: center; }
 
 .speaker-item {
-  width: 30%;
+  width: 60%;
   display: inline-block;
   margin: 0 1.2em;
   text-align: left;
-  vertical-align: top; }
+  vertical-align: top;
+  -webkit-transition: all 300ms linear;
+          transition: all 300ms linear; }
   .speaker-item:nth-child(even) {
     margin-top: 4em; }
+  @media (min-width: 50rem) {
+    .speaker-item {
+      width: 30%; } }
 
 .speaker-photo-container {
   width: 100%;
