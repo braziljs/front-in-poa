@@ -15,7 +15,7 @@ $nav-height: rem(70px);
     height: $nav-height;
     background: white;
     box-shadow: 0 1px 3px rgba(black, .2);
-    &.fixed {
+    .fixed & {
       position: fixed;
       top: 0;
       left: 0;

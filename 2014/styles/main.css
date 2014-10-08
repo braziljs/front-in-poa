@@ -365,7 +365,7 @@ a {
       height: 4.375rem;
       background: white;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
-      .nav.fixed {
+      .fixed .nav {
         position: fixed;
         top: 0;
         left: 0;
