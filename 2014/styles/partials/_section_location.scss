@@ -10,6 +10,11 @@
   @media screen and (min-width: $minor-viewport) {
     min-height: 600px;
   }
+
+  // iOS fix
+  @media screen and (max-width: $minor-viewport) {
+    height: 600px;
+  }
 }
 .address-container {
   position: absolute;
