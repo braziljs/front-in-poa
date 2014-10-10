@@ -151,13 +151,3 @@ window.mapsAsyncInit = function () {
   loadScripts('maps.google.com/maps/api/js?sensor=false&callback=mapsAsyncInit')
   loadScripts('www.google-analytics.com/ga.js')
 }()
-
-// Hotfix for Chrome Paint Bug
-// if (navigator && navigator.userAgent.match(/Chrome\/\d*/)) {
-//   var headerEl = document.querySelector('.header');
-//   document.addEventListener('scroll', function () {
-//     headerEl.style.display = "none";
-//     headerEl.offsetHeight;
-//     headerEl.style.display = "";
-//   });
-// }
