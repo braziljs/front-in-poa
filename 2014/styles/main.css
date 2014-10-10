@@ -806,6 +806,15 @@ a {
     .schedule-activity {
       font-size: 1.875rem; } }
 
+.schedule-activity-wait {
+  color: #CCC;
+  font-size: 0.875rem;
+  line-height: 1.75rem; }
+  @media screen and (min-width: 50rem) {
+    .schedule-activity-wait {
+      font-size: 1.125rem;
+      line-height: 2.25rem; } }
+
 .schedule-speaker {
   font-size: 1.125rem;
   display: block;

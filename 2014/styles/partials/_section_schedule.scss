@@ -65,6 +65,15 @@
     font-size: rem(30px);
   }
 }
+.schedule-activity-wait {
+  color: $light-grey;
+  font-size: rem(14px);
+  line-height: rem(28px);
+  @media screen and (min-width:$medium-viewport) {
+    font-size: rem(18px);
+    line-height: rem(36px);
+  }
+}
 .schedule-speaker {
   font-size: rem(18px);
   display: block;
