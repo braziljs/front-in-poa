@@ -1,20 +1,23 @@
-.organizer-item {
+.specialist-item {
   width: 20%;
-  &:nth-child(2) {
+  &:nth-child(3n-2) {
+    margin-top: 0;
+  }
+  &:nth-child(3n-1) {
     margin-top: 5%;
   }
-  &:nth-child(3) {
+  &:nth-child(3n) {
     margin-top: 10%;
   }
 }
-.organizer-name {
+.specialist-name {
   font-size: rem(16px);
   margin-bottom: 0;
   @media screen and (min-width: $minor-viewport) {
     font-size: rem(18px);
   }
 }
-.organizer-twitter {
+.specialist-twitter {
   font-size: rem(16px);
   font-weight: 400;
   margin: 0;

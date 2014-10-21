@@ -700,6 +700,27 @@ a {
 .speaker-bio {
   margin: 0; }
 
+.specialist-item {
+  width: 20%; }
+  .specialist-item:nth-child(3n-2) {
+    margin-top: 0; }
+  .specialist-item:nth-child(3n-1) {
+    margin-top: 5%; }
+  .specialist-item:nth-child(3n) {
+    margin-top: 10%; }
+
+.specialist-name {
+  font-size: 1rem;
+  margin-bottom: 0; }
+  @media screen and (min-width: 37.5rem) {
+    .specialist-name {
+      font-size: 1.125rem; } }
+
+.specialist-twitter {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0; }
+
 .section-presenter {
   color: white; }
   .section-presenter .section-title {
