@@ -700,6 +700,13 @@ a {
 .speaker-bio {
   margin: 0; }
 
+.specialists-text {
+  margin: 0 auto; }
+  @media screen and (min-width: 37.5rem) {
+    .specialists-text {
+      width: 70%;
+      font-size: 1.25rem; } }
+
 .specialist-item {
   width: 20%; }
   .specialist-item:nth-child(3n-2) {
@@ -719,6 +726,9 @@ a {
 .specialist-twitter {
   font-size: 1rem;
   font-weight: 400;
+  margin: 0; }
+
+.specialist-activity {
   margin: 0; }
 
 .section-presenter {
