@@ -18,6 +18,9 @@
     &:nth-child(even) {
       margin-top: 4em;
     }
+    &.speaker-last-item {
+      margin-right: 30%;
+    }
   }
 }
 

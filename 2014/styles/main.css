@@ -654,7 +654,9 @@ a {
     .speaker-item {
       width: 30%; }
       .speaker-item:nth-child(even) {
-        margin-top: 4em; } }
+        margin-top: 4em; }
+      .speaker-item.speaker-last-item {
+        margin-right: 30%; } }
 
 .speaker-photo-container {
   width: 100%;
