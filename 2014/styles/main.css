@@ -486,10 +486,7 @@ a {
     z-index: 1; }
   @media screen and (min-width: 50rem) {
     .header {
-      height: 100vh;
-      background-attachment: fixed; }
-      .header:before {
-        background-attachment: fixed; } }
+      height: 100vh; } }
 
 .logo {
   margin: 0;

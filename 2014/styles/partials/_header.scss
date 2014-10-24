@@ -21,10 +21,6 @@
 
   @media screen and (min-width: $medium-viewport) {
     height: 100vh;
-    background-attachment: fixed;
-    &:before {
-      background-attachment: fixed;
-    }
   }
 }
 .logo {
