@@ -9,12 +9,12 @@ var webserver = require('gulp-webserver');
 
 
 gulp.task('styles', function () {
-  gulp.src('./2014/styles/main.scss')
+  gulp.src('./styles/main.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(rename('./main.css'))
-    .pipe(gulp.dest('./2014/styles/'));
+    .pipe(gulp.dest('./styles/'));
 });
 
 /*
@@ -31,7 +31,7 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('watch', function(){
-  gulp.watch('./2014/styles/**/*.scss', ['styles']);
+  gulp.watch('./styles/**/*.scss', ['styles']);
 });
 
 gulp.task('default', [
