@@ -1,4 +1,6 @@
-Front-in POA 2014
+Front in POA
 ===============
 
-> Comming soon
+Repositório do evento Front in POA.
+
+http://frontinpoa.com.br
