@@ -17,6 +17,17 @@
   position: absolute;
   right: 0;
   top: 0;
+
+  span {
+    color: #fff;
+    position: absolute;
+    display: block;
+    width: 200px;
+    text-align: center;
+    letter-spacing: 5px;
+    padding-top: 6px;
+  }
+
   img {
     width: 200px;
   }
