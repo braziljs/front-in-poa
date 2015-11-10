@@ -1,0 +1,23 @@
+.footer {
+  background: $pink;
+  font-size: rem(14px);
+  color: white;
+  position: relative;
+}
+
+.credits {
+  padding: rem(40px) 0;
+  a {
+    color: rgba(white, .7);
+  }
+}
+
+.logo-footer {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  img {
+    width: 200px;
+  }
+}

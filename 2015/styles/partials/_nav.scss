@@ -1,0 +1,120 @@
+$litte-nav-height: rem(50px);
+$nav-height: rem(70px);
+
+.nav-container {
+  @media screen and (min-width:$large-viewport) {
+    height: $nav-height;
+  }
+}
+.nav {
+  position: relative;
+  z-index: 10000;
+  text-align: center;
+  @media screen and (min-width:$large-viewport) {
+    overflow: hidden;
+    height: $nav-height;
+    background: white;
+    box-shadow: 0 1px 3px rgba(black, .2);
+    .fixed & {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+.nav-logo {
+  position: absolute;
+  top: 0;
+  height: $nav-height;
+  padding: rem(10px) rem(45px);
+  transform: skew(-21deg);
+  background-color: $pink;
+  left: -9999em;
+  @media screen and (min-width:$large-viewport) {
+    left: -14px;
+  }
+}
+.nav-logo-image {
+  height: 100%;
+  transform: skew(21deg);
+}
+
+.nav-items {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: $nav-height;
+  position: absolute;
+  left: -9999em;
+  @media screen and (min-width:$large-viewport) {
+    position: static;
+  }
+}
+.nav-item {
+  display: inline-block;
+  margin: 0 rem(16px) 0 0;
+  &:before {
+    content: '•';
+    margin-right: rem(16px);
+    font-size: 50%;
+    display: inline-block;
+    color: $light-grey;
+  }
+}
+.nav-link {
+  display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $dark-grey;
+  line-height: 1.2;
+  border-top: solid 3px transparent;
+  border-bottom: solid 3px transparent;
+  vertical-align: middle;
+  &:hover {
+    border-bottom-color: $pink;
+  }
+  &.active {
+    border-bottom-color: $pink;
+  }
+}
+
+.social-list {
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+  margin-top: -$litte-nav-height/2;
+  list-style: none;
+  @media screen and (min-width:$large-viewport) {
+    position: absolute;
+    top: 0;
+    right: -14px;
+    margin-top: 0;
+  }
+}
+.social-item {
+  float: left;
+}
+.social-link {
+  height: $litte-nav-height;
+  display: block;
+  padding: rem(5px) rem(15px);
+  transform: skew(-21deg);
+  @media screen and (min-width:$large-viewport) {
+    height: $nav-height;
+    padding: rem(10px) rem(25px);
+  }
+  svg {
+    height: 50%;
+    transform: translateY(50%) skew(21deg);
+  }
+}
+.social-link-facebook {
+  background: $facebook-color;
+}
+.social-link-twitter {
+  background: $twitter-color;
+}
