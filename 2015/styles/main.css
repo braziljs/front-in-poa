@@ -888,6 +888,7 @@ a {
   font-weight: 700; }
   @media screen and (min-width: 50rem) {
     .schedule-speaker {
+      color: #ff3565;
       font-size: 1.25rem;
       line-height: 1.6;
       margin-top: -1.6em; } }
