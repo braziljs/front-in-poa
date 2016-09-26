@@ -1,0 +1,34 @@
+.specialists-text {
+  margin: 0 auto;
+  @media screen and (min-width:$minor-viewport) {
+    width: 70%;
+    font-size: rem(20px);
+  }
+}
+.specialist-item {
+  width: 20%;
+  &:nth-child(3n-2) {
+    margin-top: 0;
+  }
+  &:nth-child(3n-1) {
+    margin-top: 5%;
+  }
+  &:nth-child(3n) {
+    margin-top: 10%;
+  }
+}
+.specialist-name {
+  font-size: rem(16px);
+  margin-bottom: 0;
+  @media screen and (min-width: $minor-viewport) {
+    font-size: rem(18px);
+  }
+}
+.specialist-twitter {
+  font-size: rem(16px);
+  font-weight: 400;
+  margin: 0;
+}
+.specialist-activity {
+  margin: 0;
+}

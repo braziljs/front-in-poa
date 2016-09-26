@@ -1,0 +1,12 @@
+.footer {
+  background: $pink;
+  font-size: rem(14px);
+  color: white;
+}
+
+.credits {
+  padding: rem(40px) 0;
+  a {
+    color: rgba(white, .7);
+  }
+}

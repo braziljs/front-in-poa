@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Front in POA 2015</title>
+	<style type="text/css">
+		/* Based on The MailChimp Reset INLINE: Yes. */  
+		/* Client-specific Styles */
+		#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+		body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;} 
+		/* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/ 
+		.ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */  
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+		/* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */ 
+		#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+		/* End reset */
+
+		/* Some sensible defaults for images
+		Bring inline: Yes. */
+		img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;} 
+		a img {border:none;} 
+		.image_fix {display:block;}
+
+		/* Yahoo paragraph fix
+		Bring inline: Yes. */
+		p {margin: 1em 0;}
+
+		/* Hotmail header color reset
+		Bring inline: Yes. */
+		h1, h2, h3, h4, h5, h6 {color: black !important;}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: blue !important;}
+
+		h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+		color: red !important; /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+		}
+
+		h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+		color: purple !important; /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+		}
+
+		/* Outlook 07, 10 Padding issue fix
+		Bring inline: No.*/
+		table td {border-collapse: collapse;}
+
+		/* Remove spacing around Outlook 07, 10 tables
+		Bring inline: Yes */
+		table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+
+		/* Styling your links has become much simpler with the new Yahoo.  In fact, it falls in line with the main credo of styling in email and make sure to bring your styles inline.  Your link colors will be uniform across clients when brought inline.
+		Bring inline: Yes. */
+		a {color: orange;}
+
+
+		/***************************************************
+		****************************************************
+		MOBILE TARGETING
+		****************************************************
+		***************************************************/
+		@media only screen and (max-device-width: 480px) {
+			/* Part one of controlling phone number linking for mobile. */
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						color: blue; /* or whatever your want */
+						pointer-events: none;
+						cursor: default;
+					}
+
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						color: orange !important;
+						pointer-events: auto;
+						cursor: default;
+					}
+
+		}
+
+		/* More Specific Targeting */
+
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		/* You guessed it, ipad (tablets, smaller screens, etc) */
+			/* repeating for the ipad */
+			a[href^="tel"], a[href^="sms"] {
+						text-decoration: none;
+						color: blue; /* or whatever your want */
+						pointer-events: none;
+						cursor: default;
+					}
+
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+						text-decoration: default;
+						color: orange !important;
+						pointer-events: auto;
+						cursor: default;
+					}
+		}
+
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+		/* Put your iPhone 4g styles in here */ 
+		}
+
+		/* Android targeting */
+		@media only screen and (-webkit-device-pixel-ratio:.75){
+		/* Put CSS for low density (ldpi) Android layouts in here */
+		}
+		@media only screen and (-webkit-device-pixel-ratio:1){
+		/* Put CSS for medium density (mdpi) Android layouts in here */
+		}
+		@media only screen and (-webkit-device-pixel-ratio:1.5){
+		/* Put CSS for high density (hdpi) Android layouts in here */
+		}
+		/* end Android targeting */
+
+	</style>
+
+	<!-- Targeting Windows Mobile -->
+	<!--[if IEMobile 7]>
+	<style type="text/css">
+	
+	</style>
+	<![endif]-->   
+
+	<!-- ***********************************************
+	****************************************************
+	END MOBILE TARGETING
+	****************************************************
+	************************************************ -->
+
+	<!--[if gte mso 9]>
+		<style>
+		/* Target Outlook 2007 and 2010 */
+		</style>
+	<![endif]-->
+</head>
+<body>
+<!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
+<table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+	<tr>
+		<td valign="top"> 
+		<!-- Tables are the most common way to format your email consistently. Set your table widths inside cells and in most cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. -->
+		<table cellpadding="0" cellspacing="0" border="0" width="600" align="center">
+			<tr>
+				<td valign="top" align="center"><a href="http://frontinpoa.com.br/2015/"><img class="image_fix" src="http://frontinpoa.com.br/2015/newsletter/header.jpg" alt="Front in POA 2015 - 05 de dezembro no SENAC RS" style="display: block; border: 0" width="498" height="520" /></a></td>
+			</tr>
+			<tr>
+				<td valign="top"><img class="image_fix" src="http://frontinpoa.com.br/2015/newsletter/porque-nao-perder.jpg" alt="Saiba por que você não pode perder o Front in POA" style="display: block" width="600" height="242" /></td>
+			</tr>
+			<tr>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0" width="600" align="center">
+						<tr>
+							<td width="20">&nbsp;</td>
+							<td valign="top">
+								<font face="Arial, verdana" size="3" style="font-size: 18px; line-height: 140%">
+									Já colocamos Porto Alegre no mapa como um dos principais centros de desenvolvimento front-end do país.  Além de organizar o BrazilJS, acreditamos que é primordial termos um evento que consagre designers e desenvolvedores de internet.<br />
+									<br />
+									Sabemos que entregar um projeto para a web não é tarefa fácil e queremos te ajudar nisto. As palestras abordam desde concepção de produto, marcação, estilo, acessibilidade, usabilidade até performance.<br />
+									<br />
+									Este evento é obrigatório para todo o profissional que se preocupa com a experiência do usuário. Seja você atendimento, publicitário, designer gráfico ou programador, temos a certeza de que você irá aproveitar e aprender algo novo.
+								</font>
+							</td>
+							<td width="20">&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top"><a href="http://frontinpoa.com.br/2015/"><img class="image_fix" src="http://frontinpoa.com.br/2015/newsletter/inscrevase.jpg" alt="Inscreva-se" style="display: block; border: 0" width="600" height="399" /></a></td>
+			</tr>
+			<tr>
+				<td valign="top">
+					<table cellpadding="0" cellspacing="0" border="0" width="600" align="center">
+						<tr>
+							<td height="150"></td>
+							<td valign="middle" align="right">
+								<font face="Arial, verdana" size="3">
+								<font size="6" style="font-size: 30px"><b>Auditório do SENAC</b></font><br />
+								<br />
+								Rua Cel. Genuíno, 130 - Centro<br />
+								Porto Alegre - RS<br />
+								90010-350</font>
+							</td>
+							<td width="20">&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>  
+<!-- End of wrapper table -->
+
+<div itemscope itemtype="http://schema.org/EmailMessage">
+	<div itemprop="action" itemscope itemtype="http://schema.org/ViewAction">
+		<link itemprop="url" href="http://frontinpoa.com.br/2015/"/>
+		<meta itemprop="name" content="Inscreva-se"/>
+	</div>
+	<meta itemprop="description" content="Inscreva-se no Front in POA"/>
+</div>
+
+</body>
+</html>
