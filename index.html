@@ -1,10 +1,25 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>FrontInPOA</title>
-  <script>
-    window.location = "/2016"
-  </script>
-</head>
+<html>
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- WEB APP META DATA -->
+        <link rel="manifest" href="/webapp-manifest.json">
+        <meta name="theme-color" content="#DD5939"> <!-- set theme's color -->
+        <!-- /WEB APP META DATA -->
+        
+        <script src="dsw.js"></script>
+        <script>
+            DSW.setup()
+            .then(function(result){
+                // tell your users about the good news
+            })
+            .catch(function(reason){
+                // ops!
+            });
+        </script>
+    </head>
+    <body>
+    </body>
 </html>
