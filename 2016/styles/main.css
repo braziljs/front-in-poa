@@ -1047,6 +1047,12 @@ a {
   color: white; }
 
 .credits {
-  padding: 2.5rem 0; }
+  padding: 2.5rem 0;
+  position: relative; }
   .credits a {
     color: rgba(255, 255, 255, 0.7); }
+  .credits .logo-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9; }

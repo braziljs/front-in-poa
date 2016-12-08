@@ -6,7 +6,16 @@
 
 .credits {
   padding: rem(40px) 0;
+  position: relative;
+
   a {
     color: rgba(white, .7);
+  }
+
+  .logo-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
   }
 }

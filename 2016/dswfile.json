@@ -1,0 +1,59 @@
+{
+    "dswVersion": 1.1,
+    "applyImmediately": true,
+    "appShell": [],
+    "enforceSSL": false,
+    "keepUnusedCaches": false,
+    "dswRules": {
+        "images": {
+            "match": { "extension": ["jpg", "gif", "png", "jpeg", "webp"] },
+            "apply": {
+                "cache": {
+                    "name": "cachedImages",
+                    "version": "1"
+                }
+            }
+        },
+        "statics": {
+            "match": { "extension": ["js", "css"] },
+            "apply": {
+                "cache": {
+                    "name": "static-files",
+                    "version": "1",
+                    "expires": "1M"
+                }
+            }
+        },
+        "static-html": {
+            "match": [
+                { "extension": ["html"] },
+                { "path": "/$" }
+            ],
+            "strategy": "fastest",
+            "apply": {
+                "cache": {
+                    "name": "static-html-files",
+                    "version": "1",
+                    "expires": "1h"
+                }
+            }
+        },
+        "pageNotFound": {
+            "match": {
+                "status": [404]
+            },
+            "apply": {
+                "fetch": "/not-found.html"
+            }
+        },
+        "imageNotFound": {
+            "match": {
+                "status": [404, 500],
+                "extension": ["jpg", "gif", "png", "jpeg", "webp"]
+            },
+            "apply": {
+                "fetch": "/404.jpg"
+            }
+        }
+    }
+}
