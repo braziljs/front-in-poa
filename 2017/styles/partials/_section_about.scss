@@ -1,0 +1,21 @@
+.about-text {
+  margin: 0 auto;
+  @media screen and (min-width:$minor-viewport) {
+    width: 70%;
+    font-size: rem(20px);
+  }
+}
+.section-about-tail {
+  background: url('../images/about.jpg') no-repeat center top;
+  background-size: cover;
+  text-align: center;
+}
+.section-about-call-action-link {
+  display: inline-block;
+  font-size: rem(24px);
+  padding: 0 2.5em;
+  margin: 6em 0 1.6em 0;
+  @media screen and (min-width: $medium-viewport) {
+    font-size: rem(40px);
+  }
+}

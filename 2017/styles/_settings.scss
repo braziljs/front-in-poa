@@ -1,0 +1,31 @@
+// Sizes
+$site-width: 940px;
+$site-gutter: 25px;
+$marker-size: 8px;
+
+// Typography
+$font-lato: 'Lato', sans-serif;
+
+// Colors
+$pink: #ff3565;
+$grey: #AAA;
+$light-grey: #CCC;
+$overlay-dark: rgba(black, .1);
+
+$twitter-color: #00aced;
+$facebook-color: #3b5998;
+
+$dark-grey: #333333;
+$blue: #5AA1B8;
+$dark-blue: darken($blue, 20);
+$red: #F13C47;
+
+// Viewports
+$large-viewport: rem(1100px);
+$maximum-viewport: rem(920px);
+$medium-viewport: rem(800px);
+$minor-viewport: rem(600px);
+
+// Sizes
+$nav-height: rem(55px);
+$speaker-width: rem(400px);
