@@ -148,6 +148,6 @@ window.mapsAsyncInit = function () {
     })
   }
 
-  loadScripts('maps.google.com/maps/api/js?sensor=false&callback=mapsAsyncInit')
+  loadScripts('maps.google.com/maps/api/js?sensor=false&callback=mapsAsyncInit&key=AIzaSyAb6e8Pa0bhvp0kC3EhwzeXmfFuA17-D9E')
   loadScripts('www.google-analytics.com/ga.js')
 }()
