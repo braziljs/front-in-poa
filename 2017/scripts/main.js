@@ -142,7 +142,7 @@ window.mapsAsyncInit = function () {
     urls.forEach(function (url) {
       var element = document.createElement('script')
       element.async = true
-      element.src = 'http://' + url
+      element.src = 'https://' + url
       script.parentNode.insertBefore(element, script)
     })
   }
