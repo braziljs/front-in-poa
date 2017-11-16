@@ -529,12 +529,16 @@ a {
       left: 0;
       bottom: 0;
       right: 0; } }
-
+.be-a-patro {
+  margin-bottom: 50px; text-align: center;
+}
 .event-info {
   display: inline-block;
   text-align: center;
   position: absolute;
+  max-width: 337px;
   font-size: 1.125rem;
+  max-width: 337px;
   bottom: 6vw;
   left: 0;
   right: 0;
@@ -1021,8 +1025,8 @@ a {
   background-color: rgba(0, 0, 0, 0.1); }
 
 .partner-item {
-  width: 8rem;
-  font-size: 8rem; }
+  width: 10rem;
+  font-size: 10rem; }
 
 .sponsor-logo,
 .partner-logo {
