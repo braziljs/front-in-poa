@@ -27,7 +27,6 @@ window.mapsAsyncInit = function () {
 // ===========
 !function () {
   var id, target, current, previous
-  console.log(id)
 
   function step() {
     current = window.pageYOffset - (window.pageYOffset - target) / (target ? 5 : 2)
