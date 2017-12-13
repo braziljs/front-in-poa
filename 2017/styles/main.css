@@ -529,16 +529,13 @@ a {
       left: 0;
       bottom: 0;
       right: 0; } }
-.be-a-patro {
-  margin-bottom: 50px; text-align: center;
-}
+
 .event-info {
   display: inline-block;
   text-align: center;
   position: absolute;
   max-width: 337px;
   font-size: 1.125rem;
-  max-width: 337px;
   bottom: 6vw;
   left: 0;
   right: 0;
@@ -829,6 +826,18 @@ a {
 .schedule-slot:after {
   clear: both; }
 
+.section-title {
+  margin-bottom: 0; }
+
+.schedule-header {
+  margin: 0;
+  padding: 5px;
+  color: #333333;
+  font-size: 2rem;
+  text-align: right;
+  margin-bottom: 80px;
+  text-transform: uppercase; }
+
 .schedule-time {
   display: block;
   font-size: 1.5rem;
@@ -1025,8 +1034,8 @@ a {
   background-color: rgba(0, 0, 0, 0.1); }
 
 .partner-item {
-  width: 10rem;
-  font-size: 10rem; }
+  width: 8rem;
+  font-size: 8rem; }
 
 .sponsor-logo,
 .partner-logo {

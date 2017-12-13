@@ -26,6 +26,20 @@
   @include clearfix;
 }
 
+.section-title {
+  margin-bottom: 0;
+}
+
+.schedule-header {
+  margin: 0;
+  padding: 5px;
+  color: #333333;
+  font-size: 2rem;
+  text-align: right;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
 .schedule-time {
   display: block;
   font-size: rem(24px);
