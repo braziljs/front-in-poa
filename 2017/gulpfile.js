@@ -4,6 +4,8 @@ var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
+var imagemin = require('gulp-imagemin');
+
 var plumber = require('gulp-plumber');
 var webserver = require('gulp-webserver');
 
@@ -16,6 +18,12 @@ gulp.task('styles', function () {
     .pipe(rename('./main.css'))
     .pipe(gulp.dest('./styles/'));
 });
+
+gulp.task('images', () =>
+  gulp.src('images/**/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./images/'))
+);
 
 /*
  * Default task and server/watch
@@ -36,6 +44,7 @@ gulp.task('watch', function(){
 
 gulp.task('default', [
   'styles',
+  'images',
 
   'webserver',
   'watch'

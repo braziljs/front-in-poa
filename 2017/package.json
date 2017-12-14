@@ -11,6 +11,7 @@
   "devDependencies": {
     "gulp": "*",
     "gulp-autoprefixer": "~1.0.0",
+    "gulp-imagemin": "^4.0.0",
     "gulp-plumber": "~0.6.4",
     "gulp-rename": "~1.2.0",
     "gulp-sass": "*",
