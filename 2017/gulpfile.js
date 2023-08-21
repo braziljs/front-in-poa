@@ -9,7 +9,7 @@ var webserver = require('gulp-webserver');
 
 
 gulp.task('styles', function () {
-  gulp.src('./styles/main.scss')
+  return gulp.src('./styles/main.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(autoprefixer())
@@ -22,7 +22,7 @@ gulp.task('styles', function () {
 */
 
 gulp.task('webserver', function() {
-  gulp.src('./')
+  return gulp.src('./')
     .pipe(webserver({
       host: '0.0.0.0',
       directoryListing: true,
