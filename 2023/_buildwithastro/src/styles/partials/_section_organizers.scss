@@ -1,0 +1,21 @@
+.organizer-item {
+  width: 20%;
+  &:nth-child(2) {
+    margin-top: 5%;
+  }
+  &:nth-child(3) {
+    margin-top: 10%;
+  }
+}
+.organizer-name {
+  font-size: rem(16px);
+  margin-bottom: 0;
+  @media screen and (min-width: $minor-viewport) {
+    font-size: rem(18px);
+  }
+}
+.organizer-twitter {
+  font-size: rem(16px);
+  font-weight: 400;
+  margin: 0;
+}

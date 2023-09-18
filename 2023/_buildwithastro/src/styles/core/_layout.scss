@@ -1,0 +1,38 @@
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-lato;
+  color: $dark-grey;
+  overflow-x: hidden;
+}
+
+a {
+  color: $pink;
+  text-decoration: none;
+}
+
+.call-action-link {
+  background: $pink;
+  transform: skewX(-21deg);
+}
+.call-action-text {
+  color: white;
+  transform: skewX(21deg);
+  display: block;
+  font-weight: 700;
+  line-height: 2.3;
+}
+
+.wrapper {
+  max-width: $site-width + ($site-gutter * 2);
+  padding: 0 10px;
+  margin: 0 auto;
+  @media screen and (min-width:$minor-viewport) {
+    padding: 0 $site-gutter;
+  }
+}

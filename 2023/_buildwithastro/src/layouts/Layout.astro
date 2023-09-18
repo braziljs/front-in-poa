@@ -1,0 +1,100 @@
+---
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!--
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        -->
+
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+
+        <title itemprop="name">Front in Poa 2023</title>
+
+        <meta name="author" content="Front in Poa 2023" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/2023/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/2023/favicon-32x32.png"
+            sizes="32x32"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/2023/favicon-16x16.png"
+            sizes="16x16"
+        />
+        <link rel="manifest" href="/2023/webapp-manifest.json" />
+        <link
+            rel="mask-icon"
+            href="/2023/safari-pinned-tab.svg"
+            color="#696969"
+        />
+        <meta name="theme-color" content="#000000" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Front in Poa 2023" />
+        <meta
+            property="og:description"
+            content="O Front in que vai mudar o seu jeito de ver o front end!"
+        />
+        <meta
+            property="og:image"
+            content="/2023/images/front-in-poa-banner.png"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:100,400,700"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="styles/main.css" />
+        <script is:inline>
+            (function () {
+                window._gaq = [
+                    ["_setAccount", "UA-45100553-1"],
+                    ["_trackPageview"],
+                ];
+            })();
+        </script>
+
+        <script is:inline src="dsw.js"></script>
+        <script is:inline >
+            DSW.setup()
+                .then(function (result) {
+                    // tell your users about the good news
+                    // debugger;
+                })
+                .catch(function (reason) {
+                    // ops!
+                    // debugger;
+                });
+        </script>
+
+        <!-- WEB APP META DATA -->
+        <link rel="manifest" href="/webapp-manifest.json" />
+        <!-- SET THEME'S COLOR -->
+        <meta name="theme-color" content="#DD5939" />
+        <!-- /WEB APP META DATA -->
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>

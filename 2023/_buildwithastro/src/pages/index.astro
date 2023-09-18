@@ -1,0 +1,843 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Front in Poa 2023">
+  <main>
+    <header class="header">
+      <div class="wrapper">
+        <h1 class="logo">
+          <a
+            class="logo-link"
+            href="#"
+            title="Front in POA 2017"
+            itemprop="name">Front in POA 2017</a
+          >
+        </h1>
+        <div class="event-info">
+          <p class="event-head">
+            25 de Set <br><span class="event-head-place">Em definição</span>
+          </p>
+          <a
+            href="https://eventloop.com.br/frontinpoa-2017"
+            class="header-call-action-link call-action-link"
+            target="_blank"
+          >
+            <span class="call-action-text">Te inscreve!</span>
+          </a>
+
+          <!--
+            <div style="margin-top: 25px;">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSffDOrE_4O73g9P-JjzF0W3YvJV0DGBIESW2V9O_1kdWT7NyA/viewform" class="header-call-action-link call-action-link send-your-talk" target="_blank">
+                <span class="call-action-text" style="line-height: 1em;">Envia tua palestra</span>
+                </a>
+            </div>
+          -->
+        </div>
+      </div>
+    </header>
+
+    <div class="nav-container" data-nav>
+      <nav class="nav">
+        <a href="#" class="nav-logo">
+          <img
+            src="images/front-in-poa-white.svg"
+            class="nav-logo-image"
+            alt="Front in POA"
+          />
+        </a>
+
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="#about" title="Sobre" class="nav-link">Sobre</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#speakers" title="Palestrantes" class="nav-link">Palestrantes</a>
+          </li> -->
+          <!--li class="nav-item"><a href="#specialists" title="Especialistas" class="nav-link">Especialistas</a></li!-->
+          <li class="nav-item">
+            <a href="#schedule" title="Programação" class="nav-link"
+              >Programação</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#location" title="Local" class="nav-link">Local</a>
+          </li>
+          <li class="nav-item">
+            <a href="#patros" title="Patrocínio" class="nav-link">Patrocínio</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://braziljs.org/coc"
+              title="Código de Conduta"
+              class="nav-link">Código de Conduta</a
+            >
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a
+              href="http://twitter.com/frontinpoa"
+              class="social-link-twitter social-link"
+              target="_blank"
+            >
+              <svg
+                id="twitter-icon"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <g>
+                  <line
+                    stroke-width="1"
+                    x1=""
+                    y1=""
+                    x2=""
+                    y2=""
+                    stroke="#449FDB"
+                    opacity=""></line>
+                </g>
+                <path
+                  d="M32 6.076c-1.177 0.522-2.443 0.875-3.771 1.034 1.355-0.813 2.396-2.099 2.887-3.632-1.269 0.752-2.674 1.299-4.169 1.593-1.198-1.276-2.904-2.073-4.792-2.073-3.626 0-6.565 2.939-6.565 6.565 0 0.515 0.058 1.016 0.17 1.496-5.456-0.274-10.294-2.888-13.532-6.86-0.565 0.97-0.889 2.097-0.889 3.301 0 2.278 1.159 4.287 2.921 5.465-1.076-0.034-2.088-0.329-2.974-0.821-0.001 0.027-0.001 0.055-0.001 0.083 0 3.181 2.263 5.834 5.266 6.437-0.551 0.15-1.131 0.23-1.73 0.23-0.423 0-0.834-0.041-1.235-0.118 0.835 2.608 3.26 4.506 6.133 4.559-2.247 1.761-5.078 2.81-8.154 2.81-0.53 0-1.052-0.031-1.566-0.092 2.905 1.863 6.356 2.95 10.064 2.95 12.076 0 18.679-10.004 18.679-18.68 0-0.285-0.006-0.568-0.019-0.849 1.283-0.926 2.396-2.082 3.276-3.398z"
+                  fill="#fff"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              href="http://facebook.com/frontinpoa"
+              class="social-link-facebook social-link"
+              target="_blank"
+            >
+              <svg
+                id="facebook-icon"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <g>
+                  <line
+                    stroke-width="1"
+                    x1=""
+                    y1=""
+                    x2=""
+                    y2=""
+                    stroke="#449FDB"
+                    opacity=""></line>
+                </g>
+                <path
+                  d="M26.667 0h-21.333c-2.933 0-5.334 2.4-5.334 5.334v21.332c0 2.936 2.4 5.334 5.334 5.334l21.333-0c2.934 0 5.333-2.398 5.333-5.334v-21.332c0-2.934-2.399-5.334-5.333-5.334zM27.206 16h-5.206v14h-6v-14h-2.891v-4.58h2.891v-2.975c0-4.042 1.744-6.445 6.496-6.445h5.476v4.955h-4.473c-1.328-0.002-1.492 0.692-1.492 1.985l-0.007 2.48h6l-0.794 4.58z"
+                  fill="#fff"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="section section-about" id="about">
+      <div class="wrapper">
+        <h2 class="section-title">
+          Você não pode<br /> perder o <span class="section-title-highlight"
+            >Front in POA!</span
+          >
+        </h2>
+        <div class="about-text" itemprop="description">
+          <p></p>
+        </div>
+      </div>
+      <div class="section-about-tail">
+        <a
+          href="https://eventloop.com.br/frontinpoa-2017"
+          class="section-about-call-action-link call-action-link"
+          target="_blank"
+        >
+          <span class="call-action-text">Te inscreve!</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section section-speakers" id="speakers">
+      <div class="wrapper">
+        <h2 class="section-title section-title-highlight">Palestrantes</h2>
+
+        <ul class="speakers-list">
+          <li class="speaker-item">
+            <div class="speaker-photo-container">
+              <img
+                class="speaker-photo"
+                src="images/speakers/alexandra-zanela.jpg"
+                alt="Alexandra Zanela"
+              />
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Alexandra Zanela (apresentadora)</h3>
+              <a
+                href="http://twitter.com/alezanela"
+                class="speaker-twitter"
+                target="_blank">@alezanela</a
+              >
+              <p class="speaker-bio">
+                Alexandra é viciada no mundo digital, em novas tecnologias, em
+                café e Coca-Cola. Dorme facilmente com o celular na mão e assim
+                que descobre uma nova ferramenta precisa dedicar seu tempo para
+                conferir as funcionalidades. De ‘riso frouxo’, detesta trabalho
+                mal feito, mas adora um bom papo sobre ele. Já foi repórter de
+                rua, passou pelas redações do Diário de Santa Maria, pelo online
+                do Diário Catarinense e clicRBS SC (editora online) e pelo Terra
+                (editora-executiva). É dona da Padrinho Agência de Conteúdo.
+              </p>
+            </div>
+          </li>
+
+          <li class="speaker-item">
+            <div class="speaker-photo-container">
+              <img
+                class="speaker-photo"
+                src="images/speakers/vanessa-metonini.jpg"
+                alt="Vanessa Tonini"
+              />
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Vanessa Tonini</h3>
+              <a
+                href="http://twitter.com/vanessametonini"
+                class="speaker-twitter"
+                target="_blank">@vanessametonini</a
+              >
+              <p class="speaker-bio">
+                Instrutora na Caelum, desenvolvedora frontend e agile coach.
+                Atua na área de desenvolvimento para Web há quase 10 anos, onde
+                possui graduação em Sistemas Para Internet (UNIVALI), é
+                especialista em Desenvolvimento Web (UTFPR) e MBA em Engenharia
+                de Software Orientada a Serviços (FIAP). É uma das coordenadoras
+                do coletivo hacker feminista Marialab, no qual organiza eventos,
+                oficinas e palestras.
+              </p>
+            </div>
+          </li>
+
+          <li class="speaker-item">
+            <div class="speaker-photo-container">
+              <img
+                class="speaker-photo"
+                src="images/speakers/aline-bastos.jpg"
+                alt="Aline Bastos"
+              />
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Aline Bastos</h3>
+              <a
+                href="http://twitter.com/alinebastos"
+                class="speaker-twitter"
+                target="_blank">@alinebastos</a
+              >
+              <p class="speaker-bio">
+                Mãe de uma menina linda (e super inteligente) de 10 anos.
+                Mentora, moderadora, escritora e organizadora de encontros,
+                tanto no Training Center, como na vida. Trabalha com
+                desenvolvimento frontend há quase 8 anos, mas aprendeu como
+                desenvolver sites pra ela, pra familia e pros amigos há 15 anos.
+                Estuda Computer Science e tudo o que vê pela frente que seja
+                relacionado com CSS e JavaScript. E fica louca se vê um pixel
+                fora do lugar!
+              </p>
+            </div>
+          </li>
+
+          <li class="speaker-item">
+            <div class="speaker-photo-container">
+              <img
+                class="speaker-photo"
+                src="images/speakers/nathi-alves.jpg"
+                alt="Nathi Alves"
+              />
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Nathi Alves</h3>
+              <a
+                href="http://twitter.com/naathialves"
+                class="speaker-twitter"
+                target="_blank">@nathialves</a
+              >
+              <p class="speaker-bio">
+                Designer, apaixonada por pesquisa e que acredita que a empatia
+                leva todo mundo mais longe.
+              </p>
+            </div>
+          </li>
+
+          <li class="speaker-item">
+            <div class="speaker-photo-container">
+              <img
+                class="speaker-photo"
+                src="images/speakers/felipe-morais.jpg"
+                alt="Felipe de Morais"
+              />
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Felipe de Morais</h3>
+              <a
+                href="http://twitter.com/felipedemorais_"
+                class="speaker-twitter"
+                target="_blank">@felipedemorais_</a
+              >
+              <p class="speaker-bio">
+                Desenvolvedor web apaixonado por tecnologias Python, front-end e
+                no caso da Haskell no momento.
+              </p>
+            </div>
+          </li>
+
+          <li class="speaker-item">
+            <div class="speaker-photo-container">
+              <img
+                class="speaker-photo"
+                src="images/speakers/cesar-paz.jpg"
+                alt="Cesar Paz"
+              />
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Cesar Paz</h3>
+              <a
+                href="https://www.facebook.com/cesarpaz.ag2"
+                class="speaker-twitter"
+                target="_blank">@cesarpaz</a
+              >
+              <p class="speaker-bio">
+                Engenheiro, fundador, ex-CEO e ex-presidente do Conselho de
+                Administração da AG2, fundador e ex-presidente da Associação
+                Brasileira de Agências Digitais (AbradiRS) em duas gestões.
+                Presidente do Conselho de Administração da Seekr de Blumenau e
+                também sócio e membro do Advisory Board das seguintes empresas:
+                Alright, MPQuatro, Delta, Zeeng, DEx01, Minovelt e Delta. Foi
+                eleito pela plataforma Proxxima um dos 10 profissionais mais
+                inovadores do mercado brasileiro, em 2011. É professor do curso
+                de Comunicação Digital da Unisinos e mestrando em Design
+                Estratégico. Já trabalhou com estratégia digital para as
+                principais marcas do mercado brasileiro incluindo Bradesco,
+                Toyota, GM, Natura, Rio2016, Vale, Embraer, C&A, entre outras.
+              </p>
+            </div>
+          </li>
+
+          <li class="speaker-item">
+            <div class="speaker-photo-container">
+              <img
+                class="speaker-photo"
+                src="images/speakers/loiane-groner.jpg"
+                alt="Loiane Groner"
+              />
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Loiane Groner</h3>
+              <a
+                href="http://twitter.com/loiane"
+                class="speaker-twitter"
+                target="_blank">@loiane</a
+              >
+              <p>
+                Possui 10+ anos de experiência em TI, trabalha como Analista de
+                Sistemas e Desenvolvedora no Citibank, Microsoft MVP e Google
+                Developer Expert em tecnologias web e ama compartilhar
+                conhecimento! Já palestrou por vários eventos no Brasil e
+                ministrou cursos nos Estados Unidos. Autora dos livros: Ext JS 4
+                First Look, Mastering Ext JS (primeira e segunda edição), Sencha
+                Architect App Development e Learning JavaScript Data Structures
+                and Algorithms (primeira e segunda edição), JavaScript Regular
+                Expressions - todos publicados pela editora Packt e lançados
+                mundialmente em inglês (com tradução de alguns livros para
+                chinês e coreano).
+              </p>
+            </div>
+          </li>
+
+          <li class="speaker-item">
+            <div class="speaker-photo-container">
+              <img
+                class="speaker-photo"
+                src="images/speakers/camilla-matins.png"
+                alt="Camilla Martins"
+              />
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Camilla Martins</h3>
+              <a
+                href="https://twitter.com/bayerndadepress"
+                class="speaker-twitter"
+                target="_blank">@bayerndadepress</a
+              >
+              <p class="speaker-bio">
+                Paulista, santista e alucinada pelo Universo Marvel. Fundadora
+                da iniciativa NodeGirls, uma entusiasta da comunidade e da força
+                das mulheres. O que era só um site pro pai há 9 anos, virou
+                minha profissão. Formada em ADS, trabalho como desenvolvedora
+                full-stack na Umbler, faço uns freelas e abraço felinos nas
+                horas vagas.
+              </p>
+            </div>
+          </li>
+
+          <li class="speaker-item">
+            <div class="speaker-photo-container">
+              <img
+                class="speaker-photo"
+                src="images/speakers/debora-duarte.jpeg"
+                alt="Débora Duarte"
+              />
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">Débora Duarte</h3>
+              <a
+                href="http://twitter.com/deboracardu"
+                class="speaker-twitter"
+                target="_blank">@deboracardu</a
+              >
+              <p class="speaker-bio">
+                Dev lover, feminista e rata de eventos, formada em Técnico em
+                Informática em 2013 pelo IFSul Campus Charqueadas, atuo hoje na
+                área de Marketing Digital. Acabo de criar um canal no Youtube
+                para falar na relação de Mkt Digital com Web Dev.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-schedule" id="schedule">
+      <div class="wrapper">
+        <h2 class="section-title section-title-highlight">Programação</h2>
+        <ul class="schedule-list">
+          <li
+            id="schedule-credenciamento"
+            class="schedule-item schedule-item-other"
+          >
+            <span class="schedule-time">08:00</span>
+            <div class="schedule-slot">
+              <div class="schedule-activity">Credenciamento</div>
+            </div>
+          </li>
+
+          <li
+            id="schedule-credenciamento"
+            class="schedule-item schedule-item-other"
+          >
+            <span class="schedule-time">08:50</span>
+            <div class="schedule-slot">
+              <div class="schedule-activity">Abertura</div>
+            </div>
+          </li>
+
+          <li class="schedule-item schedule-item-speaker">
+            <span class="schedule-time">09:00</span>
+
+            <div class="schedule-slot">
+              <span class="schedule-speaker">Loiane Groner</span>
+              <div class="schedule-activity">
+                Progressive Web Apps e a evolução da Web
+              </div>
+            </div>
+            <p class="schedule-description">
+              Vamos desbravar o mundo das PWAs (Progressive Web Apps) e entender
+              o que podemos fazer hoje na web! Há 5 anos, não podíamos tirar
+              foto com a câmera usando o browser, e nem enviar notificações
+              push. Hoje já podemos usar APIs com essas funcionalidades graças à
+              evolução da web! Vamos entender o que são as PWAs e como podemos
+              trazer a experiência de aplicações mobile para web, além de
+              entender o que precisamos fazer para transformar aplicações web
+              existentes em aplicações progressivas (ou como criar uma do zero).
+              Como exemplo, usaremos tecnologias modernas como Angular e
+              Firebase e também iremos explorar essas funcionalidades com o bom
+              e velho JavaScript puro, pra mostrar que também podemos fazer PWAs
+              na unha!
+            </p>
+          </li>
+
+          <li class="schedule-item schedule-item-speaker">
+            <span class="schedule-time">09:30</span>
+
+            <div class="schedule-slot">
+              <span class="schedule-speaker">Nathi Alves</span>
+              <div class="schedule-activity">A importância do U de UX</div>
+            </div>
+            <p class="schedule-description">
+              Por que a pesquisa é tão importante para o processo de design?
+              Conhecer para quem nós estamos projetando e como essas pessoas
+              irão utilizar os nossos produtos ou serviços é tão importante
+              quanto desenhar uma nova tela.
+            </p>
+          </li>
+
+          <li class="schedule-item schedule-item-speaker">
+            <span class="schedule-time">10:00</span>
+            <div class="schedule-slot">
+              <span class="schedule-speaker">Felipe de Morais</span>
+              <div class="schedule-activity">
+                Vestindo a camisa da comunidade
+              </div>
+            </div>
+            <p class="schedule-description">
+              Vamos conversar sobre como me involver com a comunidade me fez
+              aprender algumas lições que levo para a minha vida. Organizando o
+              maior Django Girls da América Latina, o primeiro evento de
+              empoderamento negro do país com AfroPython, abrir espaço para que
+              pessoas com deficiência possam expor como vem contribuindo com o
+              mundo e as dificuldades que enfrentam, contribuir para a Operação
+              Serenata de Amor, o projeto de maior visibilidade utilizando dados
+              públicos da atualidade e outras coisas mais.
+            </p>
+          </li>
+
+          <li id="schedule-cafezinho" class="schedule-item schedule-item-other">
+            <span class="schedule-time">10:30</span>
+            <div class="schedule-slot">
+              <div class="schedule-activity">Coffee</div>
+            </div>
+          </li>
+
+          <li class="schedule-item schedule-item-speaker">
+            <span class="schedule-time">11:00</span>
+            <div class="schedule-slot">
+              <span class="schedule-speaker">Aline Bastos</span>
+              <div class="schedule-activity">
+                CSS no JavaScript. Usar ou não usar? Eis a questão!
+              </div>
+            </div>
+            <p class="schedule-description">
+              Com o crescente uso de tecnologias como o React, ouvimos falar
+              muito sobre o uso do CSS no JavaScript. Vamos juntos analisar as
+              opções de uso de estilos dentro e fora do JavaScript.
+            </p>
+          </li>
+
+          <li class="schedule-item schedule-item-speaker">
+            <span class="schedule-time">11:30</span>
+            <div class="schedule-slot">
+              <span class="schedule-speaker"
+                >Camilla Martins && Débora Duarte</span
+              >
+              <div class="schedule-activity">
+                Construindo um site em 10min com vue.js
+              </div>
+            </div>
+            <p class="schedule-description">
+              Sim, é possível criar um site tão rapidamente com o vue.js. Vamos
+              demonstrar a simplicidade deste framework com cada vez mais
+              destaque no mercado do Javascript em exemplos práticos!
+            </p>
+          </li>
+
+          <li class="schedule-item schedule-item-speaker">
+            <span class="schedule-time">12:00</span>
+            <div class="schedule-slot">
+              <span class="schedule-speaker">Vanessa Tonini</span>
+              <div class="schedule-activity">Desenvolvendo com Angular CLI</div>
+            </div>
+            <p class="schedule-description">
+              A ferramenta de linha de comando do Angular pode se tornar sua
+              poderosa aliada para desenvolvimento. Nesta palestra irei comparar
+              como é o cenário sem e com o uso dela, demonstrar como ela
+              funciona e facilita o dia a dia do desenvolvimento, e
+              principalmente como pode ajudar na hora de publicar sua app.
+            </p>
+          </li>
+
+          <li class="schedule-item schedule-item-speaker">
+            <span class="schedule-time">12:30</span>
+            <div class="schedule-slot">
+              <span class="schedule-speaker">Cesar Paz</span>
+              <div class="schedule-activity">A Era da Experiência</div>
+            </div>
+            <p class="schedule-description"></p>
+          </li>
+
+          <li
+            id="schedule-credenciamento"
+            class="schedule-item schedule-item-other"
+          >
+            <span class="schedule-time">13:00</span>
+            <div class="schedule-slot">
+              <div class="schedule-activity">Encerramento</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-location" id="location">
+      <div class="address-container">
+        <h2 class="section-title">
+          Local do<br />
+          <span class="section-title-highlight">Front in POA</span>
+        </h2>
+        <div class="address">
+          <div
+            class="address-data"
+            itemprop="address"
+            itemtype="http://schema.org/PostalAddress"
+          >
+            <span class="address-name" itemprop="name">Auditório do SENAC</span>
+            <span itemprop="streetAddress">Rua Cel. Genuíno, 130 • Centro</span
+            ><br />
+            <span itemprop="addressLocality">Porto Alegre</span> • <span
+              itemprop="addressRegion">RS</span
+            ><br />
+            <span itemprop="postalCode">90010-350</span><br />
+            <a
+              class="address-link"
+              href="https://www.google.com.br/maps/place/R.+Cel.+Genuino,+130+-+Centro+Histórico,+Porto+Alegre+-+RS"
+              >Ver no mapa</a
+            >
+          </div>
+          <svg
+            class="address-background"
+            width="100%"
+            viewBox="0 0 480 250"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+          >
+            <g
+              id="Page-1"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+              sketch:type="MSPage"
+            >
+              <g id="Artboard-1" sketch:type="MSArtboardGroup">
+                <path
+                  d="M1.3125,0.0313683712 L480,1.4703924 L480,250 L181.078125,210 L1.3125,0.0313683712 Z"
+                  id="Path-1"
+                  fill="#FFFFFF"
+                  sketch:type="MSShapeGroup"></path>
+                <path
+                  d="M-0.02734375,0.46875 L101.054688,42.0507812 L181.476562,210 L-0.02734375,0.46875 Z"
+                  id="Path-2"
+                  fill="#FF3565"
+                  sketch:type="MSShapeGroup"></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div
+        class="address-map"
+        data-address="Rua Cel. Genuíno, 130 - Porto Alegre"
+      >
+      </div>
+    </section>
+
+    <section class="section section-supporters" id="patros">
+      <div class="wrapper">
+        <h2 class="section-title">Patrocínio</h2>
+
+        <ul class="partners-list" style="margin-bottom: 50px;">
+          <li class="partner-item" itemtype="http://schema.org/Organization">
+            <a
+              href="https://www.alura.com.br/"
+              class="partner-link"
+              itemprop="url"
+              target="_blank"
+            >
+              <img
+                src="images/patros/logo-alura.svg"
+                alt="Alura"
+                class="partner-logo"
+                itemprop="image"
+              />
+            </a>
+          </li>
+          <li class="partner-item" itemtype="http://schema.org/Organization">
+            <a
+              href="https://rocket.chat"
+              class="partner-link"
+              itemprop="url"
+              target="_blank"
+            >
+              <img
+                src="images/patros/rocket-chat.png"
+                alt="RockChat"
+                class="partner-logo"
+                itemprop="image"
+              />
+            </a>
+          </li>
+        </ul>
+
+        <a href="mailto:eventos@nasc.io">
+          <div class="be-a-patro">
+            <span>Seja um PATROCINADOR</span>
+          </div>
+        </a>
+      </div>
+      <h2 class="section-title">Apoio</h2>
+      <ul class="partners-list">
+        <li class="partner-item" itemtype="http://schema.org/Organization">
+          <a
+            href="http://portal.senacrs.com.br"
+            class="partner-link"
+            itemprop="url"
+            target="_blank"
+          >
+            <img
+              src="images/patros/logo_fecomercio_senac.png"
+              alt="Senac"
+              class="partner-logo"
+              itemprop="image"
+            />
+          </a>
+        </li>
+        <li class="partner-item" itemtype="http://schema.org/Organization">
+          <a
+            href="http://braziljs.org"
+            class="partner-link"
+            itemprop="url"
+            target="_blank"
+          >
+            <img
+              src="images/patros/logo-braziljs.png"
+              alt="Brazil JS"
+              class="partner-logo"
+              itemprop="image"
+            />
+          </a>
+        </li>
+        <li class="partner-item" itemtype="http://schema.org/Organization">
+          <a
+            href="http://portal.senacrs.com.br"
+            class="partner-link"
+            itemprop="url"
+            target="_blank"
+          >
+            <img
+              src="images/patros/faculdade_senac.png"
+              alt="Senac"
+              class="partner-logo"
+              itemprop="image"
+            />
+          </a>
+        </li>
+        <li class="partner-item" itemtype="http://schema.org/Organization">
+          <a
+            href="http://www.abradirs.com.br/"
+            class="partner-link"
+            itemprop="url"
+            target="_blank"
+          >
+            <img
+              src="images/patros/abradirs.png"
+              alt="Abradirs"
+              class="partner-logo"
+              itemprop="image"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <!-- BrazilJS snippet -->
+      <!-- <div id='braziljs-widget-partners'></div> -->
+      <!-- <script src='https://braziljs.org/js/widget.js'></script> -->
+      <!--
+            <script>
+                BrazilJS.widget.load('partners', {
+                    eventId: '56b4df8be6368eb42d1e7d05',
+                    name: 'FrontInPoa',
+                    theme: 'white',
+                    container: document.getElementById('braziljs-widget-partners')
+                });
+            </script>
+            -->
+      <!-- end of BrazilJS snippet -->
+    </section>
+  </main>
+
+  <section class="section section-organizers" id="organizers">
+    <div class="wrapper">
+      <h2 class="section-title">
+        Curadores do<br />
+        <span class="section-title-highlight">Front in POA</span>
+      </h2>
+      <ul class="organizers-list speakers-list">
+        <li
+          class="organizer-item speaker-item"
+          itemprop="performer"
+          itemscope=""
+          itemtype="http://schema.org/Person"
+        >
+          <div class="speaker-photo-container">
+            <img
+              class="speaker-photo"
+              src="images/felipe.png"
+              alt="Felipe N. Moura"
+              itemprop="image"
+            />
+          </div>
+          <div class="speaker-info">
+            <h3 class="organizer-name speaker-name">Felipe N. Moura</h3>
+            <a
+              href="http://twitter.com/felipenmoura"
+              class="organizer-twitter speaker-twitter"
+              target="_blank">@felipenmoura</a
+            >
+          </div>
+        </li>
+        <li
+          class="organizer-item speaker-item"
+          itemprop="performer"
+          itemscope=""
+          itemtype="http://schema.org/Person"
+        >
+          <div class="speaker-photo-container">
+            <img
+              class="speaker-photo"
+              src="images/jaydson.jpeg"
+              alt="Jaydson Gomes"
+              itemprop="image"
+            />
+          </div>
+          <div class="speaker-info">
+            <h3 class="organizer-name speaker-name">Jaydson Gomes</h3>
+            <a
+              href="http://twitter.com/jaydson"
+              class="organizer-twitter speaker-twitter"
+              target="_blank">@jaydson</a
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="wrapper">
+      <div class="credits">
+        Built with <a href="https://astro.build/" target="_blank">Astro</a>, Layout by <a href="http://fguth.com" target="_blank">@fguth</a>.
+        <br />
+        <a
+          href="https://braziljs.org/coc"
+          title="Código de Conduta"
+          class="nav-link">Código de Conduta</a
+        >
+
+        <a href="http://nasc.io/" class="logo-footer">
+          <img src="images/patros/nasc.png" alt="Nasc" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <script async src="/scripts/main.js"></script>
+</Layout>
+
+<style lang="scss">
+  @import '../styles/main.scss';
+</style>
