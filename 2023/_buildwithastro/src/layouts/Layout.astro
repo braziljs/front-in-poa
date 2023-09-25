@@ -42,7 +42,7 @@ const { title } = Astro.props;
             href="/2023/favicon-16x16.png"
             sizes="16x16"
         />
-        <link rel="manifest" href="/2023/webapp-manifest.json" />
+        <link rel="manifest" href="/webapp-manifest.json" />
         <link
             rel="mask-icon"
             href="/2023/safari-pinned-tab.svg"
@@ -57,15 +57,15 @@ const { title } = Astro.props;
             content="O Front in que vai mudar o seu jeito de ver o front end!"
         />
         <meta
-            property="og:image"
-            content="/2023/images/front-in-poa-banner.png"
+          property="og:image"
+          content="/2023/images/front-in-poa-banner.png"
         />
 
         <link
             href="https://fonts.googleapis.com/css?family=Lato:100,400,700"
             rel="stylesheet"
         />
-        <link rel="stylesheet" type="text/css" href="styles/main.css" />
+
         <script is:inline>
             (function () {
                 window._gaq = [
@@ -75,7 +75,7 @@ const { title } = Astro.props;
             })();
         </script>
 
-        <script is:inline src="dsw.js"></script>
+        <script is:inline src="/dsw.js"></script>
         <script is:inline >
             DSW.setup()
                 .then(function (result) {
