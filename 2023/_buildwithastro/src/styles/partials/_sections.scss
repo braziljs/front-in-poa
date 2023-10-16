@@ -12,6 +12,7 @@
   padding-bottom: rem(10px);
   font-weight: 100;
   position: relative;
+
   @media screen and (min-width:$minor-viewport) {
     font-size: rem(70px);
     letter-spacing: rem(-3px);
@@ -22,12 +23,12 @@
   font-weight: 700;
 }
 
-@import "section_collaborate";
-@import "section_about";
-@import "section_speakers";
-@import "section_specialists";
-@import "section_presenter";
-@import "section_schedule";
-@import "section_location";
-@import "section_organizers";
-@import "section_sponsors";
+// @import "section_collaborate";
+// @import "section_about";
+// @import "section_speakers";
+// @import "section_specialists";
+// @import "section_presenter";
+// @import "section_schedule";
+// @import "section_location";
+// @import "section_organizers";
+// @import "section_sponsors";

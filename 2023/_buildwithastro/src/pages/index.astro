@@ -8,25 +8,22 @@ import Schedule from '../components/Schedule.astro';
 import Footer from '../components/Footer.astro';
 import Location from '../components/Location.astro';
 import Supporters from '../components/Supporters.astro';
-
-const ingressURL = 'https://www.sympla.com.br/evento/frontinpoa-2023/2208504';
-const callforpapers = 'https://forms.gle/1ARUc7nHxkyXsdZ58';
 ---
 
 <Layout title="Front In Poa 2023">
-  <Hero />
   <main>
+    <Hero />
     <Navigation />
     <About />
     <Speakers />
     <Schedule />
     <Location />
     <Supporters />
+    <Footer />
   </main>
-  <Footer />
-  <script async src="/scripts/main.js"></script>
+  <script is:inline src="/scripts/main.js"></script>
 </Layout>
 
 <style lang="scss">
-  @import "../styles/main.scss";
+  
 </style>
