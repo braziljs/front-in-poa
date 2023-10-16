@@ -1,16 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const ingressURL = 'https://www.sympla.com.br/evento/frontinpoa-2023/2208504';
+const callforpapers = 'https://forms.gle/1ARUc7nHxkyXsdZ58';
 ---
 
-<Layout title="Front in Poa 2023">
+<Layout title="Front In Poa 2023">
   <main>
     <header class="header">
       <div class="wrapper">
         <h1 class="logo">
           <a
             class="logo-link"
-            href="#"
-            title="Front in POA 2023"
+            href="https://www.frontinpoa.com.br/"
+            title="Front In POA 2023"
             itemprop="name">Front in POA 2023</a
           >
         </h1>
@@ -19,10 +22,10 @@ import Layout from "../layouts/Layout.astro";
             02 Dezembro<br> <span class="event-head-place">Dom Bosco</span>
           </p>
           <a
-            href="https://eventloop.com.br/frontinpoa-2023"
+            href={ingressURL}
             class="header-call-action-link call-action-link"
             target="_blank"
-          >
+            >
             <span class="call-action-text">Te inscreve</span>
           </a>
 
@@ -78,7 +81,7 @@ import Layout from "../layouts/Layout.astro";
             </a>
           </li>
         </ul>
-
+        <!-- 
         <ul class="social-list">
           <li class="social-item">
             <a
@@ -143,15 +146,16 @@ import Layout from "../layouts/Layout.astro";
             </a>
           </li>
         </ul>
+         -->
       </nav>
     </div>
 
     <section class="section section-about" id="about">
       <div class="wrapper">
         <h2 class="section-title">
-          Você não pode<br /> perder o <span class="section-title-highlight"
-            >Front in POA!</span
-          >
+          Você não pode
+          <br />
+          perder o <span class="section-title-highlight">Front in POA!</span>
         </h2>
         <div class="about-text" itemprop="description">
           <p></p>
@@ -159,11 +163,10 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <div class="section-about-tail">
         <a
-          href="https://eventloop.com.br/frontinpoa-2023"
+          href={callforpapers}
           class="section-about-call-action-link call-action-link"
-          target="_blank"
-        >
-          <span class="call-action-text">Te inscreve</span>
+          target="_blank">
+          <span class="call-action-text">Submeter palestra</span>
         </a>
       </div>
     </section>
@@ -173,6 +176,7 @@ import Layout from "../layouts/Layout.astro";
         <h2 class="section-title section-title-highlight">Palestrantes</h2>
 
         <ul class="speakers-list">
+          <!--
           <li class="speaker-item">
             <div class="speaker-photo-container">
               <img
@@ -187,7 +191,7 @@ import Layout from "../layouts/Layout.astro";
               <p class="speaker-bio">Palestrantes sendo definidos</p>
             </div>
           </li>
-          <!--
+          
           <li class="speaker-item">
             <div class="speaker-photo-container">
               <img
@@ -417,7 +421,7 @@ import Layout from "../layouts/Layout.astro";
               <div class="schedule-activity">Credenciamento</div>
             </div>
           </li>
-
+          
           <li
             id="schedule-credenciamento"
             class="schedule-item schedule-item-other"
@@ -427,7 +431,7 @@ import Layout from "../layouts/Layout.astro";
               <div class="schedule-activity">Abertura</div>
             </div>
           </li>
-
+          <!--
           <li class="schedule-item schedule-item-speaker">
             <span class="schedule-time">10:00</span>
 
@@ -446,7 +450,7 @@ import Layout from "../layouts/Layout.astro";
               viverra dolor in, pulvinar dui.
             </p>
           </li>
-          <!--
+          
           <li class="schedule-item schedule-item-speaker">
             <span class="schedule-time">09:30</span>
 
