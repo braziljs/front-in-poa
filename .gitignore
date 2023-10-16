@@ -1,5 +1,10 @@
 node_modules
+**/*/node_node_modules
 out
+
 .sass-cache
-.DS_Store
+**/*/.DS_Store
 npm-debug.log
+
+2023/_buildwithastro/dist
+

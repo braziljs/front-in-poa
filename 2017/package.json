@@ -1,19 +1,22 @@
 {
-  "name": "FrontInPOA2015",
+  "name": "FrontInPOA2017",
   "version": "0.0.1",
   "description": "The south front-end event",
-  "main": "index.js",
   "keywords": [
-    "front-end"
+    "front-end",
+    "front-in-poa"
   ],
   "author": "BrazilJS",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "*",
+    "gulp": "3.8.0",
     "gulp-autoprefixer": "~1.0.0",
     "gulp-plumber": "~0.6.4",
     "gulp-rename": "~1.2.0",
-    "gulp-sass": "*",
+    "gulp-sass": "3.1.0",
     "gulp-webserver": "~0.4.0"
+  },
+  "engines": {
+    "node": "0.12.18"
   }
 }

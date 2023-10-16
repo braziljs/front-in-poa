@@ -1,0 +1,60 @@
+.section-location {
+  height: 80vh;
+  min-height: 400px;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  .section-title {
+    margin-bottom: rem(20px);
+  }
+  @media screen and (min-width: $minor-viewport) {
+    min-height: 600px;
+  }
+}
+.address-container {
+  position: absolute;
+  width: 460px;
+  max-width: 95%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1000;
+}
+.address {
+  text-align: right;
+  position: relative;
+}
+.address-data {
+  padding: 8% 5%;
+  position: relative;
+  z-index: 1;
+  font-size: rem(14px);
+  @media screen and (min-width: $minor-viewport) {
+    font-size: rem(16px);
+  }
+}
+.address-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.address-name {
+  font-size: rem(20px);
+  font-weight: 700;
+  display: block;
+  margin-bottom: .2em;
+  @media screen and (min-width: $minor-viewport) {
+    font-size: rem(30px);
+  }
+}
+.address-link {
+  font-weight: 700;
+  display: inline-block;
+  margin-top: .2em;
+  @media screen and (min-width: $minor-viewport) {
+    font-size: rem(20px);
+  }
+}
+.address-map {
+  height: 100%;
+}
