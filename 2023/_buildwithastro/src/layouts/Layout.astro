@@ -9,63 +9,37 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
     <head>
+        <meta name="theme-color" content="#000000" />
         <meta charset="UTF-8" />
-        <!--
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        -->
-
+        
+        <title itemprop="name">{title}</title>
         <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
-
-        <title itemprop="name">Front in Poa 2023</title>
-
-        <meta name="author" content="Front in Poa 2023" />
+        
+        <meta name="author" content={title} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/2023/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            href="/2023/favicon-32x32.png"
-            sizes="32x32"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            href="/2023/favicon-16x16.png"
-            sizes="16x16"
-        />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
         <link rel="manifest" href="/webapp-manifest.json" />
-        <link
-            rel="mask-icon"
-            href="/2023/safari-pinned-tab.svg"
-            color="#696969"
-        />
-        <meta name="theme-color" content="#000000" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#696969" />
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Front in Poa 2023" />
-        <meta
-            property="og:description"
-            content="O Front in que vai mudar o seu jeito de ver o front end!"
-        />
-        <meta
-          property="og:image"
-          content="/2023/images/front-in-poa-banner.png"
-        />
+        <meta property="og:description" content="O Front in que vai mudar o seu jeito de ver o front end!" />
+        <meta property="og:image" content="/images/front-in-poa-banner.png" />
 
         <link
+            rel="preload"
             href="https://fonts.googleapis.com/css?family=Lato:100,400,700"
-            rel="stylesheet"
-        />
-
+            as="font"
+            type="font/woff"
+            crossorigin />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet" />
+        
         <script is:inline>
             (function () {
                 window._gaq = [
