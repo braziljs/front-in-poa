@@ -25,7 +25,7 @@ a {
   transform: skewX(21deg);
   display: block;
   font-weight: 700;
-  line-height: 2.3;
+  line-height: 2.3 !important;
 }
 
 .wrapper {
