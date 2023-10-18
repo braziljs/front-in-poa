@@ -1,0 +1,145 @@
+---
+const eventDate = 'december 02, 2023';
+---
+
+<div class="countdown-content">
+    <ul class="countdown">
+        <li class="countdown-day">
+            <span id="day">00</span>
+            <small>dias</small>
+        </li>
+        <li class="countdown-hour">
+            <span id="hour">00</span>
+            <small>horas</small>
+        </li>
+        <li class="countdown-minutes">
+            <span id="minutes">00</span>
+            <small>minutos</small>
+        </li>
+        <li class="countdown-seconds">
+            <span id="seconds">00</span>
+            <small>segundos</small>
+        </li>
+    </ul>
+</div>
+
+<script is:inline type="text/javascript">
+    (function countdown() {
+        'use strict';
+
+        function countdown(datestring) {
+            var targetDate = new Date(datestring).getTime();
+            var days, hours, minutes, seconds;
+            var current_date = new Date().getTime();
+            var seconds_f = (targetDate - current_date) / 1000;
+
+            days = parseInt(seconds_f / 86400);
+            seconds_f = seconds_f % 86400;
+
+            hours = parseInt(seconds_f / 3600);
+            seconds_f = seconds_f % 3600;
+
+            minutes = parseInt(seconds_f / 60);
+            seconds = parseInt(seconds_f % 60);
+
+            return {
+                days: days,
+                hours: hours,
+                minutes: minutes,
+                seconds: seconds
+            }
+        }
+
+        setInterval(function () {
+            let c = countdown('december 02, 2023');
+            let coundowncontent = document.querySelectorAll('.countdown')[0];
+
+            coundowncontent.querySelector('#day').innerHTML = c.days;
+            coundowncontent.querySelector('#hour').innerHTML = c.hours;
+            coundowncontent.querySelector('#minutes').innerHTML = c.minutes;
+            coundowncontent.querySelector('#seconds').innerHTML = c.seconds;
+        }, 1000);
+    })();
+</script>
+
+<style lang="scss" scoped>
+    @import "../styles/helpers";
+    @import "../styles/settings";
+
+    .countdown-content {
+        position: absolute;
+        left: 2rem;
+        bottom: 3rem;
+        right: 1rem;
+        left: auto;
+        z-index: 1;
+        text-align: center;
+        display: none;
+
+        @media screen and (min-width: 580px) {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            bottom: 1rem;
+            right: auto;
+            left: 2rem;
+        }
+
+        .countdown {
+            display: flex;
+            gap: .5rem;
+            padding: 0;
+
+            @media screen and (min-width: 768px) {
+                gap: 1rem;
+            }
+        }
+
+        li {
+            min-width: 60px;
+            font-size: 1rem;
+            padding: .5rem .5rem 1rem;
+
+            @media screen and (min-width: 768px) {
+                min-width: 80px;
+                font-size: 2rem;
+                padding: 1rem 1rem 2rem;
+                
+            }
+
+            color: #FFFFFF;
+            background-color: #FF3565;
+            border-radius: 4px;
+            font-weight: 900;
+            
+            &:after,
+            &:before,
+            &::marker {
+                display: none;
+                color: transparent;
+            }
+
+            span {
+                line-height: 2rem;
+
+                @media screen and (min-width: 768px) {
+                    line-height: 4rem;
+                }
+            }
+
+            small {
+                font-size: .725rem;
+                line-height: 1rem;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+
+            span,
+            small {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+</style>
