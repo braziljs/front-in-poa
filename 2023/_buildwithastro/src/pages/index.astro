@@ -8,6 +8,16 @@ import Schedule from '../components/Schedule.astro';
 import Footer from '../components/Footer.astro';
 import Location from '../components/Location.astro';
 import Supporters from '../components/Supporters.astro';
+
+const speakers = [
+  {
+    name: 'Erick Wendel',
+    img: 'https://pbs.twimg.com/profile_images/1557369824438898689/w8Igptui_400x400.jpg',
+    user: '@erickwendel_',
+    link: 'https://twitter.com/erickwendel_',
+    bio: 'Erick Wendel é um palestrante profissional e tem se apresentado em mais de 10 países pelo mundo. Foi premiado com os Google Developer Expert, Microsoft MVP, GitHub Stars e OpenJS Path Educator, os maiores prêmios em área de software do mundo. Hoje Erick vive como instrutor em treinamentos online em sua própria empresa além de trabalhar como core commiter no projeto Node.js'
+  }
+];
 ---
 
 <Layout title="Front In Poa | 2023">
@@ -15,7 +25,7 @@ import Supporters from '../components/Supporters.astro';
     <Hero />
     <Navigation />
     <About />
-    <Speakers />
+    <Speakers speakers={speakers} />
     <Schedule />
     <Location />
     <Supporters />
