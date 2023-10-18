@@ -1,8 +1,12 @@
 ---
-const eventDate = 'december 02, 2023';
+interface Props {
+	eventDate: string;
+}
+
+const { eventDate } = Astro.props;
 ---
 
-<div class="countdown-content">
+<div class="countdown-content" eventDate={eventDate}>
     <ul class="countdown">
         <li class="countdown-day">
             <span id="day">00</span>
@@ -51,9 +55,15 @@ const eventDate = 'december 02, 2023';
         }
 
         setInterval(function () {
-            let c = countdown('december 02, 2023');
-            let coundowncontent = document.querySelectorAll('.countdown')[0];
+            let eventDate = document.querySelectorAll('[eventDate]')[0]?.getAttribute('eventDate');
+            
+            if(!eventDate) {
+                return;
+            };
 
+            let coundowncontent = document.querySelectorAll('.countdown')[0];
+            let c = countdown(eventDate);
+        
             coundowncontent.querySelector('#day').innerHTML = c.days;
             coundowncontent.querySelector('#hour').innerHTML = c.hours;
             coundowncontent.querySelector('#minutes').innerHTML = c.minutes;
@@ -63,9 +73,6 @@ const eventDate = 'december 02, 2023';
 </script>
 
 <style lang="scss" scoped>
-    @import "../styles/helpers";
-    @import "../styles/settings";
-
     .countdown-content {
         position: absolute;
         left: 2rem;
