@@ -2,6 +2,7 @@
 import Countdown from "./Countdown.astro";
 const ingressURL = 'https://www.sympla.com.br/evento/frontinpoa-2023/2208504';
 const c4pURL = 'https://forms.gle/1ARUc7nHxkyXsdZ58';
+const eventDate= 'december 02, 2023';
 ---
 
 <header class="header">
@@ -51,7 +52,7 @@ const c4pURL = 'https://forms.gle/1ARUc7nHxkyXsdZ58';
         </div>
     </div>
     
-    <Countdown eventDate="december 02, 2023"/>
+    <Countdown eventDate={eventDate} />
 </header>
 
 <style lang="scss">
