@@ -1,6 +1,10 @@
 # Front In Poa 2023
 
-Website build with [Astro](https://astro.build/).
+<p align="center">
+  <img src="/2023/_buildwithastro/public/images/front-in-poa-banner.png">
+  https://www.frontinpoa.com.br
+</p>
+
 
 
 ## 🚀 Project Structure
@@ -13,7 +17,7 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── Countdown.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
