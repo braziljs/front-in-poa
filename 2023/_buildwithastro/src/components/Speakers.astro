@@ -1,49 +1,42 @@
 ---
 interface Props {
-	speakers: [{
-    name: String,
-    img: String,
-    user: String,
-    link: String,
-    bio: String
-  }]
+  speakers: [
+    {
+      name: String;
+      img: String;
+      user: String;
+      link: String;
+      bio: String;
+    },
+  ];
 }
 
 const { speakers } = Astro.props;
 ---
 
 <section class="section section-speakers" id="speakers">
-    <div class="wrapper">
-        <h2 class="section-title section-title-highlight">Palestrantes</h2>
+  <div class="wrapper">
+    <h2 class="section-title section-title-highlight">Palestrantes</h2>
 
-        <ul class="speakers-list">
-          {speakers.map((data) => <li class="speaker-item">
-              <div class="speaker-photo-container">
-                <img
-                  lazy
-                  class="speaker-photo"
-                  src={data.img}
-                  alt={data.name}
-                />
-              </div>
-              <div class="speaker-info">
-                <h3 class="speaker-name">
-                  {data.name}
-                </h3>
-                <a
-                  href={data.link}
-                  class="speaker-twitter"
-                  target="_blank">
-                  {data.user}
-                  </a>
-                <p class="speaker-bio">
-                  {data.bio}
-                </p>
-              </div>
-            </li>
-          )}
-        </ul>
-    </div>
+    <ul class="speakers-list">
+      {
+        speakers.map((data) => (
+          <li class="speaker-item">
+            <div class="speaker-photo-container">
+              <img lazy class="speaker-photo" src={data.img} alt={data.name} />
+            </div>
+            <div class="speaker-info">
+              <h3 class="speaker-name">{data.name}</h3>
+              <a href={data.link} class="speaker-twitter" target="_blank">
+                {data.user}
+              </a>
+              <p class="speaker-bio">{data.bio}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </section>
 <style lang="scss">
   @import "../styles/helpers";
