@@ -2,7 +2,7 @@
 import Countdown from "./Countdown.astro";
 const ingressURL = 'https://www.sympla.com.br/evento/frontinpoa-2023/2208504';
 const c4pURL = 'https://forms.gle/1ARUc7nHxkyXsdZ58';
-const eventDate= 'december 02, 2023';
+const eventDate= 'december 02, 2023 09:00';
 ---
 
 <header class="header">
@@ -13,7 +13,7 @@ const eventDate= 'december 02, 2023';
                 href="https://www.frontinpoa.com.br/"
                 title="Front In POA 2023"
                 itemprop="name">
-                
+
                 Front in POA 2023
             </a>
         </h1>
@@ -31,27 +31,13 @@ const eventDate= 'december 02, 2023';
                 target="_blank">
 
                 <span class="call-action-text">
-                    Te inscreve
+                    esgotado
                 </span>
             </a>
-            
-            
-            <div style="margin-top: 25px;">
-                <a
-                    href={c4pURL}
-                    class="header-call-action-link call-action-link send-your-talk"
-                    target="_blank">
-
-                    <span class="call-action-text" style="line-height: 1em;">
-                        C4P
-                    </span>
-                </a>
-            </div>
-           
         </div>
     </div>
-    
-    <Countdown eventDate={eventDate} />
+
+    <!-- <Countdown eventDate={eventDate} /> -->
 </header>
 
 <style lang="scss">

@@ -54,20 +54,27 @@ const { eventDate } = Astro.props;
             }
         }
 
-        setInterval(function () {
+        function render() {
+            let finished = true;
             let eventDate = document.querySelectorAll('[eventDate]')[0]?.getAttribute('eventDate');
-            
+
             if(!eventDate) {
                 return;
             };
 
             let coundowncontent = document.querySelectorAll('.countdown')[0];
             let c = countdown(eventDate);
-        
+
             coundowncontent.querySelector('#day').innerHTML = c.days;
             coundowncontent.querySelector('#hour').innerHTML = c.hours;
             coundowncontent.querySelector('#minutes').innerHTML = c.minutes;
             coundowncontent.querySelector('#seconds').innerHTML = c.seconds;
+
+            return finished;
+        }
+
+        let loop = setInterval(function () {
+          if(!render()) clearInterval(loop);
         }, 1000);
     })();
 </script>
@@ -112,7 +119,7 @@ const { eventDate } = Astro.props;
                 min-width: 80px;
                 font-size: 2rem;
                 padding: 1rem 1rem 2rem;
-                
+
             }
 
             color: #FFFFFF;
@@ -121,7 +128,7 @@ const { eventDate } = Astro.props;
             border-radius: 4px;
             font-weight: 900;
             border: solid 1px rgba(255, 255, 255, 0.125);
-            
+
             &:after,
             &:before,
             &::marker {
